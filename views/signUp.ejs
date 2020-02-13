@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
+    <link href="stylesheets/index.css" rel="stylesheet">
+    <link href="stylesheets/signUp.css" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="javascripts/bootstrap.min.js"></script>
+    <script src="javascripts/signUp.js"></script>
+</head>
+<body>
+<form id="signUp" class="signUp">
+    <div><span>Username:</span><input type="text" class="form-control" id="signUp-username" /></div>
+    <div><span>Password:</span><input type="text" class="form-control" id="signUp-password" /></div>
+    <div><span>Skills:</span><input type="text" class="form-control" id="signUp-skills" /></div>
+    <div><span>Experience(years):</span><input type="text" class="form-control" id="signUp-experience" onblur="signUpLevel()"/></div>
+    <div>
+        <span>Your Level:</span>
+        <span id="signUp-level"></span>
+    </div>
+        <div>
+            <span>Car Country:</span>
+            <input type="text" class="form-control" id="signUp-car-country" list="signUp-cars-country-select"/>
+            <datalist id="signUp-cars-country-select">
+                <option>Japan</option>
+                <option>Germany</option>
+                <option>Korea</option>
+                <option>US</option>
+                <option>Britain</option>
+                <option>France</option>
+                <option>Sweden</option>
+                <option>China</option>
+                <option>India</option>
+                <option>Russia</option>
+            </datalist>
+        </div>
+
+        <div>
+            <span>Car Brand:</span>
+            <input type="text" class="form-control" id="signUp-car-brand" list="signUp-cars-brand-select"/>
+            <datalist id="signUp-cars-brand-select">
+                <option>Toyota</option>
+                <option>Nissan</option>
+                <option>Honda</option>
+                <option>Suzuki</option>
+                <option>Mazda</option>
+            </datalist>
+        </div>
+        <div>
+            <span>Car Model:</span>
+            <input type="text" class="form-control" id="signUp-car-model" list="signUp-cars-model-select"/>
+            <datalist id="signUp-cars-model-select">
+                <option>Century</option>
+                <option>Crown</option>
+                <option>Camry</option>
+                <option>MIRAI</option>
+                <option>Mark X</option>
+            </datalist>
+        </div>
+        <div>
+        <span>Car Image:</span>
+        <img src="images/car-model-pics/Toyota_CAMRY.jpg" alt="car-model-pic" />
+        </div>
+    </div>
+    <button class="btn" type="button" id="signUp-submit" onclick="clickSignUpSubmit()">Submit Profile</button>
+</form>
+</body>
+</html>

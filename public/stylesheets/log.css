@@ -1,0 +1,47 @@
+.log{
+    font-size: large;
+    position:absolute;
+    left:10vw;
+    top:40vh;
+    height:30vh;
+    width:80vw;
+    background-color: black;
+    color:white;
+    padding-left:5vw;
+    padding-right:5vw;
+    z-index: 3;
+}
+
+.log .third-party{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+}
+
+.log input{
+    margin-top:1vh;
+    width:100%;
+}
+
+.log img{
+    height:5vh;
+    width:5vh;
+}
+
+.log button{
+    width:100%;
+    margin-bottom: 1vh;
+    color:black;
+    background-color: white;
+}
+
+.log .sign-up{
+    width:100%;
+    text-align: center;
+}
+
+.log div{
+    margin-top:1vh;
+    color:white;
+}

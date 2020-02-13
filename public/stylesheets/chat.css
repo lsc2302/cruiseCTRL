@@ -1,0 +1,76 @@
+.chatroom{
+    position:absolute;
+    display:none;
+    flex-direction: column;
+    height:100%;
+    width:100%;
+}
+.chatroom .chatroom-top{
+    padding-top: 3vh;
+    flex:5;
+    border-bottom: 2px solid;
+}
+
+.chatroom .chatroom-title{
+    display: inline;
+    width:30vw;
+    margin-left:20vw;
+    font-size: x-large;
+}
+
+.chatroom .chatroom-body{
+    flex:80;
+    width:90%;
+    border:2px dashed;
+    margin-top: 2.5vh;
+    margin-left:5vw;
+}
+
+.chatroom img{
+    height:5vh;
+    width:5vh;
+}
+
+.chatroom .chatroom-bottom{
+    flex:10;
+}
+
+.chatroom .input-group{
+    height:5vh;
+    margin-top:2.5vh;
+}
+
+.chatroom .input-group input{
+    height:5vh;
+}
+
+.chatroom .self-msg{
+    display:inline;
+    margin-top: 0.5vh;
+    /*background-color: black;*/
+    /*color: white;*/
+    float:left;
+}
+
+.chatroom .oppo-msg{
+    display:inline;
+    margin-top: 0.5vh;
+    /*background-color: black;*/
+    /*color: white;*/
+    float:right;
+}
+
+.chatroom .system-msg{
+    display:inline;
+    /*background-color: black;*/
+    /*color: white;*/
+    margin-left:40vw;
+}
+
+.chatroom .msg-wrapper{
+    width:100%;
+    height:3vh;
+}
+
+
+

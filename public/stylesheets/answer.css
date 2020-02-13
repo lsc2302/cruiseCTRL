@@ -1,0 +1,60 @@
+/*.article-title{*/
+/*    word-wrap:break-word;*/
+/*    word-break:break-all;*/
+/*    height:10vh;*/
+/*    width:40vh;*/
+/*    margin-left:2vh;*/
+/*    margin-right:2vh;*/
+/*    background-color: purple;*/
+/*}*/
+
+.card{
+    margin-bottom:2vh;
+}
+
+#middle-answer{
+    height:100%;
+    margin: 3vh 5vw;
+    /*width:90vw;*/
+}
+
+.card-footer{
+    height:3vh;
+    font-size: small;
+}
+.questioner-avatar, .questioner-name{
+    display: inline-block;
+}
+.questioner-avatar{
+    height:3vh;
+    width:3vh;
+    border-radius: 50%;
+}
+
+.money{
+    height:2vh;
+    width:2vh;
+}
+
+.questioner-part{
+    margin-top:-1vh;
+    height:2vh;
+    width:2vh;
+}
+
+#search-questioner{
+    margin-left: 3vw;
+}
+
+.pagination{
+    color: white;
+}
+
+.pagination li a{
+    color: black;
+}
+
+
+/*.pagination ul{*/
+/*    color: black;*/
+/*}*/

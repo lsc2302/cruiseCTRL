@@ -1,0 +1,25 @@
+#middle-article{
+    height:100%;
+    margin: 1vh 5vw;
+}
+
+.card{
+    margin-bottom:1.5vh;
+}
+
+.card-body img{
+    height:8vh;
+    width:13vh;
+}
+
+.card-footer{
+    height:3vh;
+    font-size: small;
+}
+
+.card-footer img{
+    margin-top:-1vh;
+    height:2vh;
+    width:2vh;
+    display:inline;
+}

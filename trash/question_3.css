@@ -1,0 +1,66 @@
+#middle-question-3{
+    display:flex;
+    height:100%;
+    width:80%;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10vw;
+}
+
+.audio{
+    width:100%;
+    height:100%;
+}
+#audio-visualization{
+    height:20vh;
+    width:100%;
+}
+#record-status{
+    position:absolute;
+    margin-bottom:8vh;
+}
+#record-status img{
+    height:5vh;
+    width:5vh;
+    position:relative;
+    left: 30vw;
+}
+
+.audio-records{
+    margin:2vh;
+}
+
+.card{
+    height: 7vh;
+    margin:1vh;
+    font-size:xx-small;
+}
+
+.record-play{
+    position:absolute;
+    height:3vh;
+    width:3vh;
+    right:3vh;
+    top: 2vh;
+}
+
+.record-delete{
+    position:absolute;
+    height:2vh;
+    width:2vh;
+    right:0;
+    top:0;
+}
+
+.card-body{
+    display:inline-block;
+    padding:0;
+    width:60vw;
+    height:1vh;
+    margin:1vh;
+}
+
+.waveform {
+    display: block;
+    margin: 0 auto;
+}

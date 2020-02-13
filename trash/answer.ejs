@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+
+    <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
+<!--    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">-->
+    <link rel="icon" href="images/favicon.ico">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="javascripts/bootstrap.min.js"></script>
+<!--    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+    <!--    <script src="javascripts/wavebell.js"></script>-->
+
+
+    <link href="stylesheets/index.css" rel="stylesheet">
+    <link href="stylesheets/menu.css" rel="stylesheet">
+    <link href="stylesheets/answer.css" rel="stylesheet">
+    <link href="stylesheets/chat.css" rel="stylesheet">
+
+    <script src="javascripts/init.js"></script>
+    <script src="javascripts/nav.js"></script>
+    <script src="javascripts/menu.js"></script>
+    <script src="javascripts/answer.js"></script>
+
+</head>
+<body>
+<div class="pop-up">
+    <div class="pop-up-avatar">
+        <img src="images/user-default.png" id="pop-up-avatar" alt="Avatar">
+        Unknown User
+    </div>
+    <div class="profile-more-info">
+        <div class="profile-name">username:<%= username%></div>
+        <div class="profile-experience">userExperience:<%= userExperience%></div>
+        <div class="profile-skills">userSkills:<%= userSkills%></div>
+        <div class="profile-car-country">carCountry:<%= carCountry%></div>
+        <div class="profile-car-brand">carBrand:<%= carBrand%></div>
+        <div class="profile-car-model">carModel:<%= carModel%></div>
+    </div>
+    <div class="pop-up-other">
+    <div class="settings">
+        <img src="images/settings.png" id="settings" alt=""/>
+        Settings
+    </div>
+    <div class="help">
+        <img src="images/help.png" id="help" alt=""/>
+        Help
+    </div>
+    <div class="contact">
+        <img src="images/contact.png" id="contact" alt=""/>
+        Contact Us
+    </div>
+    <div class="log-out" onclick="clickLogout()">
+        <img src="images/logout.png" id="log-out"  alt=""/>
+        Log out
+    </div>
+    </div>
+</div>
+<div class="index">
+    <div class="top">
+        <img src="images/user-default.png" alt="Avatar" id="avatar" onclick="clickMenu()">
+    </div>
+    <div class="middle" id="middle">
+        <div id="middle-answer">
+            <div id="expert-search" >
+                <div class="input-group mt-3 mb-3">
+                    <input type="text" class="form-control" id="search-expert">
+                    <div class="input-group-prepend">
+                        <button type="button" class="btn btn-outline-prepend dropdown-toggle" data-toggle="dropdown">
+                            Sort By
+                        </button>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-item" >Relate Ascend</div>
+                            <div class="dropdown-item" >Relate Descend</div>
+                            <div class="dropdown-item" >Payment Ascend</div>
+                            <div class="dropdown-item" >Payment Descend</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="notifs"></div>
+<!--                <textarea class="upload-box form-control" id='receive-text' rows="13">-->
+<!--                </textarea>-->
+<!--                <div class="card">-->
+<!--                    <div class="card-header">-->
+<!--                        <div class="questioner-avatar">-->
+<!--                            <img src="user-data/user-default.png" class="questioner-avatar" alt="questioner-avatar-avatar">-->
+<!--                        </div>-->
+<!--                        <div class="questioner-name">-->
+<!--                            Issac Newton-->
+<!--                        </div>-->
+<!--                        &lt;!&ndash;                    <img src="images/money-bag.png" class="money" alt="money">&ndash;&gt;-->
+<!--                    </div>-->
+<!--                    <div class="card-body"> Broken</div>-->
+<!--                    <div class="card-footer"><img src="images/tag-active.png" class="questioner-part" alt="questioner-part">-->
+<!--                        Tyre</div>-->
+<!--                </div>-->
+<!--                <div class="card">-->
+<!--                    <div class="card-header">-->
+<!--                        <div class="questioner-avatar">-->
+<!--                            <img src="user-data/user-default.png" class="questioner-avatar" alt="questioner-avatar-avatar">-->
+<!--                        </div>-->
+<!--                        <div class="questioner-name">-->
+<!--                            Albert Einstein-->
+<!--                        </div>-->
+<!--                        &lt;!&ndash;                    <img src="images/gold.png" class="money" alt="money">&ndash;&gt;-->
+<!--                    </div>-->
+<!--                    <div class="card-body"> Broken</div>-->
+<!--                    <div class="card-footer"><img src="images/tag-active.png" class="questioner-part" alt="questioner-part">-->
+<!--                        Oil Tank</div>-->
+<!--                </div>-->
+<!--                <div class="card">-->
+<!--                    <div class="card-header">-->
+<!--                        <div class="questioner-avatar">-->
+<!--                            <img src="user-data/user-default.png" class="questioner-avatar" alt="questioner-avatar-avatar">-->
+<!--                        </div>-->
+<!--                        <div class="questioner-name">-->
+<!--                            Bohr-->
+<!--                        </div>-->
+<!--                        &lt;!&ndash;                    <img src="images/diamond.png" class="money" alt="money">&ndash;&gt;-->
+<!--                    </div>-->
+<!--                    <div class="card-body"> Broken</div>-->
+<!--                    <div class="card-footer">-->
+<!--                        <img src="images/tag-active.png" class="questioner-part" alt="questioner-part">-->
+<!--                        AC</div>-->
+<!--                </div>-->
+<!--                <div class="card">-->
+<!--                    <div class="card-header">-->
+<!--                        <div class="questioner-avatar">-->
+<!--                            <img src="user-data/user-default.png" class="questioner-avatar" alt="questioner-avatar-avatar">-->
+<!--                        </div>-->
+<!--                        <div class="questioner-name">-->
+<!--                            Fourier-->
+<!--                        </div>-->
+<!--                        &lt;!&ndash;                    <img src="images/coins.png" class="money" alt="money">&ndash;&gt;-->
+<!--                    </div>-->
+<!--                    <div class="card-body"> Broken</div>-->
+<!--                    <div class="card-footer"><img src="images/tag-active.png" class="questioner-part" alt="questioner-part">-->
+<!--                        Window</div>-->
+<!--                </div>-->
+            </div>
+<!--            <div class="container">-->
+<!--                <ul class="pagination">-->
+<!--                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>-->
+<!--                    <li class="page-item"><a class="page-link" href="#">1</a></li>-->
+<!--                    <li class="page-item"><a class="page-link" href="#">2</a></li>-->
+<!--                    <li class="page-item"><a class="page-link" href="#">3</a></li>-->
+<!--                    <li class="page-item"><a class="page-link" href="#">4</a></li>-->
+<!--                    <li class="page-item"><a class="page-link" href="#">5</a></li>-->
+<!--                    <li class="page-item"><a class="page-link" href="#">6</a></li>-->
+<!--                    <li class="page-item"><a class="page-link" href="#">7</a></li>-->
+<!--                    <li class="page-item"><a class="page-link" href="#">...</a></li>-->
+<!--                    <li class="page-item"><a class="page-link" href="#">Next</a></li>-->
+<!--                </ul>-->
+<!--            </div>-->
+        </div>
+    </div>
+    <nav class="bottom">
+        <div id="icon-0" onclick="clickNav(0)">
+            <img src="images/que.png"  class= "icon-que" alt=""/>
+        </div>
+        <div id="icon-1" onclick="clickNav(1)">
+            <img src="images/ans-active.png" class="icon-ans" alt=""/>
+        </div>
+        <div id="icon-2" onclick="clickNav(2)">
+            <img src="images/loc.png" class="icon-loc" alt=""/>
+        </div>
+        <div id="icon-3" onclick="clickNav(3)">
+            <img src="images/search.png" class="icon-search" alt=""/>
+        </div>
+    </nav>
+</div>
+<div class="chatroom">
+    <div class="chatroom-top">
+        <img src="images/back.png">
+        <div class="chatroom-title">chatroom</div>
+    </div>
+    <div class="chatroom-body">
+
+    </div>
+    <div class="chatroom-bottom">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control">
+            <div class="input-group-append">
+                <button class="btn btn-primary" type="submit" id="chatroom-send">Send</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

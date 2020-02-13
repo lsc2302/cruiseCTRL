@@ -1,0 +1,132 @@
+#middle-question{
+    /*display:flex;*/
+    height:100%;
+    margin: 3vh 5vw;
+    /*width:80%;*/
+    /*align-items: center;*/
+    /*justify-content: space-between;*/
+    /*margin-left: 10vw;*/
+}
+
+.question-body{
+    /*position:absolute;*/
+    height:100%;
+    /*align-self: flex-start;*/
+    font-size: x-large;
+    /*padding:0.5vh;*/
+}
+
+.part,.accessories{
+    margin-top:1vh;
+}
+
+/*.progress{*/
+/*    display: inline-block;*/
+/*    height:2vh;*/
+/*    width: 60vw;*/
+/*    position:absolute;*/
+/*    left:20vw;*/
+/*    bottom:16vh;*/
+/*}*/
+
+.upload{
+    margin-top: 1vh;
+    /*height:2vh;*/
+    /*width:2vh;*/
+    /*width: 100%;*/
+}
+.upload-box{
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    /*border:2px solid;*/
+    /*background-color: gray;*/
+    /*opacity: 50%;*/
+    /*height:80vh;*/
+    width:100%;
+    /*border-radius: 5%;*/
+    margin-bottom: 1vh;
+}
+
+/*textarea{*/
+/*    height:35vh;*/
+/*}*/
+
+#upload{
+    height:2vh;
+    width:2vh;
+}
+
+.badge{
+    font-size: 30px;
+    /*border:3px;*/
+    border: 1px solid;
+}
+
+.submit{
+    position:absolute;
+    height:4vh;
+    width: 80vw;
+    bottom:13vh;
+    border:2px solid;
+    font-size: large;
+    font-weight:700;
+}
+
+.expert-abbr{
+    margin-top:1vh;
+}
+
+.expert-abbr span{
+    font-size: 35px;
+}
+
+#expert-name{
+    display:inline;
+}
+
+.align-top{
+    margin-right:-2.1vh;
+    margin-top:-1.6vh;
+}
+
+#expert-remove{
+    height:2vh;
+    width:2vh;
+}
+
+.expert-list{
+    display: none;
+}
+
+/*.parts-input{*/
+/*    width:100%;*/
+/*}*/
+
+/*.accessories-input{*/
+/*    width:100%;*/
+/*}*/
+
+.parts-select{
+    display: none;
+    position:absolute;
+    top:19vh;
+    left:5vw;
+    width:90vw;
+    background-color: black;
+    color:white;
+    border:2px solid;
+    z-index:2;
+}
+
+.accessories-select{
+    display: none;
+    position:absolute;
+    background-color: black;
+    color:white;
+    top:26vh;
+    left:5vw;
+    width:90vw;
+    border:2px solid;
+    z-index:2;
+}
