@@ -3,3 +3,31 @@
     width:5vh;
     margin-left: 2.5vh;
 }
+
+.contact-method{
+    height:5vh;
+    margin-top: 2vh;
+    margin-left: 20vw;
+}
+
+.contact-method img{
+    height:3vh;
+    width:3vh;
+}
+
+
+.contact{
+    font-size: xx-large;
+    background-color: white;
+    height:100vh;
+    width:100%;
+}
+
+.contact .dev-name{
+    margin-top: 1vh;
+    margin-left: 20vw;
+}
+
+#contact-info{
+    margin-top:30vh;
+}

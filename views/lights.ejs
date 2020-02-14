@@ -64,22 +64,52 @@
     </div>
     <div class="middle" id="middle">
         <div id="middle-home">
-            <div class="nearby-search container">
-                <div class="input-group mb-3" id="searchPanel">
-                    <input type="text" class="form-control" value="gas station" placeholder="..." onkeydown="searchIntro(event)">
+            <div class="container">
+                <div class="home-back" onclick="clickHomeBack1()">
+                    <img src="images/back.png">
+                    Back to previous Page
+                </div>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="..." onkeydown="searchIntro(event)">
                     <div class="intro-items">
-                        <div id="Antilock Brake Warning">
-                            <img src="">
-                            Antilock Brake Warning
+                        <% for(var i=0; i < children.length; i++) { %>
+                        <div class="intro-second"  onclick="clickHome('<%=children[i].event%>')">
+                            <img src=<%=children[i].img%>>
+                            <%=children[i].name%>
                         </div>
-                        <div id="Battery Low Warning">
-                            <img src="">
-                            Battery Low Warning
-                        </div>
-                        <div id="Check Engine Warning">
-                            <img src="">
-                            Check Engine Warning
-                        </div>
+                        <% } %>
+                        <!--                        <div class="intro-second"  onclick="clickAntilockWarning()">-->
+<!--                            <img src="images/intro-imgs/Antilock-Brake-Warning.png">-->
+<!--                            Antilock Brake Warning-->
+<!--                        </div>-->
+<!--                        <div class="intro-second" onclick="clickBatteryLow()">-->
+<!--                            <img src="images/intro-imgs/Battery-Check-Light.png">-->
+<!--                            Battery Low Warning-->
+<!--                        </div>-->
+<!--                        <div class="intro-second"  onclick="clickCheckEngine()">-->
+<!--                            <img src="images/intro-imgs/Check-Engine-Light.png">-->
+<!--                            Engine Warning-->
+<!--                        </div>-->
+<!--                        <div class="intro-second"  onclick="clickBrakeSystem()">-->
+<!--                            <img src="images/intro-imgs/Brake-System-Warning.png">-->
+<!--                            Brake System Warning-->
+<!--                        </div>-->
+<!--                        <div class="intro-second"  onclick="clickCheckOil()">-->
+<!--                            <img src="images/intro-imgs/Check-Oil-Light.png">-->
+<!--                            Low Oil Warning-->
+<!--                        </div>-->
+<!--                        <div class="intro-second"  onclick="clickLowFuel()">-->
+<!--                            <img src="images/intro-imgs/Low-Fuel-Light.png">-->
+<!--                            Low Fuel Warning-->
+<!--                        </div>-->
+<!--                        <div class="intro-second"  onclick="clickLowWiper()">-->
+<!--                            <img src="images/intro-imgs/Low-Wiper-Fluid.png">-->
+<!--                            Low Wiper Fluid Warning-->
+<!--                        </div>-->
+<!--                        <div class="intro-second"  onclick="clickSeatBelt()">-->
+<!--                            <img src="images/intro-imgs/Seatbelt-Warning.png">-->
+<!--                            Seatbelt Warning-->
+<!--                        </div>-->
                     </div>
                 </div>
             </div>

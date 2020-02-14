@@ -2,16 +2,104 @@ const express = require('express');
 const UserModel = require('../models/UserModel.js');
 const UserSocketModel = require('../models/UserSocketModel.js');
 const ArticleModel = require('../models/ArticleModel.js');
+const renderdata = require('../public/data/home.json');
 const router = express.Router();
 
 router.get('/', function(req, res, next) {
     if(!!req.session.loginUser){
-        res.render('home',req.session.loginUser);
+        let data = Object.assign(req.session.loginUser, renderdata);
+        res.render('home',data);
     }
     else{
         res.redirect('/login');
     }
 });
+
+router.get('/lights',function(req,res){
+    if(!!req.session.loginUser){
+        let data = Object.assign(req.session.loginUser, renderdata.data[0]);
+        res.render('lights',data);
+    }
+    else{
+        res.redirect('/login');
+    }
+});
+
+router.get('/smell',function(req,res){
+    if(!!req.session.loginUser){
+        let data = Object.assign(req.session.loginUser, renderdata.data[1]);
+        res.render('smell',data);
+    }
+    else{
+        res.redirect('/login');
+    }
+});
+
+router.get('/smoke',function(req,res){
+    if(!!req.session.loginUser){
+        let data = Object.assign(req.session.loginUser, renderdata.data[2]);
+
+        res.render('smoke',data);
+    }
+    else{
+        res.redirect('/login');
+    }
+});
+
+router.get('/sound',function(req,res){
+    if(!!req.session.loginUser){
+        let data = Object.assign(req.session.loginUser, renderdata.data[3]);
+        res.render('sound',data);
+    }
+    else{
+        res.redirect('/login');
+    }
+});
+
+
+
+router.get('/shake',function(req,res){
+    if(!!req.session.loginUser){
+        let data = Object.assign(req.session.loginUser, renderdata.data[4]);
+        res.render('shake',data);
+    }
+    else{
+        res.redirect('/login');
+    }
+});
+
+
+
+router.get('/antilockWarning',function(req,res){
+    if(!!req.session.loginUser){
+        console.log(renderdata.data[0].children[0]);
+        let data = Object.assign(req.session.loginUser, renderdata.data[0].children[0].children);
+        res.render('antilock_brake_warning',data);
+    }
+    else{
+        res.redirect('/login');
+    }
+});
+
+router.get('/batteryLow',function(req,res){
+    if(!!req.session.loginUser){
+        res.render('battery_low_warning',req.session.loginUser);
+    }
+    else{
+        res.redirect('/login');
+    }
+});
+
+router.get('/checkEngine',function(req,res){
+    if(!!req.session.loginUser){
+        res.render('check_engine_warning',req.session.loginUser);
+    }
+    else{
+        res.redirect('/login');
+    }
+});
+
+
 
 router.get('/settings',function(req,res){
     if(!!req.session.loginUser){

@@ -3,6 +3,8 @@ $(document).ready(function() {
        if (document.referrer === '') {
            window.location.href = '/';
        }
-       window.location.href = document.referrer;
+       else {
+           window.location.href = document.referrer;
+       }
    })
 });

@@ -66,11 +66,13 @@
 .submit{
     position:absolute;
     height:4vh;
-    width: 80vw;
+    width: 90vw;
     bottom:13vh;
     border:2px solid;
     font-size: large;
     font-weight:700;
+    background-color:#ee4723;
+    color:white;
 }
 
 .expert-abbr{
@@ -99,21 +101,13 @@
     display: none;
 }
 
-/*.parts-input{*/
-/*    width:100%;*/
-/*}*/
-
-/*.accessories-input{*/
-/*    width:100%;*/
-/*}*/
-
 .parts-select{
     display: none;
     position:absolute;
     top:19vh;
     left:5vw;
     width:90vw;
-    background-color: black;
+    background-color:#ee4723;
     color:white;
     border:2px solid;
     z-index:2;
@@ -130,3 +124,38 @@
     border:2px solid;
     z-index:2;
 }
+
+a.active.nav-link {
+    color: #ee4723;
+}
+
+#expert-save{
+    background-color:#ee4723;
+}
+
+.nav-pills #question-item .nav-link:not(.active) {
+    background-color:white;
+    color:#ee4723;
+
+
+}
+
+.nav-pills #answer-item .nav-link:not(.active) {
+    background-color:white;
+    color:#ee4723;
+
+}
+
+
+/* active (faded) */
+.nav-pills #question-item .nav-link {
+    background-color:#ee4723;
+    color:white;
+}
+
+.nav-pills #answer-item .nav-link {
+    background-color:#ee4723;
+    color:white;
+}
+
+

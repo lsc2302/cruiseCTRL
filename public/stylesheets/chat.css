@@ -47,23 +47,23 @@
 .chatroom .self-msg{
     display:inline;
     margin-top: 0.5vh;
-    /*background-color: black;*/
-    /*color: white;*/
+    background-color: #ee4723;
+    color: white;
     float:left;
 }
 
 .chatroom .oppo-msg{
     display:inline;
     margin-top: 0.5vh;
-    /*background-color: black;*/
-    /*color: white;*/
+    background-color: #ee4723;
+    color: white;
     float:right;
 }
 
 .chatroom .system-msg{
     display:inline;
-    /*background-color: black;*/
-    /*color: white;*/
+    background-color: gray;
+    color: white;
     margin-left:40vw;
 }
 

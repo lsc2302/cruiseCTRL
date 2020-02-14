@@ -3,15 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <title>Help Info</title>
-    <link href="stylesheets/help.css" rel="stylesheet">
+    <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="javascripts/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+
+    <link href="stylesheets/help.css" rel="stylesheet">
+    <link href="stylesheets/chat.css" rel="stylesheet">
+
     <script src="javascripts/help.js"></script>
 </head>
 <body>
-<div>
-    <img src="images/back.png" id="help-back" />
+<div class="help">
+    <img src="images/back.png" id="help-back"/>
     <div id="help-info">
+        <div class="help-title">Help</div>
         helpXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    </div>
+    <div class="chatroom">
+        <div class="chatroom-top">
+            <img src="images/close-sq.png">
+            <div class="chatroom-title">chatroom</div>
+        </div>
+        <div class="chatroom-body">
+
+        </div>
+        <div class="chatroom-bottom">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control">
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="submit" id="chatroom-send">Send</button>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 </body>

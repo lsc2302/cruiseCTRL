@@ -1,16 +1,17 @@
 $(document).ready(function() {
-    $.ajax({
-        url: '/getUser',
-        type: 'POST',
-        success: function (response) {
-            if (response.status === 0) {
-                sessionStorage.setItem('username', response.data.username);
-                sessionStorage.setItem('userAvatar', response.data.userAvatar);
-                sessionStorage.setItem('userExperience', response.data.userExperience);
-                sessionStorage.setItem('userSkills', response.data.userSkills);
-                sessionStorage.setItem('carCountry', response.data.carCountry);
-                sessionStorage.setItem('carBrand', response.data.carBrand);
-                sessionStorage.setItem('carModel', response.data.carModel);
+    // $.ajax({
+    //     url: '/getUser',
+    //     type: 'POST',
+    //     success: function (response) {
+    //         if (response.status === 0)
+            {
+                // sessionStorage.setItem('username', response.data.username);
+                // sessionStorage.setItem('userAvatar', response.data.userAvatar);
+                // sessionStorage.setItem('userExperience', response.data.userExperience);
+                // sessionStorage.setItem('userSkills', response.data.userSkills);
+                // sessionStorage.setItem('carCountry', response.data.carCountry);
+                // sessionStorage.setItem('carBrand', response.data.carBrand);
+                // sessionStorage.setItem('carModel', response.data.carModel);
                 let userAvatar = sessionStorage.getItem('userAvatar');
                 let avatarContent = `<img src="user-data/` + userAvatar + `" id="avatar" onclick="clickMenu()" alt="Avatar">`;
                 $('.top').html(avatarContent);
@@ -70,7 +71,7 @@ $(document).ready(function() {
                         $('.chatroom').css('display','none');
                         $('.index').css('display','flex');
                         $('.chatroom .chatroom-body').html('');
-                    },2000);
+                    },1000);
                 });
                 socket.on('receiveLeaveNotif',function(data){
                     $('.chatroom .chatroom-body').append(
@@ -80,10 +81,10 @@ $(document).ready(function() {
                    </div>
                        `
                     );
-                    setTimeout(function(){
-                        $('.chatroom').css('display','none');
-                        $('.index').css('display','flex');
-                    },2000);
+                    // setTimeout(function(){
+                    //     $('.chatroom').css('display','none');
+                    //     $('.index').css('display','flex');
+                    // },2000);
                 });
 
                 $('.submit').click(function () {
@@ -98,6 +99,7 @@ $(document).ready(function() {
                     $('#question-expert-name').val('');
                     $('.question-title').val('');
                     $('.parts-input').val('');
+                    $('.expert-list').fadeOut();
                 });
 
                 $('#expert-save').click(function(){
@@ -107,6 +109,7 @@ $(document).ready(function() {
                 });
 
                 $('.align-top').click(function(){
+                    $('#question-expert-name').val('');
                     $('.expert-list').fadeOut();
                 });
 
@@ -151,12 +154,13 @@ $(document).ready(function() {
                      `;
                 }
                 $('.notifs').html(html);
-            } else {
-                window.location.href = '/login';
             }
+            // else {
+            //     window.location.href = '/login';
+            // }
 
-        }
-    })
+    //     }
+    // })
 });
 
 function clickCard(i){
@@ -205,7 +209,7 @@ function clickCard(i){
         setTimeout(function(){
             $('.chatroom').css('display','none');
             $('.index').css('display','flex');
-        },2000);
+        },1000);
     });
     socket.on('receiveLeaveNotif',function(data){
         $('.chatroom .chatroom-body').append(
@@ -215,11 +219,11 @@ function clickCard(i){
                    </div>
                        `
         );
-        setTimeout(function(){
-            $('.chatroom').css('display','none');
-            $('.index').css('display','flex');
-            $('.chatroom .chatroom-body').html('');
-        },2000);
+        // setTimeout(function(){
+        //     $('.chatroom').css('display','none');
+        //     $('.index').css('display','flex');
+        //     $('.chatroom .chatroom-body').html('');
+        // },2000);
 
     })
 }

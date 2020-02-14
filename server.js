@@ -109,9 +109,9 @@ io.on('connect', function(socket) {
     })
 });
 
-// let uri = 'mongodb://localhost/server_db3'
+let uri = 'mongodb://localhost/server_db3'
 // let uri = `mongodb://lsc:ku1593574628@cluster0-keqrk.mongodb.net:27017/test?retryWrites=true&w=majority`;
-let uri = process.env.MONGODB_URI;
+// let uri = process.env.MONGODB_URI;
 mongoose.connect(uri,{useNewUrlParser:true})
     .then(()=>{
       console.log('successful database connection!');

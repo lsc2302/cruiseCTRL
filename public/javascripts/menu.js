@@ -7,7 +7,7 @@ function clickMenu(){
     });
 
     $('.pop-up').css('display','inline-block').addClass('active');
-    // $('.index').css('opacity','50%');
+    $('.index').css('opacity','50%');
     let items=['settings','help','contact','logout'];
     for(let name of items){
         let elem = '.pop-up .'+name;
@@ -37,7 +37,7 @@ function clickMenu(){
     let popUp=$('.pop-up');
     if(!popUp.is(e.target) && popUp.has(e.target).length === 0){
         popUp.css('display','none');
-        // $('.index').css('opacity','100%');
+        $('.index').css('opacity','100%');
     }})
 }
 

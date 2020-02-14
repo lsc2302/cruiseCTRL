@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Sign In</title>
     <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
     <link href="stylesheets/index.css" rel="stylesheet">
     <link href="stylesheets/log.css" rel="stylesheet">
@@ -15,20 +15,23 @@
 </head>
 <body>
 <form id="middle-login" class="log">
+    <img src="images/CruiseCTRL-icon.png" id="login-icon">
     <div>
-        <span >Username:</span>
-        <input type="text" class="form-control" id="login-username" >
+        <input type="text" class="form-control" id="login-username" placeholder="Username">
     </div>
     <div>
-        <span >Password:</span>
-        <input type="text" class="form-control" id="login-password" >
+        <input type="text" class="form-control" id="login-password" placeholder="Password">
     </div>
-    <div class="third-party">
-        <div>GOOGLE</div>
-        <div>FACEBOOK</div>
-        <div>TWITTER</div>
+    <button class="btn" type="button" id="log-in" onclick="clickLogin()">Sign in</button>
+    <div class="google-login">
+        <img src="images/google.png">
+        Sign in with Google
     </div>
-    <button class="btn" type="button" id="log-in" onclick="clickLogin()">Log in</button>
+    <div class="facebook-login">
+        <img src="images/facebook.png">
+        Sign in with Facebook
+    </div>
+    <div class="forget-password" id="forget-password"> Forget Password ?</div>
     <div class="sign-up" id="sign-up" onclick="clickSignup()"> Sign up</div>
 </form>
 </body>

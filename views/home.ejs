@@ -64,23 +64,17 @@
     </div>
     <div class="middle" id="middle">
         <div id="middle-home">
-            <div class="nearby-search container">
-                <div class="input-group mb-3" id="searchPanel">
-                    <input type="text" class="form-control" value="gas station" placeholder="..." onkeydown="searchIntro(event)">
+            <div class="container">
+                <div class="input-group mb-3" id="home-search-1">
+                    <input type="text" class="form-control" placeholder="..." onkeydown="searchIntro(event)" >
+                    <% for(var i=0; i < data.length; i++) { %>
                     <div class="intro-items">
-                        <div class="lights">
-<!--                            <img src="images/lights">-->
-                            Lights
-                        </div>
-                        <div class="audios">
-<!--                            <img src="images/audios">-->
-                            Audios
-                        </div>
-                        <div class="network">
-<!--                            <img src="images/network">-->
-                            Network
+                        <div class="intro-first" onclick="clickHome('<%=data[i].event%>')">
+                            <img src=<%=data[i].img%>>
+                            <%=data[i].name%>
                         </div>
                     </div>
+                    <% } %>
                 </div>
             </div>
         </div>
@@ -103,7 +97,7 @@
 </div>
 <div class="chatroom">
     <div class="chatroom-top">
-        <img src="images/back.png">
+        <img src="images/close-sq.png">
         <div class="chatroom-title">chatroom</div>
     </div>
     <div class="chatroom-body">
