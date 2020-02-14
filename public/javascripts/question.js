@@ -16,7 +16,7 @@ $(document).ready(function() {
                 let avatarContent = `<img src="user-data/` + userAvatar + `" id="avatar" onclick="clickMenu()" alt="Avatar">`;
                 $('.top').html(avatarContent);
 
-                let socket = io('ws://localhost:3000');
+                let socket = io(location.origin.replace(/^http/, 'ws'));
                 socket.emit('login', {
                     username: sessionStorage.getItem('username'),
                     password: sessionStorage.getItem('password')
@@ -166,7 +166,7 @@ $(document).ready(function() {
 function clickCard(i){
     let username = sessionStorage.getItem('notif'+(i+1).toString()+'username');
     let data = {questionerName:username};
-    let socket = io('ws://localhost:3000');
+    let socket = io(location.origin.replace(/^http/, 'ws'));
     socket.emit('login',{username:sessionStorage.getItem('username'),password:sessionStorage.getItem('password')});    if (!sessionStorage.getItem('notifications')){
         sessionStorage.setItem('notifications',"0");
     }
