@@ -3,7 +3,12 @@ function clickHome(path){
     window.location.href = '/'+path;
 }
 function clickHomeBack2(){
-    window.location.href = document.referrer;
+    let i=-1;
+    while(document.referrer=== window.location.host){
+        i-=1;
+    }
+    window.history.go(i);
+    // window.location.href = document.referrer;
 }
 function clickHomeBack1(){
     window.location.href = '/';
@@ -97,8 +102,6 @@ $(document).ready(function(){
 
 function searchIntro(e){
     if(e.which===13) {
-        // console.log(e.target.value);
-        // let val = $(' input').attr('value');
         window.location.href = '/' + e.target.value;
     }
 }
