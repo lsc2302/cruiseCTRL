@@ -3,7 +3,8 @@ function clickMenu(){
     let username = sessionStorage.getItem('username');
     let avatarContent = `<img src="user-data/`+userAvatar+`" id="pop-up-avatar" alt="Avatar">`+username;
     $('.pop-up-avatar').html(avatarContent).click(function(){
-        $('.profile-more-info').toggle();
+        window.location.href = '/profile';
+        // $('.profile-more-info').toggle();
     });
     $('.pop-up').css('display','inline-block').addClass('active');
     $('.index').css('opacity','50%');
@@ -64,9 +65,9 @@ function clickHelp(){
     window.location.href = '/help';
 }
 
-function clickSettings(){
-    window.location.href = '/settings';
-}
+// function clickSettings(){
+//     window.location.href = '/settings';
+// }
 
 function clickContact(){
     window.location.href = '/contact';

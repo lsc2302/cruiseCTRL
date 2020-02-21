@@ -7,10 +7,7 @@ function clickNav(index){
             window.location.href = '/question';
             break;
         case 2:
-            window.location.href = '/nearby';
-            break;
-        case 3:
-            window.location.href = '/article';
+            window.location.href = '/profile';
             break;
         default:
             window.location.href = '/';

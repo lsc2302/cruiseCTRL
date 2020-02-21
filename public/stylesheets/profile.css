@@ -1,0 +1,24 @@
+.profile .profile-imgs{
+    height:3vh;
+    width:3vh;
+    margin: 1vh;
+}
+
+.profile .card{
+    display: inline-block;
+    height:5vh;
+    width:100%;
+    vertical-align: center;
+    line-height: 5vh;
+    margin:1vh;
+    font-size: x-large;
+    border: 2px dashed #ee4723;
+}
+
+.profile{
+    padding-top: 1vh;
+}
+
+.profile #profile-car-blacklist{
+    height:20vh;
+}

@@ -40,10 +40,10 @@
         <div class="profile-car-model">carModel:<%= carModel%></div>
     </div>
     <div class="pop-up-other">
-        <div class="settings" onclick="clickSettings()">
-            <img src="images/settings.png" id="settings" alt=""/>
-            Settings
-        </div>
+<!--        <div class="settings" onclick="clickSettings()">-->
+<!--            <img src="images/settings.png" id="settings" alt=""/>-->
+<!--            Settings-->
+<!--        </div>-->
         <div class="help" onclick="clickHelp()">
             <img src="images/help.png" id="help" alt=""/>
             Help
@@ -64,9 +64,12 @@
     </div>
     <div class="middle" id="middle">
         <div id="middle-home">
-            <div class="container">
+            <div id="home-intro">
+                Please Choose Problem Type
+            </div>
+            <div class="first-level container">
                 <div class="input-group mb-3" id="home-search-1">
-                    <input type="text" class="form-control" placeholder="..." onkeydown="searchIntro(event)" >
+                    <input type="text" class="search form-control" placeholder="..." onkeydown="searchIntro(event)" >
                     <% for(var i=0; i < data.length; i++) { %>
                     <div class="intro-items">
                         <div class="intro-first" onclick="clickHome('<%=data[i].event%>')">
@@ -88,16 +91,13 @@
             <img src="images/que.png" class="icon-ans" alt=""/>
         </div>
         <div id="icon-2" onclick="clickNav(2)">
-            <img src="images/loc.png" class="icon-loc" alt=""/>
+            <img src="images/profile.png" class="icon-loc" alt=""/>
         </div>
-<!--        <div id="icon-3" onclick="clickNav(3)">-->
-<!--            <img src="images/article.png" class="icon-search" alt=""/>-->
-<!--        </div>-->
     </nav>
 </div>
 <div class="chatroom">
     <div class="chatroom-top">
-        <img src="images/close-sq.png">
+        <img src="images/close-sq.png" id="chatroom-leave">
         <div class="chatroom-title">chatroom</div>
     </div>
     <div class="chatroom-body">

@@ -17,10 +17,13 @@
 
 
 .contact{
-    font-size: xx-large;
     background-color: white;
     height:100vh;
     width:100%;
+}
+
+.contact .index{
+    font-size: xx-large;
 }
 
 .contact .dev-name{

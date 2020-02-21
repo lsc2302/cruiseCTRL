@@ -42,7 +42,22 @@
     width:100%;
 }
 
-#middle-home input{
+#middle-home #home-intro{
+    height:5vh;
+    width:100%;
+    font-size: xx-large;
+    padding-top: 3vh;
+    padding-left: 2.5vh;
+}
+
+#middle-home .first-level input{
+    height:5vh;
+    width:100%;
+    font-size: x-large;
+    border-radius:20px;
+}
+
+#middle-home .second-level input{
     margin-top: 5vh;
     height:5vh;
     width:100%;

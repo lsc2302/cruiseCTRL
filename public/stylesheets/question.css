@@ -146,8 +146,6 @@ a.active.nav-link {
 
 }
 
-
-/* active (faded) */
 .nav-pills #question-item .nav-link {
     background-color:#ee4723;
     color:white;
@@ -156,6 +154,18 @@ a.active.nav-link {
 .nav-pills #answer-item .nav-link {
     background-color:#ee4723;
     color:white;
+}
+
+
+#alert-placeholder{
+    position: absolute;
+    display:none;
+    height:5vh;
+    width:90vw;
+    margin-left: 5vw;
+    margin-top: 0.5vh;
+    z-index:99;
+    font-size: xx-large;
 }
 
 

@@ -27,12 +27,13 @@ $(document).ready(function() {
                 socket.on('receiveNotifications', function (data) {
                     storeNotifications(data)
                 });
+
                 socket.on('receiveChatRequest', function (data) {
                     $('.chatroom').css('display', 'flex');
                     $('.index').css('display', 'none');
                     $('.chatroom .chatroom-body').append(
                         `
-                            <div class="system-msg">${data}</div>
+                            <div class="system-msg">${data.expertName} will answer your question</div>
                         `
                     );
                 });
@@ -81,10 +82,24 @@ $(document).ready(function() {
                    </div>
                        `
                     );
-                    // setTimeout(function(){
-                    //     $('.chatroom').css('display','none');
-                    //     $('.index').css('display','flex');
-                    // },2000);
+                });
+
+                $('#question-expert-name').focus(function(){
+                    $.ajax({
+                            url: '/onlineUsers',
+                            type: 'POST',
+                            success: function (response) {
+                                if (response.status === 0){
+                                    let experts='';
+                                    for(let i=0;i<response.data.length;i++){
+                                        if(response.data[i].username!==sessionStorage.getItem('username')){
+                                            experts+=`<option>${response.data[i].username}</option>`
+                                        }
+                                    }
+                                    $('#experts-list').html(experts);
+                                }
+                            }
+                    });
                 });
 
                 $('.submit').click(function () {
@@ -103,6 +118,7 @@ $(document).ready(function() {
                 });
 
                 $('#expert-save').click(function(){
+                    $('#alert-placeholder').show();
                     let targetName = $('#question-expert-name').val();
                     $('.expert-list').fadeIn();
                     $('.expert-list span #expert-name').text(`You choose expert:${targetName}`);
@@ -155,17 +171,11 @@ $(document).ready(function() {
                 }
                 $('.notifs').html(html);
             }
-            // else {
-            //     window.location.href = '/login';
-            // }
-
-    //     }
-    // })
 });
 
 function clickCard(i){
     let username = sessionStorage.getItem('notif'+(i+1).toString()+'username');
-    let data = {questionerName:username};
+    let data = {questionerName:username, expertName: sessionStorage.getItem('username')};
     let socket = io(location.origin.replace(/^http/, 'ws'));
     socket.emit('login',{username:sessionStorage.getItem('username'),password:sessionStorage.getItem('password')});    if (!sessionStorage.getItem('notifications')){
         sessionStorage.setItem('notifications',"0");
@@ -176,6 +186,13 @@ function clickCard(i){
     socket.emit('sendChatRequest',data);
     $('.chatroom').css('display','flex');
     $('.index').css('display','none');
+    $('.chatroom .chatroom-body').append(
+        `
+           <div class="msg-wrapper">
+                    <div class="system-msg">You will talk to Questioner ${username}</div>
+           </div>
+        `
+    );
     socket.on('receiveMessage',function(data){
         $('.chatroom .chatroom-body').append(
             `
@@ -194,9 +211,9 @@ function clickCard(i){
             };
             $('.chatroom .chatroom-body').append(
                 `<div class="msg-wrapper">
-                            <span class="badge badge-success self-msg">${message}</span>
+                    <span class="badge badge-success self-msg">${message}</span>
                 </div>
-                               `
+                `
             );
             socket.emit('sendMessage',data);
             $('.chatroom-bottom input').val('');
@@ -219,12 +236,6 @@ function clickCard(i){
                    </div>
                        `
         );
-        // setTimeout(function(){
-        //     $('.chatroom').css('display','none');
-        //     $('.index').css('display','flex');
-        //     $('.chatroom .chatroom-body').html('');
-        // },2000);
-
     })
 }
 

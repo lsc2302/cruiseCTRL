@@ -5,16 +5,13 @@
     <title>Home</title>
 
     <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
-<!--    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">-->
     <link rel="icon" href="images/favicon.ico">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="javascripts/bootstrap.min.js"></script>
-<!--    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>-->
-    <script src="javascripts/wavebell.js"></script>
+<!--    <script src="javascripts/wavebell.js"></script>-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
-    <!--    <script src="https://unpkg.com/wavesurfer.js"></script>-->
 
 
     <link href="stylesheets/index.css" rel="stylesheet">
@@ -46,10 +43,10 @@
         <div class="profile-car-model">carModel:<%= carModel%></div>
     </div>
     <div class="pop-up-other">
-        <div class="settings" onclick="clickSettings()">
-            <img src="images/settings.png" id="settings" alt=""/>
-            Settings
-        </div>
+<!--        <div class="settings" onclick="clickSettings()">-->
+<!--            <img src="images/settings.png" id="settings" alt=""/>-->
+<!--            Settings-->
+<!--        </div>-->
         <div class="help" onclick="clickHelp()">
             <img src="images/help.png" id="help" alt=""/>
             Help
@@ -69,6 +66,10 @@
         <img src="images/user-default.png" alt="Avatar" id="avatar" onclick="clickMenu()">Unknown User
     </div>
     <div class="middle" id="middle">
+        <div class="alert alert-warning" id="alert-placeholder">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>A question will cost you 1 coin!</strong>
+        </div>
         <div id="middle-question">
             <div class="question-body">
                 <ul id="myTab" class="nav nav-pills justify-content-center">
@@ -92,32 +93,10 @@
                                 <option>Car Shaking</option>
                             </datalist>
                         </div>
-<!--                        <div class="keywords">-->
-<!--                            Describe your question using few keywords so we can find a best match for you:-->
-<!--                            <input type="text" class="keywords form-control">-->
-<!--                        </div>-->
                         <div class="title">
                             Describe your question using few keywords so we can find a best match for you:
                             <input type="text" class="question-title form-control">
                         </div>
-<!--                        <div class="accessories">-->
-<!--                            Choose accessory(s) that have problem(s):-->
-<!--                            <input type="text" class="accessories-input form-control" list="accessories-select"/>-->
-<!--                            <datalist id="accessories-select">-->
-<!--                                <option>Audio/video devices</option>-->
-<!--                                <option>Cameras</option>-->
-<!--                                <option>Low voltage electrical supply system</option>-->
-<!--                                <option>Gauges & meters</option>-->
-<!--                                <option>Ignition system</option>-->
-<!--                                <option>Lighting & signaling system</option>-->
-<!--                                <option>Sensors</option>-->
-<!--                                <option>Starting system</option>-->
-<!--                                <option>Electrical switches</option>-->
-<!--                                <option>Wiring harnesses</option>-->
-<!--                                <option>Miscellaneous</option>-->
-<!--                                <option>other</option>-->
-<!--                            </datalist>-->
-<!--                        </div>-->
                         <div class="upload">
                             <div>Tell us about your question:</div>
                             <textarea class="upload-box form-control" id='question-text' rows="15"></textarea>
@@ -127,11 +106,8 @@
                             <div class="choose-experts">
                                 Choose an expert to answer your question:
                                 <div class="input-group mb-3">
-                                    <input type="text" class="form-control" list="friends-list" id="question-expert-name">
-                                    <datalist id="friends-list">
-                                        <option>sahba</option>
-                                        <option>ivan</option>
-                                        <option>aaron</option>
+                                    <input type="text" class="form-control" list="experts-list" id="question-expert-name">
+                                    <datalist id="experts-list">
                                     </datalist>
                                     <button class="btn btn-primary" type="button" id="expert-save">Save</button>
                                 </div>
@@ -181,11 +157,8 @@
             <img src="images/que-active.png" class="icon-ans" alt=""/>
         </div>
         <div id="icon-2" onclick="clickNav(2)">
-            <img src="images/loc.png" class="icon-loc" alt=""/>
+            <img src="images/profile.png" class="icon-loc" alt=""/>
         </div>
-<!--        <div id="icon-3" onclick="clickNav(3)">-->
-<!--            <img src="images/article.png" class="icon-search" alt=""/>-->
-<!--        </div>-->
     </nav>
 </div>
 <div class="chatroom">
