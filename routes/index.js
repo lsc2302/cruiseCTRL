@@ -1,7 +1,6 @@
 const express = require('express');
 const UserModel = require('../models/UserModel.js');
 const UserSocketModel = require('../models/UserSocketModel.js');
-const ArticleModel = require('../models/ArticleModel.js');
 const renderdata = require('../public/data/home.json');
 const rendercar = require('../public/data/car.json');
 const avatarUploader = require('../public/javascripts/file-uploader');
@@ -188,16 +187,6 @@ router.get('/seatBeltWarning',function(req,res){
     }
 });
 
-
-// router.get('/settings',function(req,res){
-//     if(!!req.session.loginUser){
-//         res.render('settings');
-//     }
-//     else{
-//         res.redirect('/login');
-//     }
-// });
-
 router.get('/help',function(req,res){
     if(!!req.session.loginUser){
         res.render('help');
@@ -227,32 +216,24 @@ router.get('/question',function(req,res,next){
 
 router.get('/profile',function(req,res,next){
     if(!!req.session.loginUser){
-        res.render('profile',req.session.loginUser);
+        UserModel.findOne({username:req.session.loginUser.username})
+            .then(user => {
+                    if(user){
+                        res.render('profile',user);
+                        // res.send({status: 0, data: user});
+                    }
+                }
+            )
+            .catch(() =>
+                {
+                    res.send({status:2, msg:"error!"});
+                }
+            )
     }
     else{
         res.redirect('/login');
     }
 });
-
-// router.get('/nearby',function(req,res,next){
-//     if(!!req.session.loginUser){
-//         res.render('nearby',req.session.loginUser);
-//     }
-//     else{
-//         res.redirect('/login');
-//     }
-// });
-
-// router.get('/article',function(req,res,next){
-//     if(!!req.session.loginUser){
-//         ArticleModel.find({},function(err,docs){
-//             let data = Object.assign(req.session.loginUser, {articles:docs});
-//             res.render('article',data);
-//         });
-//     }
-//     else{
-//         res.redirect('/login');
-//     }});
 
 router.get('/login',function(req,res,next){
     res.render('login');
@@ -278,7 +259,10 @@ router.post('/onlineUsers',function(req,res){
 
 router.post('/signUp',(req,res)=> {
     avatarUploader(req,res,function(e){
-        const {username, password, userExperience,userSkills,carCountry,carBrand,carModel} = req.body;
+        const {username, password,userGender,userEmail,userAddress,
+            userExperience,userSkills,
+            userQuestioner,userExpert,
+            carCountry,carBrand,carModel} = req.body;
         let userAvatar = req.file.filename;
         UserModel.findOne({ username:username})
             .then(user => {
@@ -286,10 +270,15 @@ router.post('/signUp',(req,res)=> {
                         UserModel.create({
                             username: username,
                             password: password,
+                            userGender:userGender,
                             userAvatar:userAvatar,
+                            userEmail:userEmail,
+                            userAddress:userAddress,
                             userCoins:1,
                             userExperience:userExperience,
                             userSkills:userSkills,
+                            userQuestioner:userQuestioner,
+                            userExpert:userExpert,
                             carCountry:carCountry,
                             carBrand:carBrand,
                             carModel:carModel,
@@ -335,7 +324,6 @@ router.post('/logout',(req,res)=>{
 
 router.post('/login',(req,res)=>{
   const {username} = req.body;
-  // console.log(req);
     UserModel.findOne({username:username})
       .then(user => {
           if(user){
@@ -377,6 +365,59 @@ router.post('/getUserSocketId',(req,res)=>{
            }
        }
    )
+});
+
+router.post('/getMoreInfo',(req,res)=>{
+    const {username} = req.body;
+    UserModel.findOne({username:username})
+        .then(user => {
+                if(user){
+                    res.send({status: 0, data: user});
+                }else{
+                    res.send({status: 1, msg:'user not found!'})
+                }
+            }
+        )
+        .catch(() =>
+            {
+                res.send({status:2, msg:"error!"});
+            }
+        )
+});
+
+router.post('/getMoney',(req,res)=>{
+    UserModel.findOne({username:req.session.loginUser.username})
+        .then(user => {
+                if(user){
+                    UserModel.findOneAndUpdate({username:req.session.loginUser.username},{$set:{userCoins: user.userCoins+1}},function(err){
+                        if(!err)res.send({status:0,data:user})
+                    })
+                }
+            }
+        )
+        .catch(() =>
+            {
+                res.send({status:2, msg:"error!"});
+            }
+        )
+});
+
+router.post('/payMoney',(req,res)=>{
+    UserModel.findOne({username:req.session.loginUser.username})
+        .then(user => {
+                if(user && user.userCoins>=1){
+                    UserModel.findOneAndUpdate({username:req.session.loginUser.username},{$set:{userCoins: user.userCoins-1}},
+                        function(err){
+                        if(!err)res.send({status:0,data:user});
+                    })
+                }else res.send({status:1,msg:"Failed for lack of coins!"})
+            }
+        )
+        .catch(() =>
+            {
+                res.send({status:2, msg:"error!"});
+            }
+        )
 });
 
 module.exports = router;

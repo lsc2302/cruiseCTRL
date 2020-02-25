@@ -1,5 +1,4 @@
 $(function(){
-
     $.ajax({
         url: '/car',
         type: 'POST',
@@ -7,7 +6,6 @@ $(function(){
         processData:false,
         success: function (response) {
             let rendercar = response.data;
-            console.log(rendercar.data.length);
             $('#signUp-car-country').focus(function(){
                 let tmp = '';
                 for (let i = 0; i < rendercar.data.length; i++) {
@@ -86,14 +84,19 @@ $(function(){
         }
     });
 
-    $('#user-avatar').on('change',function(e){
+    $('#signUp-avatar').on('change',function(e){
         let files = e.target.files;
         let file = files[0];
         $('#signUp-submit').click(function(){
             let username= $('#signUp-username').val();
             let password = $('#signUp-password').val();
+            let userGender = $('#signUp-male').attr('checked')?'Male':'Female';
             let userExperience = $('#signUp-experience').val();
             let userSkills = $('#signUp-skills').val();
+            let userEmail = $('#signUp-email').val();
+            let userAddress = $('#signUp-address').val();
+            let userQuestioner = $('#signUp-questioner input').attr('checked');
+            let userExpert = $('#signUp-expert input').attr('checked');
             let carCountry = $('#signUp-car-country').val();
             let carBrand = $('#signUp-car-brand').val();
             let carModel = $('#signUp-car-model').val();
@@ -101,8 +104,13 @@ $(function(){
             data.append('username',username);
             data.append('password',password);
             data.append('userAvatar',file);
+            data.append('userGender',userGender);
             data.append('userExperience',userExperience);
             data.append('userSkills',userSkills);
+            data.append('userEmail',userEmail);
+            data.append('userAddress',userAddress);
+            data.append('userQuestioner',userQuestioner);
+            data.append('userExpert',userExpert);
             data.append('carCountry',carCountry);
             data.append('carBrand',carBrand);
             data.append('carModel',carModel);
@@ -133,10 +141,46 @@ $(function(){
 
     $('#signUp-back').click(function(){
         window.location.href = '/login';
+    });
+
+    $('.signUp-questioner').toggle();
+
+    $('#signUp-male').click(function(){
+        let checkedState = $(this).find(' input').attr('checked');
+        $('#signUp-female input').removeAttr("checked");
+        $(this).find(' input').attr('checked',true);
+        if(checkedState === 'checked'){
+            $(this).find(' input').removeAttr("checked");
+        }
+    });
+
+    $('#signUp-female').click(function(){
+        let checkedState = $(this).find(' input').attr('checked');
+        $('#signUp-male input').removeAttr("checked");
+        $(this).find(' input').attr('checked',true);
+        if(checkedState === 'checked'){
+            $(this).find(' input').removeAttr("checked");
+        }
+    });
+
+    $('#signUp-questioner').click(function(){
+        let checkedState = $(this).find(' input').attr('checked');
+        $('.signUp-questioner').toggle();
+        $(this).find(' input').attr('checked',true);
+        if(checkedState === 'checked'){
+            $(this).find(' input').removeAttr("checked");
+        }
+    });
+    $('#signUp-expert').click(function(){
+        let checkedState = $(this).find(' input').attr('checked');
+        $('.signUp-expert').toggle();
+        $(this).find(' input').attr('checked',true);
+        if(checkedState === 'checked'){
+            $(this).find(' input').removeAttr("checked");
+        }
     })
 
 });
-
 
 function signUpLevel(){
     let exp = parseInt($('#signUp-experience').val());

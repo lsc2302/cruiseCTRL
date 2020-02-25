@@ -1,11 +1,6 @@
 #middle-question{
-    /*display:flex;*/
     height:100%;
     margin: 3vh 5vw;
-    /*width:80%;*/
-    /*align-items: center;*/
-    /*justify-content: space-between;*/
-    /*margin-left: 10vw;*/
 }
 
 .question-body{
@@ -20,37 +15,13 @@
     margin-top:1vh;
 }
 
-/*.progress{*/
-/*    display: inline-block;*/
-/*    height:2vh;*/
-/*    width: 60vw;*/
-/*    position:absolute;*/
-/*    left:20vw;*/
-/*    bottom:16vh;*/
-/*}*/
-
 .upload{
     margin-top: 1vh;
-    /*height:2vh;*/
-    /*width:2vh;*/
-    /*width: 100%;*/
 }
 .upload-box{
-    /*display: flex;*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
-    /*border:2px solid;*/
-    /*background-color: gray;*/
-    /*opacity: 50%;*/
-    /*height:80vh;*/
     width:100%;
-    /*border-radius: 5%;*/
     margin-bottom: 1vh;
 }
-
-/*textarea{*/
-/*    height:35vh;*/
-/*}*/
 
 #upload{
     height:2vh;
@@ -59,11 +30,10 @@
 
 .badge{
     font-size: 30px;
-    /*border:3px;*/
     border: 1px solid;
 }
 
-.submit{
+#submit-question{
     position:absolute;
     height:4vh;
     width: 90vw;
@@ -113,18 +83,6 @@
     z-index:2;
 }
 
-.accessories-select{
-    display: none;
-    position:absolute;
-    background-color: black;
-    color:white;
-    top:26vh;
-    left:5vw;
-    width:90vw;
-    border:2px solid;
-    z-index:2;
-}
-
 a.active.nav-link {
     color: #ee4723;
 }
@@ -136,8 +94,6 @@ a.active.nav-link {
 .nav-pills #question-item .nav-link:not(.active) {
     background-color:white;
     color:#ee4723;
-
-
 }
 
 .nav-pills #answer-item .nav-link:not(.active) {
@@ -156,16 +112,39 @@ a.active.nav-link {
     color:white;
 }
 
-
-#alert-placeholder{
-    position: absolute;
-    display:none;
-    height:5vh;
-    width:90vw;
-    margin-left: 5vw;
-    margin-top: 0.5vh;
-    z-index:99;
-    font-size: xx-large;
+.question-more-info{
+    color:blue;
+    position:absolute;
+    bottom: 20vh;
 }
+
+.question-more-info-content{
+    display: none;
+    position:absolute;
+    bottom:25vh;
+    height:10vh;
+    width:45vw;
+    border:1px solid;
+    z-index:2;
+    color:white;
+    background-color: blue;
+    border-radius:20px;
+    margin-left: 25vw;
+    top:50vh;
+}
+
+#more-info-close{
+    float:right;
+    height:2vh;
+    width:2vh;
+    border:none
+}
+
+.more-info-display{
+    padding-left: 2vh;
+    padding-top:0.5vh;
+}
+
+
 
 

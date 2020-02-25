@@ -22,8 +22,7 @@
     <script src="javascripts/init.js"></script>
     <script src="javascripts/nav.js"></script>
     <script src="javascripts/menu.js"></script>
-    <script src="javascripts/profile.js"></script>
-
+    <script src="javascripts/socket.js"></script>
 </head>
 <body>
 <div class="pop-up">
@@ -52,10 +51,6 @@
         </div>
     </div>
     <div class="pop-up-other">
-<!--        <div class="settings" onclick="clickSettings()">-->
-<!--            <img src="images/settings.png" id="settings" alt=""/>-->
-<!--            Settings-->
-<!--        </div>-->
         <div class="help" onclick="clickHelp()">
             <img src="images/help.png" id="help" alt=""/>
             Help
@@ -74,17 +69,33 @@
     <div class="top">
         <img src="images/user-default.png" alt="Avatar" id="avatar" onclick="clickMenu()">
     </div>
+    <div id="alert-placeholder">
+    </div>
     <div class="middle" id="middle">
         <div id="middle-profile">
             <div class="profile container">
                 <div id="profile-name" class="card">
-                    <img src="images/user.png" class="profile-imgs">
-                    username: <%= username%>
+                    <img src="user-data/<%= userAvatar%>" class="profile-imgs">
+                    Username: <%= username%>
+                </div>
+                <div id="profile-name" class="card">
+                    <img src="images/gender.png" class="profile-imgs">
+                    Gender: <%= userGender%>
+                    <img src="images/<%= userGender%>.png" class="profile-imgs">
+                </div>
+                <div id="profile-name" class="card">
+                    <img src="images/email.png" class="profile-imgs">
+                    Email: <%= userEmail%>
+                </div>
+                <div id="profile-name" class="card">
+                    <img src="images/house.png" class="profile-imgs">
+                    Address: <%= userAddress%>
                 </div>
                 <div id="profile-user-coins" class="card">
                     <img src="images/coins.png" class="profile-imgs">
-                    Coins: 1
+                    Coins: <%= userCoins%>
                 </div>
+                <% if (userExpert==='checked') { %>
                 <div id="profile-experience" class="card">
                     <img src="images/user-experience.png" class="profile-imgs">
                     Experience: <%= userExperience%> years
@@ -93,6 +104,8 @@
                     <img src="images/user-skills.png" class="profile-imgs">
                     Skills: <%= userSkills%>
                 </div>
+                <% } %>
+                <% if (userQuestioner==='checked') { %>
                 <div id="profile-car-country" class="card">
                     <img src="images/car-country.png" class="profile-imgs">
                     Manufacturer Origin: <%= carCountry%>
@@ -105,25 +118,7 @@
                     <img src="images/car-model.png" class="profile-imgs">
                     Car Model: <%= carModel%>
                 </div>
-<!--                <div id="profile-car-blacklist" class="card">-->
-<!--                    <img src="images/blacklist.png" class="profile-imgs">-->
-<!--                    Black List:-->
-<!--                    <div class="input-group mt-3 mb-3">-->
-<!--                        <div class="input-group-prepend">-->
-<!--                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">-->
-<!--                                action-->
-<!--                            </button>-->
-<!--                            <div class="dropdown-menu">-->
-<!--                                <div class="dropdown-item">Add</div>-->
-<!--                                <div class="dropdown-item">Remove</div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <input type="text" class="form-control" placeholder="blacklist">-->
-<!--                    </div>-->
-<!--                    <div class="profile-black-list">-->
-<!--                        <span class="badge badge-danger">Tom</span>-->
-<!--                    </div>-->
-<!--                </div>-->
+                <% } %>
             </div>
         </div>
 
@@ -131,12 +126,15 @@
     <nav class="bottom">
         <div id="icon-0" onclick="clickNav(0)">
             <img src="images/home.png"  class= "icon-que" alt=""/>
+            <div class="nav-text">Home</div>
         </div>
         <div id="icon-1" onclick="clickNav(1)">
             <img src="images/que.png" class="icon-ans" alt=""/>
+            <div class="nav-text">Q&A</div>
         </div>
         <div id="icon-2" onclick="clickNav(2)">
             <img src="images/profile-active.png" class="icon-loc" alt=""/>
+            <div class="nav-text">Profile</div>
         </div>
     </nav>
 </div>

@@ -1,6 +1,6 @@
 .pop-up{
     height:100vh;
-    width:70%;
+    width:60%;
     display:none;
     position: fixed;
     z-index: 99;
@@ -34,7 +34,7 @@
     position:absolute;
     height:20vh;
     width:100%;
-    top: 60vh;
+    top: 70vh;
     font-size: xx-large;
 }
 .profile-more-info{

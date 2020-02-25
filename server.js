@@ -1,17 +1,14 @@
 const mongoose = require('mongoose');
-var express = require('express');
-var app = express();
-var http = require('http').createServer(app);
-var io = require('socket.io')(http);
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var session = require('express-session');
-var FileStore = require('session-file-store')(session);
+const express = require('express');
+const app = express();
+const http = require('http').createServer(app);
+const io = require('socket.io')(http);
+const path = require('path');
+const cookieParser = require('cookie-parser');
+const session = require('express-session');
+const FileStore = require('session-file-store')(session);
 const UserModel = require('./models/UserModel.js');
 const UserSocketModel = require('./models/UserSocketModel.js');
-
-
-// var logger = require('morgan');
 const bodyParser = require('body-parser');
 const indexRouter = require('./routes/index');
 
@@ -23,7 +20,9 @@ app.set('view engine', 'ejs');
 
 let users = new Map();
 io.on('connect', function(socket) {
+
     console.log('a user connected');
+
     console.log(socket.id);
 
     socket.on('sendNotifications', function (data) {
@@ -106,12 +105,20 @@ io.on('connect', function(socket) {
                     });
                 }
             });
-    })
+    });
+
+    socket.on('disconnect',function(){
+        UserSocketModel.findOneAndRemove({socketId:socket.id},function(err){
+        })
+    });
+
 });
 
-// let uri = 'mongodb://localhost/server_db3';
+
+
+let uri = 'mongodb://localhost/server_db3';
 // let uri = `mongodb://lsc:ku1593574628@cluster0-keqrk.mongodb.net:27017/test?retryWrites=true&w=majority`;
-let uri = process.env.MONGODB_URI;
+// let uri = process.env.MONGODB_URI;
 mongoose.connect(uri,{useNewUrlParser:true})
     .then(()=>{
       console.log('successful database connection!');
@@ -119,26 +126,10 @@ mongoose.connect(uri,{useNewUrlParser:true})
         var server = http.listen(app.get('port'), function() {
             console.log('start at port:' + server.address().port);
         });
-
-        // const io = require('socket.io').listen(app.listen(3000));
-      // io.on('connection', function (socket) {
-      //     socket.on('login',function(data){console.log('client connect')});
-      // });
-
-            // io.sockets.on('login', function () {
-        //     console.log('client connect');
-            // socket.on('echo', function (data) {
-            //     io.sockets.emit('message', data);
-            // });
-        // });
         app.io = io;
-        // app.listen('3000', () => {
-      //   console.log('successful launch!')
-      // })
     })
     .catch((err)=>{
         console.log(err);
-      // console.log('could not launch database!')
     });
 
 
@@ -155,7 +146,7 @@ app.use(session({
         return req.body.username;
     },
     resave: false,
-    cookie: { maxAge: 10* 60 * 1000 }
+    // cookie: { maxAge: 10* 60 * 1000 }
 }));
 
 app.use('/', indexRouter);

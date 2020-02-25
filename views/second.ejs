@@ -41,10 +41,6 @@
         <div class="profile-car-model">carModel:<%= carModel%></div>
     </div>
     <div class="pop-up-other">
-        <div class="settings" onclick="clickSettings()">
-            <img src="images/settings.png" id="settings" alt=""/>
-            Settings
-        </div>
         <div class="help" onclick="clickHelp()">
             <img src="images/help.png" id="help" alt=""/>
             Help
@@ -63,6 +59,8 @@
     <div class="top">
         <img src="images/user-default.png" alt="Avatar" id="avatar" onclick="clickMenu()">
     </div>
+    <div id="alert-placeholder">
+    </div>
     <div class="middle" id="middle">
         <div id="middle-home">
             <div class="second-level container">
@@ -79,39 +77,6 @@
                             <%=children[i].name%>
                         </div>
                         <% } %>
-
-<!--                        <div class="intro-second"  onclick="clickAntilockWarning()">-->
-<!--                            <img src="images/intro-imgs/Antilock-Brake-Warning.png">-->
-<!--                            Antilock Brake Warning-->
-<!--                        </div>-->
-<!--                        <div class="intro-second" onclick="clickBatteryLow()">-->
-<!--                            <img src="images/intro-imgs/Battery-Check-Light.png">-->
-<!--                            Battery Low Warning-->
-<!--                        </div>-->
-<!--                        <div class="intro-second"  onclick="clickCheckEngine()">-->
-<!--                            <img src="images/intro-imgs/Check-Engine-Light.png">-->
-<!--                            Engine Warning-->
-<!--                        </div>-->
-<!--                        <div class="intro-second"  onclick="clickBrakeSystem()">-->
-<!--                            <img src="images/intro-imgs/Brake-System-Warning.png">-->
-<!--                            Brake System Warning-->
-<!--                        </div>-->
-<!--                        <div class="intro-second"  onclick="clickCheckOil()">-->
-<!--                            <img src="images/intro-imgs/Check-Oil-Light.png">-->
-<!--                            Low Oil Warning-->
-<!--                        </div>-->
-<!--                        <div class="intro-second"  onclick="clickLowFuel()">-->
-<!--                            <img src="images/intro-imgs/Low-Fuel-Light.png">-->
-<!--                            Low Fuel Warning-->
-<!--                        </div>-->
-<!--                        <div class="intro-second"  onclick="clickLowWiper()">-->
-<!--                            <img src="images/intro-imgs/Low-Wiper-Fluid.png">-->
-<!--                            Low Wiper Fluid Warning-->
-<!--                        </div>-->
-<!--                        <div class="intro-second"  onclick="clickSeatBelt()">-->
-<!--                            <img src="images/intro-imgs/Seatbelt-Warning.png">-->
-<!--                            Seatbelt Warning-->
-<!--                        </div>-->
                     </div>
                 </div>
             </div>

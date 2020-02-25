@@ -6,16 +6,19 @@
     width:100%;
 }
 .chatroom .chatroom-top{
-    padding-top: 3vh;
-    flex:5;
+    flex:10;
     border-bottom: 2px solid;
+    background-color: #ee4723;
 }
 
 .chatroom .chatroom-title{
     display: inline;
     width:30vw;
+    line-height: 10vh;
+    height:10vh;
+    font-size: 60px;
     margin-left:20vw;
-    font-size: x-large;
+    color: white;
 }
 
 .chatroom .chatroom-body{
@@ -24,57 +27,96 @@
     border:2px dashed;
     margin-top: 2.5vh;
     margin-left:5vw;
+    overflow: scroll;
 }
 
-.chatroom img{
+.chatroom #chatroom-leave{
     height:5vh;
     width:5vh;
+    margin-left:2vh;
 }
 
 .chatroom .chatroom-bottom{
     flex:10;
+    width:90vw;
+    margin-left: 5vw;
 }
 
 .chatroom .input-group{
-    height:5vh;
+    height:3vh;
     margin-top:2.5vh;
 }
 
 .chatroom .input-group input{
-    height:5vh;
+    height:3vh;
+    font-size: xx-large;
+}
+
+.chatroom .input-group button{
+    background-color:#ee4723;
+    color:white;
 }
 
 .chatroom .self-msg{
-    display:inline;
-    margin-top: 0.5vh;
+    display:inline-block;
     background-color: #ee4723;
     color: white;
     float:left;
-    font-size: large;
+    font-size: xx-large;
+    white-space:pre-wrap;
+    word-wrap:break-word;
+    max-width: 50vw;
+    text-align: left;
 }
 
 .chatroom .oppo-msg{
-    display:inline;
-    margin-top: 0.5vh;
+    display:inline-block;
     background-color: #ee4723;
     color: white;
     float:right;
-    font-size: large;
+    font-size: xx-large;
+    white-space:pre-wrap;
+    word-wrap:break-word;
+    max-width: 50vw;
+    text-align: left;
+}
+
+.clear {
+    clear:both;
 }
 
 .chatroom .system-msg{
-    display:inline;
+    display:inline-block;
     background-color: gray;
     color: white;
-    margin-left:25vw;
-    margin-top: 2vh;
-    font-size: large;
+    font-size: x-large;
 }
 
-.chatroom .msg-wrapper{
-    width:100%;
-    height:3vh;
+.chatroom .msg-wrapper-sys,.msg-wrapper-oppo,.msg-wrapper-self{
+    min-height:5vh;
+    margin-top: 1.5vh;
+    text-align: center;
 }
+
+.chatroom .msg-wrapper-self img{
+    float:left;
+    height:5vh;
+    width:5vh;
+    border-radius: 50%;
+    margin-left:1vh;
+    margin-right:1vh;
+}
+
+.chatroom .msg-wrapper-oppo img{
+    float:right;
+    height:5vh;
+    width:5vh;
+    border-radius: 50%;
+    margin-left:1vh;
+    margin-right: 1vh;
+}
+
+
 
 
 

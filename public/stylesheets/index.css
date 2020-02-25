@@ -31,8 +31,6 @@ html, body, .index {
     float:left;
     height: 5vh;
     width: 5vh;
-    /*left:1vh;*/
-    /*top: 2vh;*/
     margin:2.5vh 0 0 2.5vh;
     border-radius: 50%;
 }
@@ -75,6 +73,22 @@ nav div img{
 }
 .quest-or-answer button{
     margin:0 0.5vh;
+}
+
+nav .nav-text{
+    color:white;
+    margin-top: 0.5vh;
+}
+
+#alert-placeholder{
+    position: absolute;
+    /*display:none;*/
+    height:5vh;
+    width:90vw;
+    margin-left: 5vw;
+    margin-top: 0.5vh;
+    z-index:99;
+    font-size: xx-large;
 }
 
 

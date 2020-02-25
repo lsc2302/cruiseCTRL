@@ -10,7 +10,7 @@
     width:100%;
     vertical-align: center;
     line-height: 5vh;
-    margin:1vh;
+    margin-top:2vh;
     font-size: x-large;
     border: 2px dashed #ee4723;
 }
@@ -21,4 +21,9 @@
 
 .profile #profile-car-blacklist{
     height:20vh;
+}
+
+.container{
+    max-width: 1000px;
+    width:90%;
 }

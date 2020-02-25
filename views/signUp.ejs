@@ -14,27 +14,55 @@
 </head>
 <body>
 <div class="signUp">
+    <div>
     <img src="images/back.png" id="signUp-back"/>
+    Back to Sign in
+    </div>
     <form id="signUp" enctype="multipart/form-data">
-        <div><span>Username:</span><input type="text" class="form-control" id="signUp-username" /></div>
-        <div><span>Password:</span><input type="text" class="form-control" id="signUp-password" /></div>
+        <div class="signUp-item">
+                <span>Username:</span>
+                <input type="text" class="form-control" id="signUp-username" />
+        </div>
+        <div>
+            <span>Password:</span>
+            <input type="text" class="form-control" id="signUp-password" /></div>
         <div>
             <span>Avatar:</span>
-            <input type="file" name="user Avatar" id="user-avatar"/>
+            <input type="file" name="user Avatar" id="signUp-avatar"/>
         </div>
-        <div><span>Skills:</span><input type="text" class="form-control" id="signUp-skills" /></div>
-        <div><span>Experience(years):</span><input type="text" class="form-control" id="signUp-experience" onblur="signUpLevel()"/></div>
         <div>
-            <span>Your Level:</span>
-            <span id="signUp-level"></span>
+            <span>Gender:</span>
+            <label class="radio-inline" id="signUp-male"><input type="radio" checked="checked">Male</label>
+            <label class="radio-inline" id="signUp-female"><input type="radio">Female</label>
         </div>
+        <div>
+            <span>Email:</span>
+            <input type="text" class="form-control" id="signUp-email"/>
+        </div>
+        <div>
+            <span>Address:</span>
+            <input type="text" class="form-control" id="signUp-address"/>
+        </div>
+        <div>
+            <span>Sign Up as:</span>
+            <label class="radio-inline" id="signUp-questioner"><input type="radio" checked="checked">Questioner</label>
+            <label class="radio-inline" id="signUp-expert"><input type="radio">Expert</label>
+        </div>
+        <div class="signUp-expert">
+            <div><span>Skills:</span><input type="text" class="form-control" id="signUp-skills" /></div>
+            <div><span>Experience(years):</span><input type="text" class="form-control" id="signUp-experience" onblur="signUpLevel()"/></div>
+            <div>
+                <span>Your Level:</span>
+                <span id="signUp-level"></span>
+            </div>
+        </div>
+        <div class="signUp-questioner">
         <div>
             <span>Car Country:</span>
             <input type="text" class="form-control" autocomplete="off" id="signUp-car-country" list="signUp-cars-country-select"/>
             <datalist id="signUp-cars-country-select">
             </datalist>
         </div>
-
         <div>
             <span>Car Brand:</span>
             <input type="text" class="form-control" autocomplete="off" id="signUp-car-brand" list="signUp-cars-brand-select"/>
@@ -50,6 +78,7 @@
         <div>
             <span>Car Image:</span>
             <img src="images/car-model-pics/car-default.png" alt="car-model-pic" id="signUp-car-img"/>
+        </div>
         </div>
         <button class="btn" type="button" id="signUp-submit">Submit Profile</button>
     </form>

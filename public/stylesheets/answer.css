@@ -1,21 +1,10 @@
-/*.article-title{*/
-/*    word-wrap:break-word;*/
-/*    word-break:break-all;*/
-/*    height:10vh;*/
-/*    width:40vh;*/
-/*    margin-left:2vh;*/
-/*    margin-right:2vh;*/
-/*    background-color: purple;*/
-/*}*/
-
-.card{
-    margin-bottom:2vh;
-}
-
 #middle-answer{
     height:100%;
     margin: 3vh 5vw;
-    /*width:90vw;*/
+}
+
+.card{
+    margin-bottom:2vh;
 }
 
 .card-footer{
@@ -31,30 +20,81 @@
     border-radius: 50%;
 }
 
-.money{
-    height:2vh;
-    width:2vh;
-}
-
 .questioner-part{
     margin-top:-1vh;
     height:2vh;
     width:2vh;
 }
 
-#search-questioner{
-    margin-left: 3vw;
+.answer-notification-detail{
+    display: none;
+    position:absolute;
+    height:80vh;
+    width:90vw;
+    border:2px solid;
+    z-index:2;
+    border-radius:20px;
+    top:10vh;
+    left:5vw;
 }
 
-.pagination{
-    color: white;
+#answer-question{
+    position:absolute;
+    height:4vh;
+    width: 80vw;
+    top:65vh;
+    left:5vw;
+    border:2px solid;
+    font-size: large;
+    font-weight:700;
+    background-color:#ee4723;
+    color:white;
 }
 
-.pagination li a{
-    color: black;
+#answer-back{
+    height:5vh;
+    width:5vh;
+    margin: 1vh;
 }
 
+#answer{
+    height:70vh;
+}
 
-/*.pagination ul{*/
-/*    color: black;*/
-/*}*/
+#card-detail{
+    height:60vh;
+    margin:1vh;
+    font-size: xx-large;
+}
+
+#card-body-detail{
+    word-wrap:break-word;
+    word-break: break-all;
+}
+
+#card-footer-detail{
+    height:3vh;
+    font-size: large;
+}
+#questioner-avatar-detail, #questioner-name-detail{
+    display: inline-block;
+    height:5vh;
+}
+#questioner-avatar-detail{
+    height:5vh;
+    width:5vh;
+    border-radius: 50%;
+}
+
+#questioner-part-detail{
+    margin-top:-1vh;
+    margin-right: 1vh;
+    height:3vh;
+    width:3vh;
+}
+
+#questioner-title-detail{
+    display:block;
+    height:10vh;
+    padding:1em;
+}

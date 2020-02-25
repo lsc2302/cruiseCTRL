@@ -1,19 +1,27 @@
 #help-back{
     height:5vh;
     width:5vh;
-    margin-left: 2vh;
-    margin-top: 2vh;
+    margin-left: 2.5vh;
+    margin-top: 2.5vh;
+}
+.help-back{
+    height:10vh;
+    background-color: #ee4723;
 }
 
 .help{
     background-color: white;
     height:100vh;
-    width:80vw;
+    width:100vw;
     font-size: x-large;
-    margin-left:10vw;
 }
 
 .help-title{
     font-size: xx-large;
     text-align: center;
+}
+
+#help-info{
+    width:80vw;
+    margin-left: 10vw;
 }

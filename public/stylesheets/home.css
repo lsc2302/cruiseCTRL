@@ -37,6 +37,17 @@
     margin-left: 3vh;
 }
 
+.intro-third img{
+    height:10vh;
+    width:10vh;
+    margin-right:3vh;
+    margin-left: 3vh;
+}
+
+.intro-details{
+    font-size: x-large;
+}
+
 #middle-home{
     height:100%;
     width:100%;
@@ -77,6 +88,7 @@
 #middle-home .home-back img{
     height:5vh;
     width:5vh;
+    margin-right: 1vh;
 }
 
 #middle-home .home-back{
