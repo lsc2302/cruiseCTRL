@@ -83,14 +83,40 @@ $(function(){
 
         }
     });
-
+    $('#signUp-submit').click(function(){
+        if($('#signUp-username').val()===''){
+            $('#alert-placeholder').html(`
+                        <div class="alert alert-warning" style="display: block">
+                            <button type="button" class="close" data-dismiss="alert">&times;</button>
+                            <strong>Must Input username!</strong>
+                        </div>
+                        `);
+        }
+        else if($('#signUp-password').val()===''){
+            $('#alert-placeholder').html(`
+                        <div class="alert alert-warning" style="display: block">
+                            <button type="button" class="close" data-dismiss="alert">&times;</button>
+                            <strong>Must Input password!</strong>
+                        </div>
+                        `);
+        }
+        else if(!$('#signUp-avatar').val()){
+            $('#alert-placeholder').html(`
+                        <div class="alert alert-warning" style="display: block">
+                            <button type="button" class="close" data-dismiss="alert">&times;</button>
+                            <strong>Must Select Avatar!</strong>
+                        </div>
+                        `);
+        }
+    });
     $('#signUp-avatar').on('change',function(e){
-        let files = e.target.files;
-        let file = files[0];
+        $('#signUp-submit').off('click');
         $('#signUp-submit').click(function(){
+            let files = e.target.files;
+            let file = files[0];
             let username= $('#signUp-username').val();
             let password = $('#signUp-password').val();
-            let userGender = $('#signUp-male').attr('checked')?'Male':'Female';
+            let userGender = $('#signUp-male input').attr('checked')?'Male':'Female';
             let userExperience = $('#signUp-experience').val();
             let userSkills = $('#signUp-skills').val();
             let userEmail = $('#signUp-email').val();
@@ -126,13 +152,31 @@ $(function(){
                 dataType: 'json',
                 success: function (response) {
                     if(response.status === 0){
-                        alert('Successfully create Account! \n Now you have 1 free coin, try asking an expert!');
+                        $('#alert-placeholder').html(`
+                        <div class="alert alert-warning" style="display: block">
+                            <button type="button" class="close" data-dismiss="alert">&times;</button>
+                            <strong>Successfully create Account!</strong>
+                        </div>
+                        `);
+                        // alert('Successfully create Account! \n Now you have 1 free coin, try asking an expert!');
                         window.location.href='/login';
                     }else if(response.status === 1){
-                        alert('User exists!');
+                        $('#alert-placeholder').html(`
+                        <div class="alert alert-warning" style="display: block">
+                            <button type="button" class="close" data-dismiss="alert">&times;</button>
+                            <strong>User exists!</strong>
+                        </div>
+                        `);
+                        // alert('User exists!');
                     }
                     else{
-                        alert('unknown error!');
+                        $('#alert-placeholder').html(`
+                        <div class="alert alert-warning" style="display: block">
+                            <button type="button" class="close" data-dismiss="alert">&times;</button>
+                            <strong>unknown error!</strong>
+                        </div>
+                        `);
+                        // alert('unknown error!');
                     }
                 }
             })

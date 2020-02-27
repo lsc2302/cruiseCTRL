@@ -83,7 +83,7 @@ nav .nav-text{
 #alert-placeholder{
     position: absolute;
     /*display:none;*/
-    height:5vh;
+    /*height:5vh;*/
     width:90vw;
     margin-left: 5vw;
     margin-top: 0.5vh;

@@ -16,6 +16,16 @@ router.get('/', function(req, res, next) {
     }
 });
 
+router.get('/homeNew', function(req, res, next) {
+    if(!!req.session.loginUser){
+        let data = Object.assign(req.session.loginUser, renderdata);
+        res.render('homeNew',data);
+    }
+    else{
+        res.redirect('/homeNew');
+    }
+});
+
 router.get('/lights',function(req,res){
     if(!!req.session.loginUser){
         let data = Object.assign(req.session.loginUser, renderdata.data[0]);

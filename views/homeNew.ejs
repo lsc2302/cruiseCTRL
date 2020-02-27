@@ -15,14 +15,15 @@
 
     <link href="stylesheets/index.css" rel="stylesheet">
     <link href="stylesheets/menu.css" rel="stylesheet">
-    <link href="stylesheets/home.css" rel="stylesheet">
+    <link href="stylesheets/homeNew.css" rel="stylesheet">
     <link href="stylesheets/chat.css" rel="stylesheet">
 
+
     <script src="javascripts/init.js"></script>
-    <script src="javascripts/socket.js"></script>
     <script src="javascripts/nav.js"></script>
     <script src="javascripts/menu.js"></script>
-    <script src="javascripts/home.js"></script>
+    <script src="javascripts/socket.js"></script>
+    <script src="javascripts/homeNew.js"></script>
 
 </head>
 <body>
@@ -62,50 +63,68 @@
     </div>
     <div class="middle" id="middle">
         <div id="middle-home">
-            <div class="container">
-                <div class="home-back" onclick="clickHomeBack2()">
-                    <img src="images/back.png">
-                    Back to previous Page
-                </div>
-                <div class="input-group mb-3">
-                    <div class="intro-details">
-                        <div class="intro-third" style="font-size:50px">
-                            <img src=<%=img%>>
-                            <strong><%=name%></strong>
+            <div class="first-level">
+                    <% for(var i=0; i < data.length; i++) { %>
+                        <div class="intro-first">
+                            <div class="intro-first-title">
+                                <img src="images/right.png"  onclick="expandSecond(this)">
+                                <img src=<%=data[i].img%>>
+                                <%=data[i].name%>
+                            </div>
+                            <div class="intro-seconds">
+                                <% for(var j=0; j < data[i].children.length; j++) { %>
+                                    <div class="intro-second">
+                                        <div class="intro-second-title">
+                                            <img src="images/right.png" onclick="expandThird(this)">
+                                            <img src=<%=data[i].children[j].img%>>
+                                            <%=data[i].children[j].name%>
+                                        </div>
+                                        <div class="intro-thirds">
+                                            <div class="intro-third" style="font-size:50px">
+                                                <div class="intro-details">
+                                                    <div class="intro-detail">
+                                                        <%-data[i].children[j].children.detail.replace('\n', '<br>')%>
+                                                    </div>
+                                                    <div>
+                                                        <h5 style="margin-top: 2vh;">FAQ:</h5>
+                                                    </div>
+                                                    <% for(var k=0; k < data[i].children[j].children.faq.length; k++) { %>
+                                                    <div><strong>q:</strong><%-data[i].children[j].children.faq[k].question.replace('\n', '<br>')%></div>
+                                                    <div><strong>a:</strong><%-data[i].children[j].children.faq[k].answer.replace('\n', '<br>')%></div>
+                                                    <% } %>
+                                                </div>
+                                            </div>
+                                        </div>
+                            </div>
+                                <% } %>
+                            </div>
                         </div>
-                        <div class="intro-detail">
-                            <%-detail.replace('\n', '<br>')%>
-                        </div>
-                        <div>
-                            <h4 style="margin-top: 2vh;">FAQ:</h4>
-                        </div>
-                        <% for(var i=0; i < faq.length; i++) { %>
-                        <div><strong>q:</strong><%-faq[i].question.replace('\n', '<br>')%></div>
-                        <div><strong>a:</strong><%-faq[i].answer.replace('\n', '<br>')%></div>
-                        <% } %>
-                    </div>
-                </div>
+                    <% } %>
             </div>
         </div>
+
     </div>
     <nav class="bottom">
         <div id="icon-0" onclick="clickNav(0)">
             <img src="images/home-active.png"  class= "icon-que" alt=""/>
+            <div class="nav-text">Home</div>
         </div>
         <div id="icon-1" onclick="clickNav(1)">
             <img src="images/que.png" class="icon-ans" alt=""/>
+            <div class="nav-text">Q&A</div>
         </div>
         <div id="icon-2" onclick="clickNav(2)">
             <img src="images/profile.png" class="icon-loc" alt=""/>
-        </div>    </nav>
+            <div class="nav-text">Profile</div>
+        </div>
+    </nav>
 </div>
 <div class="chatroom">
     <div class="chatroom-top">
-        <img src="images/back.png">
+        <img src="images/close-sq.png" id="chatroom-leave">
         <div class="chatroom-title">chatroom</div>
     </div>
     <div class="chatroom-body">
-
     </div>
     <div class="chatroom-bottom">
         <div class="input-group mb-3">
@@ -118,5 +137,3 @@
 </div>
 </body>
 </html>
-
-

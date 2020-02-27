@@ -1,31 +1,12 @@
 .log{
-    /*display: flex;*/
-    /*justify-content: center;*/
     font-size: x-large;
     position:absolute;
-    /*left:20vw;*/
-    /*top:40vh;*/
     height:100%;
     width:100%;
     background-color: #ee4723;
     color:white;
-    /*padding-left:5vw;*/
-    /*padding-right:5vw;*/
     z-index: 3;
 }
-
-/*.log .third-party{*/
-/*    display:flex;*/
-/*    justify-content: space-between;*/
-/*    margin-bottom: 2vh;*/
-/*    margin-top: 2vh;*/
-/*}*/
-
-/*.log input{*/
-/*    margin-top:1vh;*/
-/*    width:100%;*/
-/*    border-radius: 2.5vh;*/
-/*}*/
 
 .log img{
     height:5vh;

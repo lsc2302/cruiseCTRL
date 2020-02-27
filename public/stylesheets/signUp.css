@@ -38,7 +38,7 @@
     margin:2vh 15vw;
 }
 
-.signUp button{
+.signUp #signUp-submit{
     position:absolute;
     width:90%;
     top:90vh;

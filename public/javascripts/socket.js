@@ -20,6 +20,7 @@ $(function(){
                     sessionStorage.setItem('notifications',"0");
                 }
                 socket.on('receiveNotifications',function(data){
+                    storeNotifications(data);
                     $('#alert-placeholder').html(`
                         <div class="alert alert-warning" style="display: block">
                             <button type="button" class="close" data-dismiss="alert">&times;</button>
@@ -29,7 +30,6 @@ $(function(){
                             >Go right now!</button>
                         </div>
                         `);
-                    storeNotifications(data)
                 });
                 socket.on('receiveChatRequest', function (data) {
                     $('.chatroom').css('display', 'flex');
