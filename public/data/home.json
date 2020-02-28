@@ -185,8 +185,8 @@
               "detail": "Rotten eggs? Could be your catalytic converter\nHot oil? Leaky crankshaft or valve cover. The valve cover could be accompanied by smoke coming from exhaust.\nSyrup? This could be a leaky radiator or heating system\nGasoline? It could mean a leaky vent hose or fuel injection line.\nLocker room? This could be mold and mildew in your AC evaporator.\nBurned carpet? Check the brakes!\nBurned rubber? Check the engine hoses and belts.",
               "faq": [
                 {
-                  "question": "What if my seatbelt light is on but I'm buckled in",
-                  "answer":"The problem may lie in a faulty seatbelt sensor"
+                  "question": "Should I drive after I smell some rotten-eggs like odor?",
+                  "answer":"We suggest you don't do that."
                 }
               ]
             }
@@ -209,8 +209,8 @@
             "detail": "Under the hood, smoke might be due to coolant in the combustion chamber (sweet smell could accompany), a cracked engine block, or a leaking head gasket.",
             "faq": [
               {
-                "question": "What if my seatbelt light is on but I'm buckled in",
-                "answer":"The problem may lie in a faulty seatbelt sensor"
+                "question": "Should I still drive after I see black smoke?",
+                "answer":"We suggest you don't do that."
               }
             ]
           }
@@ -233,8 +233,8 @@
             "detail": "If a sound is coming from your tires, check the inflation, tire wear, and wheel balancing.\nThe car itself making a loud noise could be due to a hole in the muffler.\nWhen making a turn, this could be due to wheel bearings wearing.",
             "faq": [
               {
-                "question": "What if my seatbelt light is on but I'm buckled in",
-                "answer":"The problem may lie in a faulty seatbelt sensor"
+                "question": "Should I still drive after I hear sound from tire?",
+                "answer":"We suggest you don't do that."
               }
             ]
           }
@@ -257,8 +257,8 @@
             "detail": "Shaking is most commonly tied to your tires. They are probably out of balance\nIf the car shakes while braking, this could be tied to your brake rotors\nOn all cars, shaking can also be due to a brake caliper sticking. If your car has over 75,000 miles, a brake caliper service is important.",
             "faq": [
               {
-                "question": "What if my seatbelt light is on but I'm buckled in",
-                "answer":"The problem may lie in a faulty seatbelt sensor."
+                "question": "Should I still drive after I feel the shake from tire?",
+                "answer":"We suggest you don't do that."
               }
             ]
           }
