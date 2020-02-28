@@ -154,7 +154,7 @@ $(document).ready(function() {
         }
         let notifications = parseInt(sessionStorage.getItem('notifications'));
         let html='';
-        let posts = 5;
+        let posts = 4;
         for(let i=notifications-1;i>=0;i--){
             if(sessionStorage.getItem('notif'+(i+1).toString()+'username')&&posts>=1){
                 html=html+
