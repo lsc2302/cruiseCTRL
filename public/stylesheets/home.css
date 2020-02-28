@@ -45,6 +45,7 @@
 }
 
 .intro-details{
+    margin-top: 2vh;
     font-size: x-large;
 }
 
@@ -88,6 +89,7 @@
 #middle-home .home-back img{
     height:5vh;
     width:5vh;
+    /*margin-top: 2vh;*/
     margin-right: 1vh;
 }
 
@@ -95,7 +97,7 @@
     line-height:5vh;
     font-size: x-large;
     height:5vh;
-    margin-top: 1vh;
+    margin-top: 2vh;
 }
 
 #home-search-1{
