@@ -13,10 +13,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/data/home1.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-5216" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="359">
+              <caret line="124" column="50" lean-forward="true" selection-start-line="124" selection-start-column="50" selection-end-line="124" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/stylesheets/log.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="502">
+              <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
+            </state>
           </provider>
         </entry>
       </file>
@@ -93,11 +111,9 @@
         <option value="$PROJECT_DIR$/views/popUpA.ejs" />
         <option value="$PROJECT_DIR$/views/topA.ejs" />
         <option value="$PROJECT_DIR$/views/third.ejs" />
-        <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/views/second.ejs" />
         <option value="$PROJECT_DIR$/views/home.ejs" />
         <option value="$PROJECT_DIR$/views/login.ejs" />
-        <option value="$PROJECT_DIR$/public/stylesheets/log.css" />
         <option value="$PROJECT_DIR$/views/homeA.ejs" />
         <option value="$PROJECT_DIR$/views/homeB.ejs" />
         <option value="$PROJECT_DIR$/views/profileB.ejs" />
@@ -107,6 +123,8 @@
         <option value="$PROJECT_DIR$/views/profileA.ejs" />
         <option value="$PROJECT_DIR$/views/questionA.ejs" />
         <option value="$PROJECT_DIR$/public/javascripts/navA.js" />
+        <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/public/stylesheets/log.css" />
       </list>
     </option>
   </component>
@@ -145,6 +163,12 @@
               <item name="cruiseCTRL" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cruiseCTRL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cruiseCTRL" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cruiseCTRL" type="b2602c69:ProjectViewProjectNode" />
@@ -279,12 +303,12 @@
       <workItem from="1582828908708" duration="1881000" />
       <workItem from="1582835650885" duration="5395000" />
       <workItem from="1582860580642" duration="6543000" />
-      <workItem from="1582867560270" duration="2601000" />
+      <workItem from="1582867560270" duration="3471000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="471676000" />
+    <option name="totallyTimeSpent" value="472546000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="38" width="3840" height="2122" extended-state="6" />
@@ -535,13 +559,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="119" column="35" lean-forward="true" selection-start-line="119" selection-start-column="35" selection-end-line="119" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/home.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="359">
@@ -567,13 +584,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="675">
           <caret line="26" column="10" lean-forward="true" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/log.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2236">
-          <caret line="52" column="22" lean-forward="true" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -692,6 +702,20 @@
     <entry file="file://$PROJECT_DIR$/public/data/home1.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-5216" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="124" column="50" lean-forward="true" selection-start-line="124" selection-start-column="50" selection-end-line="124" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/log.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="502">
+          <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
+        </state>
       </provider>
     </entry>
   </component>
