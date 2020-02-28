@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+
+    <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="javascripts/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+
+
+    <link href="stylesheets/index.css" rel="stylesheet">
+    <link href="stylesheets/menu.css" rel="stylesheet">
+    <link href="stylesheets/question.css" rel="stylesheet">
+    <link href="stylesheets/answer.css" rel="stylesheet">
+    <link href="stylesheets/chat.css" rel="stylesheet">
+
+    <script src="javascripts/init.js"></script>
+    <script src="javascripts/navB.js"></script>
+    <script src="javascripts/menu.js"></script>
+    <script src="javascripts/question.js"></script>
+
+</head>
+<body>
+<%- include ('popUp.ejs') %>
+<div class="index">
+    <%- include ('top.ejs') %>
+    <div id="alert-placeholder">
+    </div>
+    <div class="middle" id="middle">
+        <div id="middle-question">
+            <div class="question-body">
+                <ul id="myTab" class="nav nav-pills justify-content-center">
+                    <li class="nav-item" id="question-item">
+                        <a class="nav-link active" data-toggle="pill" href="#question" id="question-link">question</a>
+                    </li>
+                    <li class="nav-item" id="answer-item">
+                        <a class="nav-link" data-toggle="pill" href="#answer" id="answer-link">answer</a>
+                    </li>
+                </ul>
+                <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane active" id="question">
+                        <div class="part">
+                            Choose problem type:
+                            <input type="text" class="parts-input form-control" list="parts-select"/>
+                            <datalist id="parts-select">
+                                <option>DashBoard Light</option>
+                                <option>Strange Smell</option>
+                                <option>Emitting Smoke</option>
+                                <option>Weird Sound</option>
+                                <option>Car Shaking</option>
+                                <option>Other</option>
+                            </datalist>
+                        </div>
+                        <div class="title">
+                            Describe your question using few keywords so we can find a best match for you:
+                            <input type="text" class="question-title form-control">
+                        </div>
+                        <div class="upload">
+                            <div>Tell us about your question:</div>
+                            <textarea class="upload-box form-control" id='question-text' rows="10"></textarea>
+                        </div>
+                        <div class="ask-expert">
+                            <div class="choose-experts">
+                                Choose an expert to answer your question:
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" list="experts-list" id="question-expert-name">
+                                    <datalist id="experts-list">
+                                    </datalist>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="question-more-info" onclick="clickMoreInfo()"></span>
+                        <button class="btn submit" id="submit-question" type="button">Submit Question</button>
+                    </div>
+                    <div class="tab-pane fade" id="answer">
+                        <div>Questions you have received:</div>
+                        <div id="expert-search" >
+                            <div class="notifs"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="bottom">
+        <div id="icon-0" onclick="clickNav(0)">
+            <img src="images/home.png"  class= "icon-que" alt=""/>
+            <div class="nav-text">Home</div>
+        </div>
+        <div id="icon-1" onclick="clickNav(1)">
+            <img src="images/que-active.png" class="icon-ans" alt=""/>
+            <div class="nav-text">Q&A</div>
+        </div>
+        <div id="icon-2" onclick="clickNav(2)">
+            <img src="images/profile.png" class="icon-loc" alt=""/>
+            <div class="nav-text">Profile</div>
+        </div>
+    </nav>
+</div>
+<div class="question-more-info-content">
+</div>
+<div class="answer-notification-detail">
+</div>
+<%- include ('chat.ejs') %>
+</body>
+</html>

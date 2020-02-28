@@ -234,6 +234,24 @@ router.get('/question',function(req,res,next){
     }
 });
 
+router.get('/questionA',function(req,res,next){
+    if(!!req.session.loginUser){
+        res.render('questionA',req.session.loginUser);
+    }
+    else{
+        res.redirect('/login');
+    }
+});
+
+router.get('/questionB',function(req,res,next){
+    if(!!req.session.loginUser){
+        res.render('questionB',req.session.loginUser);
+    }
+    else{
+        res.redirect('/login');
+    }
+});
+
 router.get('/profile',function(req,res,next){
     if(!!req.session.loginUser){
         UserModel.findOne({username:req.session.loginUser.username})
@@ -254,6 +272,49 @@ router.get('/profile',function(req,res,next){
         res.redirect('/login');
     }
 });
+
+router.get('/profileA',function(req,res,next){
+    if(!!req.session.loginUser){
+        UserModel.findOne({username:req.session.loginUser.username})
+            .then(user => {
+                    if(user){
+                        res.render('profileA',user);
+                        // res.send({status: 0, data: user});
+                    }
+                }
+            )
+            .catch(() =>
+                {
+                    res.send({status:2, msg:"error!"});
+                }
+            )
+    }
+    else{
+        res.redirect('/login');
+    }
+});
+
+router.get('/profileB',function(req,res,next){
+    if(!!req.session.loginUser){
+        UserModel.findOne({username:req.session.loginUser.username})
+            .then(user => {
+                    if(user){
+                        res.render('profileB',user);
+                        // res.send({status: 0, data: user});
+                    }
+                }
+            )
+            .catch(() =>
+                {
+                    res.send({status:2, msg:"error!"});
+                }
+            )
+    }
+    else{
+        res.redirect('/login');
+    }
+});
+
 
 router.get('/login',function(req,res,next){
     res.render('login');
