@@ -13,32 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/homeA.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="32" selection-start-line="32" selection-end-line="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/topA.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/popUpA.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="43">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
-              <folding>
-                <element signature="n#div#0;n#!!top" />
-              </folding>
+            <state relative-caret-position="589">
+              <caret line="70" column="19" lean-forward="true" selection-start-line="70" selection-end-line="71" />
             </state>
           </provider>
         </entry>
@@ -46,8 +25,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/homeB.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4483">
-              <caret line="122" selection-start-line="122" selection-end-line="137" selection-end-column="6" />
+            <state relative-caret-position="617">
+              <caret line="92" column="28" selection-start-line="92" selection-start-column="28" selection-end-line="92" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="545">
+              <caret line="121" column="30" selection-start-line="121" selection-start-column="30" selection-end-line="121" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -138,9 +126,7 @@
         <option value="$PROJECT_DIR$/public/javascripts/socketA.js" />
         <option value="$PROJECT_DIR$/public/javascripts/homeB.js" />
         <option value="$PROJECT_DIR$/public/javascripts/menuA.js" />
-        <option value="$PROJECT_DIR$/views/homeB.ejs" />
         <option value="$PROJECT_DIR$/public/data/home.json" />
-        <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/views/popUp.ejs" />
         <option value="$PROJECT_DIR$/views/top.ejs" />
         <option value="$PROJECT_DIR$/views/buttom.ejs" />
@@ -157,6 +143,8 @@
         <option value="$PROJECT_DIR$/views/popUpA.ejs" />
         <option value="$PROJECT_DIR$/views/topA.ejs" />
         <option value="$PROJECT_DIR$/views/homeA.ejs" />
+        <option value="$PROJECT_DIR$/views/homeB.ejs" />
+        <option value="$PROJECT_DIR$/server.js" />
       </list>
     </option>
   </component>
@@ -352,14 +340,16 @@
       <workItem from="1582828908708" duration="1881000" />
       <workItem from="1582835650885" duration="5395000" />
       <workItem from="1582860580642" duration="6543000" />
+      <workItem from="1582867560270" duration="263000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="469075000" />
+    <option name="totallyTimeSpent" value="469338000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="38" width="3840" height="2122" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24993409" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -431,13 +421,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/homeNew.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="602">
-          <caret line="61" column="10" selection-start-line="61" selection-start-column="10" selection-end-line="61" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/views/homeNew.ejs" />
     <entry file="file://$PROJECT_DIR$/public/stylesheets/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="574">
@@ -587,13 +571,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2795">
-          <caret line="119" column="31" lean-forward="true" selection-start-line="119" selection-start-column="31" selection-end-line="119" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/data/home.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4545">
@@ -684,14 +661,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/chat.ejs">
+    <entry file="file://$PROJECT_DIR$/views/chatA.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="645">
           <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/chatA.ejs">
+    <entry file="file://$PROJECT_DIR$/views/chat.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="645">
           <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
@@ -700,18 +677,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/popUpA.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="43">
+        <state relative-caret-position="1204">
           <caret line="28" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="n#div#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/homeB.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4483">
-          <caret line="122" selection-start-line="122" selection-end-line="137" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -731,8 +698,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/homeA.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="32" selection-start-line="32" selection-end-line="33" />
+        <state relative-caret-position="589">
+          <caret line="70" column="19" lean-forward="true" selection-start-line="70" selection-end-line="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/homeB.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="617">
+          <caret line="92" column="28" selection-start-line="92" selection-start-column="28" selection-end-line="92" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="121" column="30" selection-start-line="121" selection-start-column="30" selection-end-line="121" selection-end-column="30" />
         </state>
       </provider>
     </entry>
