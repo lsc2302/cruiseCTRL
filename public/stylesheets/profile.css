@@ -1,7 +1,5 @@
-.profile .profile-imgs{
-    height:3vh;
-    width:3vh;
-    margin: 1vh;
+.profile{
+    padding-top: 1vh;
 }
 
 .profile .card{
@@ -15,15 +13,28 @@
     border: 2px dashed #ee4723;
 }
 
-.profile{
-    padding-top: 1vh;
-}
-
-.profile #profile-car-blacklist{
-    height:20vh;
+.profile .profile-imgs{
+    height:3vh;
+    width:3vh;
+    margin: 1vh;
 }
 
 .container{
     max-width: 1000px;
     width:90%;
+}
+
+#profile-name{
+    font-size: 60px;
+    margin-top: 3vw;
+    text-align: center;
+}
+
+#profile-name #user-img{
+    height:60vw;
+    width:60vw;
+    border-radius: 50%;
+    z-index:2;
+    padding:5vw;
+    border: 15px solid #ee4723;
 }

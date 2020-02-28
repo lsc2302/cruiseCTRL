@@ -1,11 +1,6 @@
 $(document).ready(function() {
     {
         let userAvatar = sessionStorage.getItem('userAvatar');
-        let avatarContent = `
-                <img src="images/menu.png" alt="Menu" id="menu" onclick="clickMenu()" />
-                <img src="user-data/` + userAvatar + `" id="avatar" alt="Avatar">
-                `;
-        $('.top').html(avatarContent);
         let socket = io(location.origin.replace(/^http/, 'ws'));
         socket.emit('login', {
             username: sessionStorage.getItem('username'),
@@ -108,7 +103,7 @@ $(document).ready(function() {
                         }
                     }
             });
-        }).on('change',function(){
+        }).on('input',function(){
             $('.question-more-info').html(`More Info about ${$('#question-expert-name').val()}`)
         });
 
@@ -123,13 +118,11 @@ $(document).ready(function() {
                     if(response.status===0){
                         let question = $('#question-text').val();
                         let targetName = $('#question-expert-name').val();
-                        let questionTitle = $('.question-title').val();
                         let questionType = $('.parts-input').val();
                         sessionStorage.setItem('question', question);
-                        sendNotifications(question, targetName,questionTitle,questionType);
+                        sendNotifications(question, targetName,questionType);
                         $('#question-text').val('');
                         $('#question-expert-name').val('');
-                        $('.question-title').val('');
                         $('.parts-input').val('');
                         $('.expert-list').fadeOut();
                     }else if(response.status === 1){
@@ -144,7 +137,7 @@ $(document).ready(function() {
 
         });
 
-        function sendNotifications(question, expertName,questionTitle,questionType) {
+        function sendNotifications(question, expertName,questionType) {
             let questionBody = {
                 username: sessionStorage.getItem('username'),
                 userAvatar: sessionStorage.getItem('userAvatar'),
@@ -155,7 +148,6 @@ $(document).ready(function() {
                 carModel: sessionStorage.getItem('carModel'),
                 question: question,
                 questionType:questionType,
-                questionTitle:questionTitle,
                 expertName: expertName,
             };
             socket.emit('sendNotifications', questionBody);
@@ -176,13 +168,6 @@ $(document).ready(function() {
                     </div>
                     <div class="questioner-name">
                     ${sessionStorage.getItem('notif'+(i+1).toString()+'username')}
-                    </div>
-                    <div class="questioner-title">
-                    ${
-                        sessionStorage.getItem('notif'+(i+1).toString()+'questionTitle').length>40?
-                            sessionStorage.getItem('notif'+(i+1).toString()+'questionTitle').substr(0,37)+'...':
-                            sessionStorage.getItem('notif'+(i+1).toString()+'questionTitle')
-                        }
                     </div>
                 </div>
             <div class="card-body">
@@ -221,12 +206,6 @@ function clickCard(i){
                     ${sessionStorage.getItem('notif'+(i+1).toString()+'username')}
                     </div>
                 </div>
-                <div id="questioner-title-detail">
-                <h4>Question Summary:</h4>
-                    ${
-                    sessionStorage.getItem('notif'+(i+1).toString()+'questionTitle')
-                    }
-                    </div>
                 <div class="card-body" id="card-body-detail">
                 <h4>Problem:</h4>
                     ${
@@ -274,7 +253,6 @@ function clickAnswerQuestion(i) {
                     sessionStorage.setItem('notifications', "0");
                 }
                 socket.on('receiveNotifications', function (data) {
-
                     storeNotifications(data)
                 });
                 socket.emit('sendChatRequest', data);
@@ -359,15 +337,12 @@ function clickMoreInfo(){
                 $('.question-more-info-content').toggle().html(
                     `
                     <div id="more-info-close">
-                        <span class="badge align-top" onclick="clickCloseMoreInfo()">
+                        <span class="align-top" onclick="clickCloseMoreInfo()">
                             <img src="images/close.png" id="more-info-close">
                         </span>
                     </div>
                     <div class="more-info-display">
                         Name:${response.data.username}
-                    </div>
-                    <div class="more-info-display">
-                        Gender:${response.data.userGender}
                     </div>
                     <div class="more-info-display">
                         Experience:${response.data.userExperience}
@@ -382,12 +357,12 @@ function clickMoreInfo(){
                 $('.question-more-info-content').toggle().html(
                     `
                     <div id="more-info-close">
-                        <span class="badge align-top" onclick="clickCloseMoreInfo()">
+                        <span class="align-top" onclick="clickCloseMoreInfo()">
                             <img src="images/close.png" id="more-info-close">
                         </span>
                     </div>
-                    <div class="more-info-display" style="margin-top: 3vh;margin-left:2vh;">
-                        Expert Not Exists!
+                    <div class="more-info-display" style="margin-top: 1vh;margin-left:1vh; height:10vh;">
+                        Expert Not Selected or Not Exists!
                     </div>
                     `);
             }
@@ -415,7 +390,6 @@ function cleanNotification(targetNumber){
     sessionStorage.removeItem(cur+'carBrand');
     sessionStorage.removeItem(cur+'carModel');
     sessionStorage.removeItem(cur+'question');
-    sessionStorage.removeItem(cur+'questionTitle');
     sessionStorage.removeItem(cur+'questionType');
     sessionStorage.removeItem('targetAvatar');
     sessionStorage.removeItem('targetNumber');

@@ -116,11 +116,8 @@ $(function(){
             let file = files[0];
             let username= $('#signUp-username').val();
             let password = $('#signUp-password').val();
-            let userGender = $('#signUp-male input').attr('checked')?'Male':'Female';
             let userExperience = $('#signUp-experience').val();
             let userSkills = $('#signUp-skills').val();
-            let userEmail = $('#signUp-email').val();
-            let userAddress = $('#signUp-address').val();
             let userQuestioner = $('#signUp-questioner input').attr('checked');
             let userExpert = $('#signUp-expert input').attr('checked');
             let carCountry = $('#signUp-car-country').val();
@@ -130,11 +127,8 @@ $(function(){
             data.append('username',username);
             data.append('password',password);
             data.append('userAvatar',file);
-            data.append('userGender',userGender);
             data.append('userExperience',userExperience);
             data.append('userSkills',userSkills);
-            data.append('userEmail',userEmail);
-            data.append('userAddress',userAddress);
             data.append('userQuestioner',userQuestioner);
             data.append('userExpert',userExpert);
             data.append('carCountry',carCountry);
@@ -188,24 +182,6 @@ $(function(){
     });
 
     $('.signUp-questioner').toggle();
-
-    $('#signUp-male').click(function(){
-        let checkedState = $(this).find(' input').attr('checked');
-        $('#signUp-female input').removeAttr("checked");
-        $(this).find(' input').attr('checked',true);
-        if(checkedState === 'checked'){
-            $(this).find(' input').removeAttr("checked");
-        }
-    });
-
-    $('#signUp-female').click(function(){
-        let checkedState = $(this).find(' input').attr('checked');
-        $('#signUp-male input').removeAttr("checked");
-        $(this).find(' input').attr('checked',true);
-        if(checkedState === 'checked'){
-            $(this).find(' input').removeAttr("checked");
-        }
-    });
 
     $('#signUp-questioner').click(function(){
         let checkedState = $(this).find(' input').attr('checked');

@@ -7,10 +7,8 @@
     color:white;
 }
 
-.signUp #upload-button-img{
-    height:3vh;
-    width:3vh;
-    margin:1vh;
+#signUp{
+    margin-top: 2vh;
 }
 
 .signUp #signUp{
@@ -19,18 +17,19 @@
     width:90%;
 }
 
-.signUp #upload-button{
-    height:5vh;
-    width:5vh;
-    background-color: white;
-}
 
+.signUp .signUp-back{
+    margin-top: 2.5vh;
+    height:5vh;
+    line-height: 5vh;
+}
 
 .signUp #signUp-back{
     height:5vh;
     width:5vh;
     margin-left: 2.5vh;
 }
+
 
 .signUp #signUp-car-img{
     height:10vh;
@@ -41,7 +40,7 @@
 .signUp #signUp-submit{
     position:absolute;
     width:90%;
-    top:90vh;
+    top:80vh;
     color:black;
     background-color: white;
     font-size: xx-large;

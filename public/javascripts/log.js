@@ -37,6 +37,6 @@ function clickLogin(){
         })
 }
 
-function clickSignup(){
+function clickSignUp(){
     window.location.href = '/signUp';
 }

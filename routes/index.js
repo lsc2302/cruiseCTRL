@@ -258,7 +258,6 @@ router.get('/profile',function(req,res,next){
             .then(user => {
                     if(user){
                         res.render('profile',user);
-                        // res.send({status: 0, data: user});
                     }
                 }
             )
@@ -315,7 +314,6 @@ router.get('/profileB',function(req,res,next){
     }
 });
 
-
 router.get('/login',function(req,res,next){
     res.render('login');
 });
@@ -340,7 +338,7 @@ router.post('/onlineUsers',function(req,res){
 
 router.post('/signUp',(req,res)=> {
     avatarUploader(req,res,function(e){
-        const {username, password,userGender,userEmail,userAddress,
+        const {username, password,
             userExperience,userSkills,
             userQuestioner,userExpert,
             carCountry,carBrand,carModel} = req.body;
@@ -351,10 +349,7 @@ router.post('/signUp',(req,res)=> {
                         UserModel.create({
                             username: username,
                             password: password,
-                            userGender:userGender,
                             userAvatar:userAvatar,
-                            userEmail:userEmail,
-                            userAddress:userAddress,
                             userCoins:1,
                             userExperience:userExperience,
                             userSkills:userSkills,

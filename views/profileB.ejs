@@ -33,22 +33,9 @@
     <div class="middle" id="middle">
         <div id="middle-profile">
             <div class="profile container">
-                <div id="profile-name" class="card">
-                    <img src="user-data/<%= userAvatar%>" class="profile-imgs">
-                    Username: <%= username%>
-                </div>
-                <div id="profile-name" class="card">
-                    <img src="images/gender.png" class="profile-imgs">
-                    Gender: <%= userGender%>
-                    <img src="images/<%= userGender%>.png" class="profile-imgs">
-                </div>
-                <div id="profile-name" class="card">
-                    <img src="images/email.png" class="profile-imgs">
-                    Email: <%= userEmail%>
-                </div>
-                <div id="profile-name" class="card">
-                    <img src="images/house.png" class="profile-imgs">
-                    Address: <%= userAddress%>
+                <div id="profile-name">
+                    <img src="user-data/<%= userAvatar%>" class="profile-imgs" id="user-img">
+                    <div><%= username%></div>
                 </div>
                 <div id="profile-user-coins" class="card">
                     <img src="images/coins.png" class="profile-imgs">
@@ -65,10 +52,6 @@
                     </div>
                 <% } %>
                 <% if (userQuestioner==='checked') { %>
-                    <div id="profile-car-country" class="card">
-                        <img src="images/car-country.png" class="profile-imgs">
-                        Manufacturer Origin: <%= carCountry%>
-                    </div>
                     <div id="profile-car-brand" class="card">
                         <img src="images/car-brand.png" class="profile-imgs">
                         Manufacturer Name: <%= carBrand%>

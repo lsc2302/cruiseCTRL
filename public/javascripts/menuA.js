@@ -1,11 +1,5 @@
 function clickMenu(){
-    let userAvatar = sessionStorage.getItem('userAvatar');
-    let username = sessionStorage.getItem('username');
-    let avatarContent = `<img src="../../user-data/`+userAvatar+`" id="pop-up-avatar" alt="Avatar">`+username;
-    $('.pop-up-avatar').html(avatarContent);
-    $('.pop-up').css('display','inline-block').addClass('active');
-    $('.index').css('opacity','50%');
-    $('.index *').prop('disabled',true);
+    $('.pop-up').toggle();
     let items=['settings','help','contact','logout'];
     for(let name of items){
         let elem = '.pop-up .'+name;
@@ -22,12 +16,12 @@ function clickMenu(){
         let elemChild = elem+' img';
         $(elem).click(function(){
             if($(elem).hasClass('active')){
-                $(elemChild).attr('src','images/'+name+'-active.png');
+                $(elemChild).attr('src','../../images/'+name+'-active.png');
                 if(name === 'logout'){
                     clickLogout();
                 }
             }else{
-                $(elemChild).attr('src','images/'+name+'.png');
+                $(elemChild).attr('src','../../images/'+name+'.png');
             }
         })
     }
