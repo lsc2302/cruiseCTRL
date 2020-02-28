@@ -5,6 +5,7 @@
     position: fixed;
     z-index: 99;
     padding: 2.5vh 2vh 2vh 2.5vh;
+    color:white;
     background-color: #ee4723;
 }
 

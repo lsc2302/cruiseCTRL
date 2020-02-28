@@ -12,7 +12,10 @@ $(function(){
                 sessionStorage.setItem('carBrand', response.data.carBrand);
                 sessionStorage.setItem('carModel', response.data.carModel);
                 let userAvatar = sessionStorage.getItem('userAvatar');
-                let avatarContent = `<img src="user-data/` + userAvatar + `" id="avatar" onclick="clickMenu()" alt="Avatar">`;
+                let avatarContent = `
+                <img src="images/menu.png" alt="Menu" id="menu" onclick="clickMenu()" />
+                <img src="user-data/` + userAvatar + `" id="avatar" alt="Avatar">
+                `;
                 $('.top').html(avatarContent);
                 let socket = io(location.origin.replace(/^http/, 'ws'));
                 socket.emit('login',{username:sessionStorage.getItem('username'),password:sessionStorage.getItem('password')});

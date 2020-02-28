@@ -1,14 +1,13 @@
 #middle-question{
-    height:100%;
-    margin: 3vh 5vw;
+    height:77vh;
+    margin-top: 3vh;
+    margin-left:5vw;
+    margin-right: 5vw;
 }
 
 .question-body{
-    /*position:absolute;*/
     height:100%;
-    /*align-self: flex-start;*/
     font-size: x-large;
-    /*padding:0.5vh;*/
 }
 
 .part,.accessories{
@@ -21,6 +20,7 @@
 .upload-box{
     width:100%;
     margin-bottom: 1vh;
+    font-size: x-large;
 }
 
 #upload{
@@ -39,7 +39,7 @@
     width: 90vw;
     bottom:13vh;
     border:2px solid;
-    font-size: large;
+    font-size: xx-large;
     font-weight:700;
     background-color:#ee4723;
     color:white;
@@ -145,6 +145,20 @@ a.active.nav-link {
     padding-top:0.5vh;
 }
 
+#question-expert-name{
+    height:5vh;
+    font-size: xx-large;
+}
+
+.question-title{
+    height:5vh;
+    font-size: xx-large;
+}
+
+.parts-input{
+    height:5vh;
+    font-size: xx-large;
+}
 
 
 

@@ -48,13 +48,14 @@
 }
 
 .chatroom .input-group input{
-    height:3vh;
+    height:5vh;
     font-size: xx-large;
 }
 
 .chatroom .input-group button{
     background-color:#ee4723;
     color:white;
+    font-size: xx-large;
 }
 
 .chatroom .self-msg{

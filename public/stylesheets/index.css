@@ -28,11 +28,18 @@ html, body, .index {
 
 
 #avatar{
+    float:right;
+    height: 5vh;
+    width: 5vh;
+    margin:2.5vh;
+    border-radius: 50%;
+}
+
+#menu{
     float:left;
     height: 5vh;
     width: 5vh;
     margin:2.5vh 0 0 2.5vh;
-    border-radius: 50%;
 }
 .middle{
     flex:80;

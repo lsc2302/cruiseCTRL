@@ -2,9 +2,7 @@ function clickMenu(){
     let userAvatar = sessionStorage.getItem('userAvatar');
     let username = sessionStorage.getItem('username');
     let avatarContent = `<img src="user-data/`+userAvatar+`" id="pop-up-avatar" alt="Avatar">`+username;
-    $('.pop-up-avatar').html(avatarContent).click(function(){
-        window.location.href = '/profile';
-    });
+    $('.pop-up-avatar').html(avatarContent);
     $('.pop-up').css('display','inline-block').addClass('active');
     $('.index').css('opacity','50%');
     $('.index *').prop('disabled',true);
