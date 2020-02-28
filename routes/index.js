@@ -16,13 +16,23 @@ router.get('/', function(req, res, next) {
     }
 });
 
-router.get('/homeNew', function(req, res, next) {
+router.get('/path/to/homeA', function(req, res, next) {
     if(!!req.session.loginUser){
         let data = Object.assign(req.session.loginUser, renderdata);
-        res.render('homeNew',data);
+        res.render('homeA',data);
     }
     else{
-        res.redirect('/homeNew');
+        res.redirect('/login');
+    }
+});
+
+router.get('/path/to/homeB', function(req, res, next) {
+    if(!!req.session.loginUser){
+        let data = Object.assign(req.session.loginUser, renderdata);
+        res.render('homeB',data);
+    }
+    else{
+        res.redirect('/login');
     }
 });
 

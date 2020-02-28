@@ -224,12 +224,12 @@
       "children": [
         {
           "name": "Sound from Tyre",
-          "img": "images/intro-imgs/sound.png",
+          "img": "images/intro-imgs/tire-sound.png",
           "event": "soundTyre",
           "children":
           {
             "name": "Sound from Tyre",
-            "img": "images/intro-imgs/sound.png",
+            "img": "images/intro-imgs/tire-sound.png",
             "detail": "If a sound is coming from your tires, check the inflation, tire wear, and wheel balancing.\nThe car itself making a loud noise could be due to a hole in the muffler.\nWhen making a turn, this could be due to wheel bearings wearing.",
             "faq": [
               {
@@ -248,12 +248,12 @@
       "children": [
         {
           "name": "Shaking from Tyres",
-          "img": "images/intro-imgs/car-shake.png",
+          "img": "images/intro-imgs/flat-tire.png",
           "event": "shakeTyre",
           "children":
           {
             "name": "Shaking from Tyres",
-            "img": "images/intro-imgs/car-shake.png",
+            "img": "images/intro-imgs/flat-tire.png",
             "detail": "Shaking is most commonly tied to your tires. They are probably out of balance\nIf the car shakes while braking, this could be tied to your brake rotors\nOn all cars, shaking can also be due to a brake caliper sticking. If your car has over 75,000 miles, a brake caliper service is important.",
             "faq": [
               {

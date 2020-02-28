@@ -4,32 +4,32 @@
     <meta charset="UTF-8">
     <title>Home</title>
 
-    <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
+    <link href="../../stylesheets/bootstrap.min.css" rel="stylesheet">
     <link rel="icon" href="images/favicon.ico">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="javascripts/bootstrap.min.js"></script>
+    <script src="../../javascripts/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
 
 
-    <link href="stylesheets/index.css" rel="stylesheet">
-    <link href="stylesheets/menu.css" rel="stylesheet">
-    <link href="stylesheets/homeNew.css" rel="stylesheet">
-    <link href="stylesheets/chat.css" rel="stylesheet">
+    <link href="../../stylesheets/index.css" rel="stylesheet">
+    <link href="../../stylesheets/menu.css" rel="stylesheet">
+    <link href="../../stylesheets/homeB.css" rel="stylesheet">
+    <link href="../../stylesheets/chat.css" rel="stylesheet">
 
 
-    <script src="javascripts/init.js"></script>
-    <script src="javascripts/nav.js"></script>
-    <script src="javascripts/menu.js"></script>
-    <script src="javascripts/socket.js"></script>
-    <script src="javascripts/homeNew.js"></script>
+    <script src="../../javascripts/init.js"></script>
+    <script src="../../javascripts/nav.js"></script>
+    <script src="../../javascripts/menu.js"></script>
+    <script src="../../javascripts/socketA.js"></script>
+    <script src="../../javascripts/homeB.js"></script>
 
 </head>
 <body>
 <div class="pop-up">
     <div class="pop-up-avatar">
-        <img src="images/user-default.png" id="pop-up-avatar" alt="Avatar">
+        <img src="../../images/user-default.png" id="pop-up-avatar" alt="Avatar">
         Unknown User
     </div>
     <div class="profile-more-info">
@@ -42,23 +42,23 @@
     </div>
     <div class="pop-up-other">
         <div class="help" onclick="clickHelp()">
-            <img src="images/help.png" id="help" alt=""/>
+            <img src="../../images/help.png" id="help" alt=""/>
             Help
         </div>
         <div class="contact" onclick="clickContact()">
-            <img src="images/contact.png" id="contact" alt=""/>
+            <img src="../../images/contact.png" id="contact" alt=""/>
             Contact Us
         </div>
         <div class="log-out" onclick="clickLogout()">
-            <img src="images/logout.png" id="log-out"  alt=""/>
+            <img src="../../images/logout.png" id="log-out"  alt=""/>
             Log out
         </div>
     </div>
 </div>
 <div class="index">
     <div class="top">
-        <img src="images/menu.png" alt="Menu" id="menu" onclick="clickMenu()" />
-        <img src="images/user-default.png" alt="Avatar" id="avatar" />
+        <img src="../../images/menu.png" alt="Menu" id="menu" onclick="clickMenu()" />
+        <img src="../../images/user-default.png" alt="Avatar" id="avatar" />
     </div>
     <div id="alert-placeholder">
     </div>
@@ -68,16 +68,16 @@
                     <% for(var i=0; i < data.length; i++) { %>
                         <div class="intro-first">
                             <div class="intro-first-title">
-                                <img src="images/right.png"  onclick="expandSecond(this)">
-                                <img src=<%=data[i].img%>>
+                                <img src="../../images/right.png"  onclick="expandSecond(this)">
+                                <img src=<%='../../'+data[i].img%>>
                                 <%=data[i].name%>
                             </div>
                             <div class="intro-seconds">
                                 <% for(var j=0; j < data[i].children.length; j++) { %>
                                     <div class="intro-second">
                                         <div class="intro-second-title">
-                                            <img src="images/right.png" onclick="expandThird(this)">
-                                            <img src=<%=data[i].children[j].img%>>
+                                            <img src="../../images/right.png" onclick="expandThird(this)">
+                                            <img src=<%='../../'+data[i].children[j].img%>>
                                             <%=data[i].children[j].name%>
                                         </div>
                                         <div class="intro-thirds">
@@ -107,22 +107,22 @@
     </div>
     <nav class="bottom">
         <div id="icon-0" onclick="clickNav(0)">
-            <img src="images/home-active.png"  class= "icon-que" alt=""/>
+            <img src="../../images/home-active.png"  class= "icon-que" alt=""/>
             <div class="nav-text">Home</div>
         </div>
         <div id="icon-1" onclick="clickNav(1)">
-            <img src="images/que.png" class="icon-ans" alt=""/>
+            <img src="../../images/que.png" class="icon-ans" alt=""/>
             <div class="nav-text">Q&A</div>
         </div>
         <div id="icon-2" onclick="clickNav(2)">
-            <img src="images/profile.png" class="icon-loc" alt=""/>
+            <img src="../../images/profile.png" class="icon-loc" alt=""/>
             <div class="nav-text">Profile</div>
         </div>
     </nav>
 </div>
 <div class="chatroom">
     <div class="chatroom-top">
-        <img src="images/close-sq.png" id="chatroom-leave">
+        <img src="../../images/close-sq.png" id="chatroom-leave">
         <div class="chatroom-title">chatroom</div>
     </div>
     <div class="chatroom-body">
