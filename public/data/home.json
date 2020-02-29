@@ -149,23 +149,6 @@
               }
             ]
           }
-        },
-        {
-          "name": "Seatbelt Warning",
-          "img": "images/intro-imgs/Seatbelt-Warning.png",
-          "event": "seatBeltWarning",
-          "children":
-          {
-            "name":"Seatbelt Warning",
-            "img": "images/intro-imgs/Seatbelt-Warning.png",
-            "detail": "This light turns on when a seatbelt is disconnected.",
-            "faq": [
-              {
-                "question": "What if my seatbelt light is on but I'm buckled in?",
-                "answer":"The problem may lie in a faulty seatbelt sensor."
-              }
-            ]
-          }
         }
       ]
     },
