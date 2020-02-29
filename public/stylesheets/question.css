@@ -145,8 +145,9 @@ a.active.nav-link {
 
 #submit-question{
     display: block;
-    height:5vh;
-    width: 90vw;
+    height:6vh;
+    width: 60vw;
+    margin-left: 15vw;
     margin-top: 2vh;
     border:2px solid;
     font-size: xx-large;

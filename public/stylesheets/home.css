@@ -5,7 +5,6 @@
     background-color: white;
     height:8vh;
     width:90vw;
-    /*margin:2vh 0;*/
     font-size: xx-large;
     text-align:center;
     line-height:8vh;
@@ -24,8 +23,7 @@
     background-color: white;
     height:6vh;
     width:90vw;
-    margin-bottom: 1vh;
-    margin-top: 1vh;
+    margin-top: 2vh;
     font-size: xx-large;
     text-align:left;
     line-height:5vh;
@@ -68,7 +66,7 @@
 }
 
 .second-level input{
-    margin-top: 1vh;
+    margin-top: 2vh;
     height:5vh;
     width:100%;
     font-size: x-large;
@@ -97,5 +95,5 @@
 }
 
 #home-search-1{
-    margin-top:3vh;
+    margin-top:4vh;
 }
