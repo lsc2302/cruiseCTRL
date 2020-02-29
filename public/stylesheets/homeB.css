@@ -1,11 +1,6 @@
-/*#middle-home{*/
-/*    height:100%;*/
-/*    width:100%;*/
-/*}*/
-
 .first-level{
     max-width: 1000px;
-    height:80vh;
+    /*height:80vh;*/
     width:100vw;
     overflow: scroll;
 }
