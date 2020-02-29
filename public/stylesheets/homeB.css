@@ -1,8 +1,10 @@
 .first-level{
+    position:fixed;
+    top:10vh;
+    bottom:10vh;
     max-width: 1000px;
-    height:100%;
     width:100vw;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 .intro-first{
