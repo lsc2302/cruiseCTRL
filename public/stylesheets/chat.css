@@ -22,7 +22,7 @@
 }
 
 .chatroom .chatroom-body{
-    flex:80;
+    flex:75;
     width:90%;
     border:2px dashed;
     margin-top: 2.5vh;
@@ -37,7 +37,7 @@
 }
 
 .chatroom .chatroom-bottom{
-    flex:10;
+    flex:15;
     width:90vw;
     margin-left: 5vw;
 }

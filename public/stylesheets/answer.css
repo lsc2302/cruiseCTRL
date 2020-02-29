@@ -4,12 +4,13 @@
 }
 
 .card{
-    margin-bottom:2vh;
+    margin-top:3vh;
+    margin-bottom:3vh;
 }
 
 .card-footer{
-    height:3vh;
-    font-size: small;
+    height:5vh;
+    font-size: xx-large;
 }
 .questioner-avatar, .questioner-name{
     display: inline-block;
@@ -73,8 +74,8 @@
 }
 
 #card-footer-detail{
-    height:3vh;
-    font-size: large;
+    height:5vh;
+    font-size: xx-large;
 }
 #questioner-avatar-detail, #questioner-name-detail{
     display: inline-block;

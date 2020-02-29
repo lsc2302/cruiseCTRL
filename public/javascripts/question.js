@@ -154,7 +154,7 @@ $(document).ready(function() {
         }
         let notifications = parseInt(sessionStorage.getItem('notifications'));
         let html='';
-        let posts = 4;
+        let posts = 3;
         for(let i=notifications-1;i>=0;i--){
             if(sessionStorage.getItem('notif'+(i+1).toString()+'username')&&posts>=1){
                 html=html+
@@ -194,7 +194,11 @@ $(document).ready(function() {
 function clickCard(i){
     $('.answer-notification-detail').toggle().html(
         `
-            <img src="images/back.png" id="answer-back"/>
+            <img src="images/back.png" id="answer-back" 
+            onclick="
+            $('.answer-notification-detail').toggle().html('');
+            $('.index').css('opacity','100%').prop('disabled', false);
+            "/>
             <div class="card" id="card-detail">
                 <div class="card-header" id="card-header-detail">
                     <div class="questioner-avatar" id="questioner-avatar-detail">
@@ -220,7 +224,7 @@ function clickCard(i){
             </div>
         `
     );
-    $('.index').css('opacity','0%');
+    $('.index').css('opacity','0%').prop( "disabled", true );
 }
 
 function clickAnswerQuestion(i) {

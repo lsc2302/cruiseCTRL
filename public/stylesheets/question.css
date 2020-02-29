@@ -145,20 +145,14 @@ a.active.nav-link {
 
 #submit-question{
     display: block;
-    position:absolute;
     height:5vh;
     width: 90vw;
-    top:80vh;
+    margin-top: 2vh;
     border:2px solid;
     font-size: xx-large;
     font-weight:700;
     background-color:#ee4723;
     color:white;
-}
-
-#myTabContent{
-    height:60vh;
-    overflow-y: scroll;
 }
 
 
