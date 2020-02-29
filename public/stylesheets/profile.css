@@ -1,5 +1,6 @@
 .profile{
     padding-top: 1vh;
+    font-size: xx-large;
 }
 
 .profile .card{
@@ -9,7 +10,6 @@
     vertical-align: center;
     line-height: 5vh;
     margin-top:2vh;
-    font-size: x-large;
     border: 2px dashed #ee4723;
 }
 

@@ -41,7 +41,7 @@
                 <div class="input-group mb-3" id="home-search-1">
                     <input type="text" class="search form-control" placeholder="Search..." onkeydown="searchIntro(event)" >
                     <% for(var i=0; i < data.length; i++) { %>
-                    <div class="intro-items">
+                    <div class="intro-item">
                         <div class="intro-first" onclick="clickHome('<%=data[i].event%>')">
                             <img src=<%='../../' + data[i].img%>>
                             <%=data[i].name%>

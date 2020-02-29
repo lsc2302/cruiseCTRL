@@ -1,8 +1,11 @@
+.intro-item{
+    margin-top:3vh;
+}
 .intro-first{
     background-color: white;
     height:8vh;
     width:90vw;
-    margin:1.5vh 0;
+    /*margin:2vh 0;*/
     font-size: xx-large;
     text-align:center;
     line-height:8vh;

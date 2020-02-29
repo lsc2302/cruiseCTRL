@@ -1,9 +1,9 @@
 #middle-question{
-    height:77vh;
+    height:100%;
     margin-top: 3vh;
     margin-left:5vw;
     margin-right: 5vw;
-    font-size: x-large;
+    font-size: xx-large;
 }
 
 .part{
@@ -16,7 +16,7 @@
 .upload-box{
     width:100%;
     margin-bottom: 1vh;
-    font-size: x-large;
+    font-size: xx-large;
 }
 
 #upload{
@@ -93,8 +93,8 @@ a.active.nav-link {
 
 .question-more-info{
     color:#ee4723;
-    position:absolute;
-    bottom: 20vh;
+    /*position:absolute;*/
+    /*bottom: 20vh;*/
     font-size: xx-large;
 }
 
@@ -144,6 +144,7 @@ a.active.nav-link {
 }
 
 #submit-question{
+    display: block;
     position:absolute;
     height:5vh;
     width: 90vw;
@@ -156,7 +157,7 @@ a.active.nav-link {
 }
 
 #myTabContent{
-    height:55vh;
+    height:60vh;
     overflow-y: scroll;
 }
 
