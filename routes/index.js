@@ -46,87 +46,6 @@ router.get('/lights',function(req,res){
     }
 });
 
-router.get('/smell',function(req,res){
-    if(!!req.session.loginUser){
-        let data = Object.assign(req.session.loginUser, renderdata.data[1]);
-        res.render('second',data);
-    }
-    else{
-        res.redirect('/login');
-    }
-});
-
-router.get('/rottenEgg',function(req,res){
-    if(!!req.session.loginUser){
-        let data = Object.assign(req.session.loginUser, renderdata.data[1].children[0].children);
-        res.render('third',data);
-    }
-    else{
-        res.redirect('/login');
-    }
-});
-
-router.get('/smoke',function(req,res){
-    if(!!req.session.loginUser){
-        let data = Object.assign(req.session.loginUser, renderdata.data[2]);
-
-        res.render('second',data);
-    }
-    else{
-        res.redirect('/login');
-    }
-});
-
-router.get('/blackSmoke',function(req,res){
-    if(!!req.session.loginUser){
-        let data = Object.assign(req.session.loginUser, renderdata.data[2].children[0].children);
-        res.render('third',data);
-    }
-    else{
-        res.redirect('/login');
-    }
-});
-
-router.get('/sound',function(req,res){
-    if(!!req.session.loginUser){
-        let data = Object.assign(req.session.loginUser, renderdata.data[3]);
-        res.render('second',data);
-    }
-    else{
-        res.redirect('/login');
-    }
-});
-
-router.get('/soundTyre',function(req,res){
-    if(!!req.session.loginUser){
-        let data = Object.assign(req.session.loginUser, renderdata.data[3].children[0].children);
-        res.render('third',data);
-    }
-    else{
-        res.redirect('/login');
-    }
-});
-
-router.get('/shake',function(req,res){
-    if(!!req.session.loginUser){
-        let data = Object.assign(req.session.loginUser, renderdata.data[4]);
-        res.render('second',data);
-    }
-    else{
-        res.redirect('/login');
-    }
-});
-
-router.get('/shakeTyre',function(req,res){
-    if(!!req.session.loginUser){
-        let data = Object.assign(req.session.loginUser, renderdata.data[4].children[0].children);
-        res.render('third',data);
-    }
-    else{
-        res.redirect('/login');
-    }
-});
-
 router.get('/antilockWarning',function(req,res){
     if(!!req.session.loginUser){
         let data = Object.assign(req.session.loginUser, renderdata.data[0].children[0].children);
@@ -197,9 +116,211 @@ router.get('/lowWiperFluidWarning',function(req,res){
     }
 });
 
-router.get('/seatBeltWarning',function(req,res){
+router.get('/temperatureWarning',function(req,res){
     if(!!req.session.loginUser){
         let data = Object.assign(req.session.loginUser, renderdata.data[0].children[7].children);
+        res.render('third',data);
+    }
+    else{
+        res.redirect('/login');
+    }
+});
+
+router.get('/tirePressureWarning',function(req,res){
+    if(!!req.session.loginUser){
+        let data = Object.assign(req.session.loginUser, renderdata.data[0].children[8].children);
+        res.render('third',data);
+    }
+    else{
+        res.redirect('/login');
+    }
+});
+
+router.get('/tractionControlIndicator',function(req,res){
+    if(!!req.session.loginUser){
+        let data = Object.assign(req.session.loginUser, renderdata.data[0].children[9].children);
+        res.render('third',data);
+    }
+    else{
+        res.redirect('/login');
+    }
+});
+
+
+router.get('/smell',function(req,res){
+    if(!!req.session.loginUser){
+        let data = Object.assign(req.session.loginUser, renderdata.data[1]);
+        res.render('second',data);
+    }
+    else{
+        res.redirect('/login');
+    }
+});
+
+router.get('/rottenEgg',function(req,res){
+    if(!!req.session.loginUser){
+        let data = Object.assign(req.session.loginUser, renderdata.data[1].children[0].children);
+        res.render('third',data);
+    }
+    else{
+        res.redirect('/login');
+    }
+});
+
+router.get('/gas',function(req,res){
+    if(!!req.session.loginUser){
+        let data = Object.assign(req.session.loginUser, renderdata.data[1].children[1].children);
+        res.render('third',data);
+    }
+    else{
+        res.redirect('/login');
+    }
+});
+
+router.get('/burnt',function(req,res){
+    if(!!req.session.loginUser){
+        let data = Object.assign(req.session.loginUser, renderdata.data[1].children[2].children);
+        res.render('third',data);
+    }
+    else{
+        res.redirect('/login');
+    }
+});
+
+router.get('/mold',function(req,res){
+    if(!!req.session.loginUser){
+        let data = Object.assign(req.session.loginUser, renderdata.data[1].children[3].children);
+        res.render('third',data);
+    }
+    else{
+        res.redirect('/login');
+    }
+});
+
+router.get('/syrup',function(req,res){
+    if(!!req.session.loginUser){
+        let data = Object.assign(req.session.loginUser, renderdata.data[1].children[4].children);
+        res.render('third',data);
+    }
+    else{
+        res.redirect('/login');
+    }
+});
+
+router.get('/hotOil',function(req,res){
+    if(!!req.session.loginUser){
+        let data = Object.assign(req.session.loginUser, renderdata.data[1].children[5].children);
+        res.render('third',data);
+    }
+    else{
+        res.redirect('/login');
+    }
+});
+
+router.get('/smoke',function(req,res){
+    if(!!req.session.loginUser){
+        let data = Object.assign(req.session.loginUser, renderdata.data[2]);
+
+        res.render('second',data);
+    }
+    else{
+        res.redirect('/login');
+    }
+});
+
+router.get('/blackSmoke',function(req,res){
+    if(!!req.session.loginUser){
+        let data = Object.assign(req.session.loginUser, renderdata.data[2].children[0].children);
+        res.render('third',data);
+    }
+    else{
+        res.redirect('/login');
+    }
+});
+
+router.get('/sound',function(req,res){
+    if(!!req.session.loginUser){
+        let data = Object.assign(req.session.loginUser, renderdata.data[3]);
+        res.render('second',data);
+    }
+    else{
+        res.redirect('/login');
+    }
+});
+
+router.get('/clunking',function(req,res){
+    if(!!req.session.loginUser){
+        let data = Object.assign(req.session.loginUser, renderdata.data[3].children[0].children);
+        res.render('third',data);
+    }
+    else{
+        res.redirect('/login');
+    }
+});
+
+router.get('/flapping',function(req,res){
+    if(!!req.session.loginUser){
+        let data = Object.assign(req.session.loginUser, renderdata.data[3].children[1].children);
+        res.render('third',data);
+    }
+    else{
+        res.redirect('/login');
+    }
+});
+
+router.get('/grind',function(req,res){
+    if(!!req.session.loginUser){
+        let data = Object.assign(req.session.loginUser, renderdata.data[3].children[2].children);
+        res.render('third',data);
+    }
+    else{
+        res.redirect('/login');
+    }
+});
+
+router.get('/sizzling',function(req,res){
+    if(!!req.session.loginUser){
+        let data = Object.assign(req.session.loginUser, renderdata.data[3].children[3].children);
+        res.render('third',data);
+    }
+    else{
+        res.redirect('/login');
+    }
+});
+
+router.get('/knocking',function(req,res){
+    if(!!req.session.loginUser){
+        let data = Object.assign(req.session.loginUser, renderdata.data[3].children[4].children);
+        res.render('third',data);
+    }
+    else{
+        res.redirect('/login');
+    }
+});
+
+router.get('/bang',function(req,res){
+    if(!!req.session.loginUser){
+        let data = Object.assign(req.session.loginUser, renderdata.data[3].children[5].children);
+        res.render('third',data);
+    }
+    else{
+        res.redirect('/login');
+    }
+});
+
+router.get('/shake',function(req,res){
+    if(!!req.session.loginUser){
+        let data = Object.assign(req.session.loginUser, renderdata.data[4]);
+        res.render('second',data);
+    }
+    else{
+        res.redirect('/login');
+    }
+});
+
+router.get('/shakeTyre',function(req,res){
+    if(!!req.session.loginUser){
+        let data = Object.assign(req.session.loginUser, renderdata.data[4].children[0].children);
         res.render('third',data);
     }
     else{

@@ -1,12 +1,9 @@
-.intro-item{
-    margin-top:3vh;
-}
 .intro-first{
     background-color: white;
     height:8vh;
     width:90vw;
     font-size: xx-large;
-    text-align:center;
+    text-align:left;
     line-height:8vh;
     border-radius: 50px;
     border:2px solid
@@ -31,6 +28,15 @@
     border:2px solid
 }
 
+.intro-item{
+    margin-top:3vh;
+}
+
+.intro-items{
+    height:66vh;
+    overflow: scroll;
+}
+
 .intro-second img{
     height:5vh;
     width:5vh;
@@ -38,16 +44,18 @@
     margin-left: 3vh;
 }
 
-.intro-third img{
-    height:10vh;
-    width:10vh;
-    margin-right:5vh;
-    margin-left: 3vh;
-}
-
-.intro-details{
+.intro-third{
+    height:71vh;
     margin-top: 2vh;
     font-size: x-large;
+    overflow-y: auto;
+}
+
+.intro-third img{
+    height:7vh;
+    width:7vh;
+    margin-right:3vh;
+    margin-left: 3vh;
 }
 
 #home-intro{

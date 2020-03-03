@@ -37,24 +37,21 @@
                     <img src="images/back.png">
                     Back
                 </div>
-                <div class="input-group mb-3">
-                    <div class="intro-details">
-                        <div class="intro-third" style="font-size:50px">
-                            <img src=<%=img%>>
-                            <strong><%=name%></strong>
-                        </div>
-                        <div class="intro-detail">
-                            <%-detail.replace('\n', '<br>')%>
-                        </div>
-                        <div>
-                            <h4 style="margin-top: 2vh;">FAQ:</h4>
-                        </div>
-                        <% for(var i=0; i < faq.length; i++) { %>
-                        <div><strong>q:</strong><%-faq[i].question.replace('\n', '<br>')%></div>
-                        <div><strong>a:</strong><%-faq[i].answer.replace('\n', '<br>')%></div>
-                        <br />
-                        <% } %>
+                <div class="intro-third" style="font-size:50px">
+                    <img src=<%=img%>>
+                    <strong><%=name%></strong>
+                    <div class="intro-detail">
+                        <%-detail.replace('\n', '<br>')%>
                     </div>
+                    <div>
+                        <strong style="margin-top: 2vh;">FAQ:</strong>
+                    </div>
+                    <% for(var i=0; i < faq.length; i++) { %>
+                    <div style="margin: 1vh 0;">
+                    <div><strong>q:</strong><%-faq[i].question.replace('\n', '<br>')%></div>
+                    <div><strong>a:</strong><%-faq[i].answer.replace('\n', '<br>')%></div>
+                    </div>
+                    <% } %>
                 </div>
             </div>
     </div>

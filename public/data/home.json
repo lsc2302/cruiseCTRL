@@ -19,8 +19,8 @@
                   "question": "Is it safe to drive with this light on?",
                   "answer": "In most cases, yes.If the light remains on, it would be safe to get an inspection."
                 },{
-                  "question": "What to do if my Brake System lights are also on?",
-                  "answer": "Stop the vehicle and call for a tow."
+                  "question": "What to do if my Brake System lights are on?",
+                  "answer": "Drive cautiously. If you need to make an immediate stop while travelling at medium to high speeds, your ABS may or may not assist you in stopping or maintaining control of your vehicle during the stop.You may want to get this problem resolved as soon as possible, since other safety systems in your vehicle may depend on your ABS system."
                 },{
                   "question": "What causes this?",
                   "answer": "This could be your emergency brake, loss of brake fluid/pressure, or bad hydraulic valves."
@@ -44,6 +44,9 @@
               },{
                 "question": "Is it safe to drive with this light on?",
                 "answer": "This could be dangerous."
+              },{
+                "question": "What should I do if I see this light on?",
+                "answer": "If you have no experience in troubleshooting your vehicle, stop at a safe location and call for help immediately.<br />Here are a few steps you can take to troubleshoot your battery:<br />Turn off or disconnect all electricity dependent components. This includes: Air conditioning and heating system, Stereo, Interior lights, Heated seats, and Charging accessories. You do not have to turn off your headlights. If the battery light is still on, this means there is enough battery left to continue driving, but only for a short amount of time. You should get this problem checked as soon as you can, if you want to continue driving.<br />Stop your vehicle. If you notice the engine temperature getting warming or overheating, stop your vehicle in a safe location to prevent any damage that may occur to your engine. Try starting your vehicle, if the battery light turns on again, do not drive. Shut off the engine and find an expert."
               }
             ]
           }
@@ -65,6 +68,9 @@
               {
                 "question": "What causes this?",
                 "answer":"Faulty MAF sensor, gas cap, faulty battery, contaminated air filter, etc."
+              },{
+                "question": "What to do when your Check Engine light turns on?",
+                "answer":"Check for other dashboard lights that may be on such as low oil pressure or overheating. Under these conditions, you should pull over to a safe place, shut off the engine, and call for an expert.<br/>Check if the gas cap is correctly tightened. This can often solve the problem but takes several trips before the light turns off.<br/>If you notice any changes in your vehicle’s performance such as a loss of power, you should reduce your speed and reduce the load on the engine."
               }
           ]
           }
@@ -85,6 +91,9 @@
               },{
                 "question": "What causes this?",
                 "answer":"It could mean that hydraulic pressure has been lost or that the fluid level in the master cylinder is dangerously low. This could be due to a leak. A leak will not allow you to stop your car safely."
+              },{
+                "question": "What to do when your Brake light turns on?",
+                "answer":"Check to see if your parking/emergency brake is correctly disengaged. Most vehicles will turn on its brake system warning light if a driver forgets to disengage their parking/emergency brake. <br/>If this does not solve the issue, arrange to have your vehicle safely transported to an expert as soon as possible.If the light turns on while you are driving, slowly brake and stop at a safe location. Once you are stopped call for assistance to have your vehicle transported to a repair shop."
               }
             ]
           }
@@ -100,11 +109,11 @@
             "detail": "This is a warning that there is not enough oil pressure or that your oil levels are too low.",
             "faq": [
               {
-                "question": "Is it safe to drive with this light on?",
-                "answer":"No, this could damage the engine. Stop driving once you notice this light."
-              },{
                 "question": "Can I just add more oil?",
                 "answer":"This might be a temporary fix, but burning oil or oil leaks might still be happening."
+              },{
+                "question": "What to do when your Engine Oil Warning light turns on?",
+                "answer":"If the light is yellow, plan on getting your oil changed soon.<br/>If the light is red, safely stop operation of the vehicle as soon as possible, and turn off the engine.It is dangerous to continue driving.<br/>If you do not have experience checking your oil levels, call for assistance immediately.If you have experience checking your oil, check to see if it is low. You will need to add more oil if this is the case. <br/>If you are unable to add more oil, call for assistance.If you’ve added more oil and the light is still on, call for assistance immediately. It is dangerous to drive."
               }
             ]
           }
@@ -117,11 +126,11 @@
           {
             "name": "Low Fuel Warning",
             "img": "images/intro-imgs/Low-Fuel-Light.png",
-            "detail": "This is a common light letting you know you need more fuel. Some cars will show you your reminaing range in miles or kilometers.",
+            "detail": "This is a common light letting you know you need more fuel. Some cars will show you your remaining range in miles or kilometers.",
             "faq": [
               {
                 "question": "Is it safe to drive with this light on?",
-                "answer":"For a little while, yes. Avoid long journeys. Try to find a gas station as soon as you can."
+                "answer":"For a little while, yes. Avoid long journeys. Try to find a gas station as soon as you can. <br/>Turn off your Air conditioning as the system operates on gas. Doing this will help you save fuel in most situations. <br/>In addition, try to reduce your braking and refrain from accelerating rapidly if you do not need to. <br/>If you do not think you can make it to a gas station before your fuel runs out, stop your car at a safe location and call for assistance."
               },{
                 "question": "How much fuel is left?",
                 "answer":"This varies with make and model."
@@ -145,7 +154,71 @@
             "faq": [
               {
                 "question": "Is it safe to drive with this light on?",
-                "answer":"Yes, but top off the washer fluid as soon as you can."
+                "answer":"It's not recommended to do that."
+              },{
+                "question": "What to do when your Low Wiper Fluid light turns on?",
+                "answer":"Adding/replacing the fluid is recommended as it prevents seals in the fluid system from drying up and leaking.<br/> Usually when a driver needs to use their wipers, it is because they really need to use them. It is recommended to keep your wiper fluid as full as possible"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Temperature Warning",
+          "img": "images/intro-imgs/Temperature-Warning.png",
+          "event":"temperatureWarning",
+          "children":
+          {
+            "name":"Temperature Warning",
+            "img": "images/intro-imgs/Temperature-Warning.png",
+            "detail": "The temperature warning light indicates that your engine is overheating or running too hot and is causing the cooling system to heat up. This light will show as blue if the engine is not warmed up yet and is below its optimal temperature.",
+            "faq": [
+              {
+                "question": "Is it safe to drive with this light on?",
+                "answer":"It's not recommended to do that."
+              },
+              {
+                "question": "What to do when your Temperature Warning light turns on?",
+                "answer":"If the light is blue, you can still operate your vehicle normally. Though it is best to wait till it disappears. The blue light should disappear once your engine reaches its optimal temperature. The light will usually be blue if it is cold outside.<br/>If the light is blinking, decelerate your vehicle. <br/>If the blinking light turns off, you can drive your vehicle normally. <br/>If the problem persists, call for assistance as soon as possible.If the light is illuminated for longer than a few seconds, your engine may overheat. Safely stop operation of the vehicle and call for assistance as soon as possible.<br/>If the light is blinking alternately, call for assistance as soon as possible."
+              }
+            ]
+          }
+        },
+        {
+          "name": "Tire Pressure Warning",
+          "img": "images/intro-imgs/Tire-Pressure-Warning.png",
+          "event":"tirePressureWarning",
+          "children":
+          {
+            "name":"Tire Pressure Warning",
+            "img": "images/intro-imgs/Tire-Pressure-Warning.png",
+            "detail": "The tire pressure light indicates that one of your tires has dangerously low pressure. Depending on your vehicle, each tire needs a certain amount of pressure for optimal operation. Tires affect the speed, acceleration, cornering, and stopping of your vehicle. This requires immediate attention.",
+            "faq": [
+              {
+                "question": "Is it safe to drive with this light on?",
+                "answer":"It's not recommended to do that."
+              },{
+                "question": "What to do when your Tire Pressure Warning light turns on?",
+                "answer":"Safely stop the vehicle and check if you have a flat tire.<br/>If one of your tires is flat or punctured, you will need to get it changed. If you do not know how to change your tire, or do not have the means to do so, call for help immediately.If you are sure that you do not have a flat or punctured tire, check if any of your tires are dangerously low in pressure. <br/>If you do not visually see any issues, drive safely to the nearest tire shop, or repair shop to fill up your tires. Gas stations will usually have a self-service station that allows you to fill up your tires for a small price. Make sure to check all your tires.<br/> If you do not know how to do this yourself, calling for assistance or going to a service shop is highly recommended."
+              }
+            ]
+          }
+        },
+        {
+          "name": "Traction Control Indicator",
+          "img": "images/intro-imgs/Traction-Control-Indicator.png",
+          "event":"tractionControlIndicator",
+          "children":
+          {
+            "name":"Traction Control Indicator",
+            "img": "images/intro-imgs/Traction-Control-Indicator.png",
+            "detail": "The traction control system (TCS) is responsible for helping your vehicle maintain its grip in situations where your tires may slip. The TCS works together with your anti-lock braking system(ABS) to provide safety.",
+            "faq": [
+              {
+                "question": "Is it safe to drive with this light on?",
+                "answer":"It's not recommended to do that."
+              },{
+                "question": "What to do when your Traction Control light turns on?",
+                "answer":"If this light is on, it usually means that the TCS is in operation. It may also blink while working. <br/>If you are in normal, non-slippery driving conditions and the light illuminates, there may be a problem with the system. This usually occurs with a faulty sensor used by the TCS or ABS systems. When this occurs, stop at a safe location, turn off your vehicle, and restart your vehicle. If the light is still illuminated, call an expert for a diagnosis and repair when you can. You will be able to drive, but please proceed cautiously. <br/>If both the TCS and ABS lights are illuminated along with your brake system lights, call for help immediately."
               }
             ]
           }
@@ -165,15 +238,102 @@
             {
               "name": "Rotten eggs Smell",
               "img": "images/intro-imgs/egg.png",
-              "detail": "Rotten eggs? Could be your catalytic converter\nHot oil? Leaky crankshaft or valve cover. The valve cover could be accompanied by smoke coming from exhaust.\nSyrup? This could be a leaky radiator or heating system\nGasoline? It could mean a leaky vent hose or fuel injection line.\nLocker room? This could be mold and mildew in your AC evaporator.\nBurned carpet? Check the brakes!\nBurned rubber? Check the engine hoses and belts.",
+              "detail": "If your vehicle smells of rotten eggs, it is probably coming from your transmission. Your transmission uses oil containing sulfur, which is what produces the smell. The smell of rotten eggs can also mean you have a problem with your catalytic converter. ",
               "faq": [
                 {
                   "question": "Should I drive after I smell some rotten-eggs like odor?",
                   "answer":"We suggest you don't do that."
+                },{
+                  "question": "What to do when you smell some rotten-eggs like odor?",
+                  "answer":"Go to your nearest repair shop as soon as you can."
                 }
               ]
             }
+        }, {
+          "name": "Gasoline Smell",
+          "img": "images/intro-imgs/gas.png",
+          "event": "gas",
+          "children":
+          {
+            "name": "Gasoline Smell",
+            "img": "images/intro-imgs/gas.png",
+            "detail": "If you smell any type of gasoline from the inside of your car, it usually means something is wrong with your fuel-tank injection line or vent hose.",
+            "faq": [
+              {
+                "question": "What to do when you smell some gasoline scent?",
+                "answer":"Go to your nearest repair shop as soon as you can."
+              }
+            ]
+          }
+        },{
+          "name": "Burnt Smell",
+          "img": "images/intro-imgs/burnt.png",
+          "event": "burnt",
+          "children":
+          {
+            "name": "Burnt Smell",
+            "img": "images/intro-imgs/burnt.png",
+            "detail": "The smell of burning paper is most likely coming from your clutch, which is in charge of helping your car shift gears.<br/>A burnt carpet smell usually arises when the brake pads are overheated.",
+            "faq": [
+              {
+                "question": "What to do when you smell some burnt scent?",
+                "answer":"Go to your nearest repair shop as soon as you can."
+              }
+            ]
+          }
+        },
+        {
+          "name": "Mold Smell",
+          "img": "images/intro-imgs/mold.png",
+          "event": "mold",
+          "children":
+          {
+            "name": "Mold Smell",
+            "img": "images/intro-imgs/mold.png",
+            "detail": "If your vehicle smells moldy, it probably is. There may be mildew growing inside your air conditioning system from moisture.",
+            "faq": [
+              {
+                "question": "What to do when you smell some mold scent?",
+                "answer":"A possible solution is to turn your air conditioning off and run the fan on high to dry the system out. Go to the nearest repair shop or contact an expert for assistance if this does not solve the issue."
+              }
+            ]
+          }
+        },
+        {
+          "name": "Maple Syrup Smell",
+          "img": "images/intro-imgs/syrup.png",
+          "event": "syrup",
+          "children":
+          {
+            "name": "Maple Syrup Smell",
+            "img": "images/intro-imgs/syrup.png",
+            "detail": "If your vehicle smells sweet after the engine has been running, you may have a coolant leak. This may be coming from the radiator, heater, failed intake gasket or cylinder head. If it seems like the odor is coming from the glove/passenger compartment, the issue may be from your heater.",
+            "faq": [
+              {
+                "question": "What to do when you smell some mold scent?",
+                "answer":"Go to the nearest repair shop or contact an expert for assistance if you are unsure of what to do."
+              }
+            ]
+          }
+        },
+        {
+          "name": "Hot Oil Smell",
+          "img": "images/intro-imgs/hot-oil.png",
+          "event": "hotOil",
+          "children":
+          {
+            "name": "Hot Oil Smell",
+            "img": "images/intro-imgs/hot-oil.png",
+            "detail": "If you smell hot oil, there may be an oil leak.",
+            "faq": [
+              {
+                "question": "What to do when you smell some mold scent?",
+                "answer":"Go to the nearest repair shop or contact an expert for assistance if you are unsure of what to do."
+              }
+            ]
+          }
         }
+
       ]
     },
     {
@@ -206,18 +366,98 @@
       "event": "sound",
       "children": [
         {
-          "name": "Sound from Tyre",
-          "img": "images/intro-imgs/tire-sound.png",
-          "event": "soundTyre",
+          "name": "Clunking",
+          "img": "images/intro-imgs/sound.png",
+          "event": "clunking",
           "children":
           {
-            "name": "Sound from Tyre",
-            "img": "images/intro-imgs/tire-sound.png",
-            "detail": "If a sound is coming from your tires, check the inflation, tire wear, and wheel balancing.\nThe car itself making a loud noise could be due to a hole in the muffler.\nWhen making a turn, this could be due to wheel bearings wearing.",
+            "name": "Clunking",
+            "img": "images/intro-imgs/sound.png",
+            "detail": "If you hear clunking while braking, your brake caliper may be damaged, broken, or improperly installed. ",
             "faq": [
               {
-                "question": "Should I still drive after I hear sound from tire?",
-                "answer":"We suggest you don't do that."
+                "question": "What to do if I hear clunking?",
+                "answer":"You should call for assistance immediately and refrain from operating your vehicle."
+              }
+            ]
+          }
+        },{
+          "name": "Flapping",
+          "img": "images/intro-imgs/sound.png",
+          "event": "flapping",
+          "children":
+          {
+            "name": "Flapping",
+            "img": "images/intro-imgs/sound.png",
+            "detail": "Flapping noises may come from a fan or a belt.",
+            "faq": [
+              {
+                "question": "What to do if I hear flapping?",
+                "answer":"You should call for assistance immediately."
+              }
+            ]
+          }
+        },{
+          "name": "Grinding",
+          "img": "images/intro-imgs/sound.png",
+          "event": "grinding",
+          "children":
+          {
+            "name": "Grinding",
+            "img": "images/intro-imgs/sound.png",
+            "detail": "If you hear grinding while speeding up or slowing down, your transmission might have issues.",
+            "faq": [
+              {
+                "question": "What to do if I hear grinding?",
+                "answer":"You should call for assistance immediately."
+              }
+            ]
+          }
+        },{
+          "name": "Sizzling/Hissing",
+          "img": "images/intro-imgs/sound.png",
+          "event": "sizzling",
+          "children":
+          {
+            "name": "Sizzling/Hissing",
+            "img": "images/intro-imgs/sound.png",
+            "detail": "Sizzling or hissing may signify a leak of oil or coolant.",
+            "faq": [
+              {
+                "question": "What to do if I hear sizzling?",
+                "answer":"You should call for assistance immediately."
+              }
+            ]
+          }
+        },{
+          "name": "Knocking",
+          "img": "images/intro-imgs/sound.png",
+          "event": "knocking",
+          "children":
+          {
+            "name": "Knocking",
+            "img": "images/intro-imgs/sound.png",
+            "detail": "A knocking sound will usually come from your engine compartment. Make sure that you are using the correct grade of fuel and the correct type of oil for your vehicle.",
+            "faq": [
+              {
+                "question": "What to do if I hear knocking?",
+                "answer":"You should call for assistance immediately."
+              }
+            ]
+          }
+        },{
+          "name": "Bang",
+          "img": "images/intro-imgs/sound.png",
+          "event": "bang",
+          "children":
+          {
+            "name": "Bang",
+            "img": "images/intro-imgs/sound.png",
+            "detail": "If you hear a loud bang from the back of your car, this may be caused by a backfire. This occurs when the mixture between the air and your fuel is too rich. There may also be an issue with your catalytic converter.",
+            "faq": [
+              {
+                "question": "What to do if I hear bang?",
+                "answer":"You should call for assistance immediately."
               }
             ]
           }
