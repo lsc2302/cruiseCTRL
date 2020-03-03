@@ -146,6 +146,55 @@ router.get('/tractionControlIndicator',function(req,res){
     }
 });
 
+router.get('/cruiseControlIndicator',function(req,res){
+    if(!!req.session.loginUser){
+        let data = Object.assign(req.session.loginUser, renderdata.data[0].children[10].children);
+        res.render('third',data);
+    }
+    else{
+        res.redirect('/login');
+    }
+});
+
+router.get('/ignitionSwitchWarning',function(req,res){
+    if(!!req.session.loginUser){
+        let data = Object.assign(req.session.loginUser, renderdata.data[0].children[11].children);
+        res.render('third',data);
+    }
+    else{
+        res.redirect('/login');
+    }
+});
+
+router.get('/steeringLockWarning',function(req,res){
+    if(!!req.session.loginUser){
+        let data = Object.assign(req.session.loginUser, renderdata.data[0].children[12].children);
+        res.render('third',data);
+    }
+    else{
+        res.redirect('/login');
+    }
+});
+
+router.get('/doorOpenWarning',function(req,res){
+    if(!!req.session.loginUser){
+        let data = Object.assign(req.session.loginUser, renderdata.data[0].children[13].children);
+        res.render('third',data);
+    }
+    else{
+        res.redirect('/login');
+    }
+});
+
+router.get('/seatBeltWarning',function(req,res){
+    if(!!req.session.loginUser){
+        let data = Object.assign(req.session.loginUser, renderdata.data[0].children[14].children);
+        res.render('third',data);
+    }
+    else{
+        res.redirect('/login');
+    }
+});
 
 router.get('/smell',function(req,res){
     if(!!req.session.loginUser){

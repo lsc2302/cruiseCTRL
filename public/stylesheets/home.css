@@ -34,7 +34,7 @@
 
 .intro-items{
     height:66vh;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 .intro-second img{

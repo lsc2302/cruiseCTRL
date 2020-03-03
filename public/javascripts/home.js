@@ -2,23 +2,21 @@ function clickHome(path){
     if(path==='')return;
     window.location.href = '/'+path;
 }
-function clickHomeBack2(){
+function clickHomeBack(){
     let i=-1;
     while(document.referrer=== window.location.host){
         i-=1;
     }
     window.history.go(i);
 }
-function clickHomeBack1(){
-    window.location.href = '/';
-}
 
 function searchIntro(e){
     if(e.which===13) {
         let paths = ['lights','smell','rottenEgg','smoke','blackSmoke','sound',
                     'soundTyre','shake','shakeTyre','antilockWarning','batteryLow','checkEngine','brakeSystemWarning',
-                    'lowOilWarning','lowFuelWarning','lowWiperFluidWarning',
-                    'seatBeltWarning',
+                    'lowOilWarning','lowFuelWarning','lowWiperFluidWarning','temperatureWarning','tirePressureWarning',
+                    'tractionControlIndicator','cruiseControlIndicator','ignitionSwitchWarning','steeringLockWarning',
+                    'doorOpenWarning','seatBeltWarning',
         ];
         if(paths.indexOf(e.target.value)!== -1){
             window.location.href = '/' + e.target.value;
