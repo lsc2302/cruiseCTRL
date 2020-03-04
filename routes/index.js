@@ -367,9 +367,49 @@ router.get('/shake',function(req,res){
     }
 });
 
-router.get('/shakeTyre',function(req,res){
+router.get('/imbalancedTires',function(req,res){
     if(!!req.session.loginUser){
         let data = Object.assign(req.session.loginUser, renderdata.data[4].children[0].children);
+        res.render('third',data);
+    }
+    else{
+        res.redirect('/login');
+    }
+});
+
+router.get('/sparkPlugs',function(req,res){
+    if(!!req.session.loginUser){
+        let data = Object.assign(req.session.loginUser, renderdata.data[4].children[1].children);
+        res.render('third',data);
+    }
+    else{
+        res.redirect('/login');
+    }
+});
+
+router.get('/brakePads',function(req,res){
+    if(!!req.session.loginUser){
+        let data = Object.assign(req.session.loginUser, renderdata.data[4].children[2].children);
+        res.render('third',data);
+    }
+    else{
+        res.redirect('/login');
+    }
+});
+
+router.get('/brakeCalipers',function(req,res){
+    if(!!req.session.loginUser){
+        let data = Object.assign(req.session.loginUser, renderdata.data[4].children[3].children);
+        res.render('third',data);
+    }
+    else{
+        res.redirect('/login');
+    }
+});
+
+router.get('/axles',function(req,res){
+    if(!!req.session.loginUser){
+        let data = Object.assign(req.session.loginUser, renderdata.data[4].children[4].children);
         res.render('third',data);
     }
     else{

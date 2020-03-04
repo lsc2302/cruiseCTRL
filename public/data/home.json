@@ -309,7 +309,7 @@
       ]
     },
     {
-      "name":"Strange Smell",
+      "name":"Smells",
       "img": "images/intro-imgs/smell.png",
       "event": "smell",
       "children": [
@@ -420,7 +420,7 @@
       ]
     },
     {
-      "name":"Emitting Smoke",
+      "name":"Smoke",
       "img": "images/intro-imgs/smoke.png",
       "event": "smoke",
       "children": [
@@ -444,7 +444,7 @@
       ]
     },
     {
-      "name":"Weird Sound",
+      "name":"Strange Sound",
       "img": "images/intro-imgs/sound.png",
       "event": "sound",
       "children": [
@@ -548,23 +548,87 @@
       ]
     },
     {
-      "name":"Car Shaking",
+      "name":"Shaking",
       "img": "images/intro-imgs/car-shake.png",
       "event": "shake",
       "children": [
         {
-          "name": "Shaking from Tyres",
+          "name": "Imbalanced Tires",
           "img": "images/intro-imgs/flat-tire.png",
-          "event": "shakeTyre",
+          "event": "imbalancedTires",
           "children":
           {
-            "name": "Shaking from Tyres",
+            "name": "Imbalanced Tires",
             "img": "images/intro-imgs/flat-tire.png",
-            "detail": "Shaking is most commonly tied to your tires. They are probably out of balance\nIf the car shakes while braking, this could be tied to your brake rotors\nOn all cars, shaking can also be due to a brake caliper sticking. If your car has over 75,000 miles, a brake caliper service is important.",
+            "detail": "If your vehicle shakes at high speeds, your tires are most likely imbalanced. This is due to your tires wearing unevenly. ",
             "faq": [
               {
-                "question": "Should I still drive after I feel the shake from tire?",
-                "answer":"We suggest you don't do that."
+                "question": "What should I do if I feel the shake from tire?",
+                "answer":" To fix this issue, go to a nearby tire or repair shop to have your tires rotated and balanced. If this problem persists, you may need to purchase new tires."
+              }
+            ]
+          }
+        },{
+          "name": "Spark Plugs",
+          "img": "images/intro-imgs/spark-plug.png",
+          "event": "sparkPlugs",
+          "children":
+          {
+            "name": "Spark Plugs",
+            "img": "images/intro-imgs/spark-plug.png",
+            "detail": "Engine shaking is most likely caused by old spark plugs that need replacement. An oil leak may also occur, but there is no need to worry about the oil leak.",
+            "faq": [
+              {
+                "question": "What should I do?",
+                "answer":" If replacing the spark plugs stops the shaking, it should also stop the leak. Your vehicle may be drivable, but go to your nearest repair shop for assistance as soon as you can."
+              }
+            ]
+          }
+        },{
+          "name": "Brake Pads",
+          "img": "images/intro-imgs/brake-pads.png",
+          "event": "brakePads",
+          "children":
+          {
+            "name": "Brake Pads",
+            "img": "images/intro-imgs/brake-pads.png",
+            "detail": "When a vehicle shakes while you are braking, a potential cause are the brake pads being worn out. You should also hear a loud brushing noise if this is the case.",
+            "faq": [
+              {
+                "question": "What should I do?",
+                "answer":"To solve this, you should seek assistance from a repair shop to replace your brake pads."
+              }
+            ]
+          }
+        },{
+          "name": "Brake Calipers",
+          "img": "images/intro-imgs/brake-caliper.png",
+          "event": "brakeCalipers",
+          "children":
+          {
+            "name": "Brake Calipers",
+            "img": "images/intro-imgs/brake-caliper.png",
+            "detail": "Sticky brake calipers can cause a vehicle to shake. This is only the case when your car shakes while driving around 45 mph and up. You should also smell a burning odor which intensifies relative to higher speeds.",
+            "faq": [
+              {
+                "question": "What should I do?",
+                "answer":"To solve this, you should seek assistance from a repair shop."
+              }
+            ]
+          }
+        },{
+          "name": "Axles",
+          "img": "images/intro-imgs/axle.png",
+          "event": "axles",
+          "children":
+          {
+            "name": "Axles",
+            "img": "images/intro-imgs/axle.png",
+            "detail": "Damaged axles will cause shaking.",
+            "faq": [
+              {
+                "question": "What should I do?",
+                "answer":"replace the axles, Seek assistance from a repair shop to solve this issue."
               }
             ]
           }
