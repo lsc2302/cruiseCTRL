@@ -12,9 +12,6 @@ const UserSocketModel = require('./models/UserSocketModel.js');
 const bodyParser = require('body-parser');
 const indexRouter = require('./routes/index');
 
-
-const PORT = 3000;
-
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 

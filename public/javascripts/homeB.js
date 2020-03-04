@@ -1,4 +1,5 @@
 function expandSecond(item){
+    ga("send", "event", 'buttonClick','click');
     if ($(item).attr('src')==='../../images/right.png'){
         $(item).attr('src','../../images/down.png')
     }else{
@@ -8,6 +9,7 @@ function expandSecond(item){
 }
 
 function expandThird(item){
+    ga("send", "event", 'buttonClick','click');
     if ($(item).attr('src')==='../../images/right.png'){
         $(item).attr('src','../../images/down.png')
     }else{

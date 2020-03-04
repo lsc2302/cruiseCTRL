@@ -16,39 +16,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="119" column="28" selection-start-line="119" selection-start-column="28" selection-end-line="119" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/data/home.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="531">
-              <caret line="625" column="47" lean-forward="true" selection-start-line="625" selection-start-column="47" selection-end-line="625" selection-end-column="47" />
-              <folding>
-                <element signature="e#157#1607#0" />
-                <element signature="e#1617#3476#0" />
-                <element signature="e#3486#5074#0" />
-                <element signature="e#5084#6601#0" />
-                <element signature="e#6611#7974#0" />
-                <element signature="e#7984#9352#0" />
-                <element signature="e#9362#10426#0" />
-                <element signature="e#10436#12051#0" />
-                <element signature="e#12061#13786#0" />
-                <element signature="e#13796#15361#0" />
-                <element signature="e#26546#30255#0" />
-                <element signature="e#26678#30263#0" />
-                <element signature="e#26831#27296#0" />
-                <element signature="e#27450#27817#0" />
-                <element signature="e#27828#28394#0" />
-                <element signature="e#27971#28384#0" />
-                <element signature="e#28192#28372#0" />
-                <element signature="e#28546#28932#0" />
-                <element signature="e#28943#29582#0" />
-                <element signature="e#29086#29572#0" />
-              </folding>
+            <state relative-caret-position="344">
+              <caret line="116" column="30" lean-forward="true" selection-start-line="116" selection-start-column="30" selection-end-line="116" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -56,10 +25,9 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1606">
-              <caret line="409" column="18" selection-start-line="409" selection-start-column="18" selection-end-line="409" selection-end-column="18" />
+            <state relative-caret-position="515">
+              <caret line="12" column="35" lean-forward="true" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
               <folding>
-                <element signature="e#410#602#0" />
                 <element signature="e#660#853#0" />
                 <element signature="e#911#1104#0" />
                 <element signature="e#1146#1348#0" />
@@ -101,10 +69,37 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/home.ejs">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="918">
-              <caret line="42" column="42" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
+            <state relative-caret-position="344">
+              <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/homeB.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="473">
+              <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/homeA.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="301">
+              <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/homeB.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="660">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
             </state>
           </provider>
         </entry>
@@ -112,8 +107,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/second.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="918">
-              <caret line="35" column="88" selection-start-line="35" selection-start-column="88" selection-end-line="35" selection-end-column="88" />
+            <state relative-caret-position="-415">
+              <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -121,8 +116,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/third.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1505">
-              <caret line="35" column="88" selection-start-line="35" selection-start-column="88" selection-end-line="35" selection-end-column="88" />
+            <state relative-caret-position="-387">
+              <caret line="33" column="31" lean-forward="true" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -169,7 +164,6 @@
       <list>
         <option value="$PROJECT_DIR$/public/stylesheets/homeNew.css" />
         <option value="$PROJECT_DIR$/views/homeNew.ejs" />
-        <option value="$PROJECT_DIR$/public/javascripts/homeB.js" />
         <option value="$PROJECT_DIR$/views/buttom.ejs" />
         <option value="$PROJECT_DIR$/views/chat.ejs" />
         <option value="$PROJECT_DIR$/views/help.ejs" />
@@ -199,7 +193,6 @@
         <option value="$PROJECT_DIR$/views/profileA.ejs" />
         <option value="$PROJECT_DIR$/views/profileB.ejs" />
         <option value="$PROJECT_DIR$/views/home.ejs" />
-        <option value="$PROJECT_DIR$/views/homeA.ejs" />
         <option value="$PROJECT_DIR$/public/stylesheets/profile.css" />
         <option value="$PROJECT_DIR$/public/stylesheets/chat.css" />
         <option value="$PROJECT_DIR$/public/javascripts/question.js" />
@@ -209,15 +202,17 @@
         <option value="$PROJECT_DIR$/views/questionB.ejs" />
         <option value="$PROJECT_DIR$/public/stylesheets/question.css" />
         <option value="$PROJECT_DIR$/public/stylesheets/index.css" />
-        <option value="$PROJECT_DIR$/views/homeB.ejs" />
         <option value="$PROJECT_DIR$/public/stylesheets/homeB.css" />
         <option value="$PROJECT_DIR$/public/stylesheets/home.css" />
-        <option value="$PROJECT_DIR$/views/second.ejs" />
-        <option value="$PROJECT_DIR$/views/third.ejs" />
-        <option value="$PROJECT_DIR$/public/javascripts/home.js" />
-        <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/public/data/home.json" />
         <option value="$PROJECT_DIR$/routes/index.js" />
+        <option value="$PROJECT_DIR$/views/homeB.ejs" />
+        <option value="$PROJECT_DIR$/views/second.ejs" />
+        <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/views/third.ejs" />
+        <option value="$PROJECT_DIR$/public/javascripts/home.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/homeB.js" />
+        <option value="$PROJECT_DIR$/views/homeA.ejs" />
       </list>
     </option>
   </component>
@@ -417,12 +412,13 @@
       <workItem from="1583264006897" duration="9912000" />
       <workItem from="1583274023203" duration="2464000" />
       <workItem from="1583289336793" duration="66000" />
-      <workItem from="1583290637207" duration="1790000" />
+      <workItem from="1583290637207" duration="2476000" />
+      <workItem from="1583346837639" duration="2281000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="508140000" />
+    <option name="totallyTimeSpent" value="511107000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="38" width="3840" height="2122" extended-state="6" />
@@ -459,13 +455,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/public/images/back.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/homeB.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/bottom.ejs">
       <provider selected="true" editor-type-id="text-editor">
@@ -673,13 +662,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/homeA.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="43" column="42" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/socket.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-731">
@@ -753,16 +735,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/homeB.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="58" column="63" selection-start-line="58" selection-start-column="57" selection-end-line="58" selection-end-column="63" />
-          <folding>
-            <element signature="n#style#0;n#strong#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/homeB.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="473">
@@ -777,24 +749,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/third.ejs">
+    <entry file="file://$PROJECT_DIR$/public/data/home.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1505">
-          <caret line="35" column="88" selection-start-line="35" selection-start-column="88" selection-end-line="35" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="119" column="28" selection-start-line="119" selection-start-column="28" selection-end-line="119" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="817">
-          <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+        <state relative-caret-position="43">
+          <caret line="578" column="48" selection-start-line="578" selection-start-column="48" selection-end-line="578" selection-end-column="48" />
+          <folding>
+            <element signature="e#157#1607#0" />
+            <element signature="e#1617#3476#0" />
+            <element signature="e#3486#5074#0" />
+            <element signature="e#5084#6601#0" />
+            <element signature="e#6611#7974#0" />
+            <element signature="e#7984#9352#0" />
+            <element signature="e#9362#10426#0" />
+            <element signature="e#10436#12051#0" />
+            <element signature="e#12061#13786#0" />
+            <element signature="e#13796#15361#0" />
+            <element signature="e#26546#30255#0" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -805,19 +776,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/third.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-387">
+          <caret line="33" column="31" lean-forward="true" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/homeB.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/second.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="35" column="88" selection-start-line="35" selection-start-column="88" selection-end-line="35" selection-end-column="88" />
+        <state relative-caret-position="-415">
+          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="116" column="30" lean-forward="true" selection-start-line="116" selection-start-column="30" selection-end-line="116" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/homeB.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1606">
-          <caret line="409" column="18" selection-start-line="409" selection-start-column="18" selection-end-line="409" selection-end-column="18" />
+        <state relative-caret-position="515">
+          <caret line="12" column="35" lean-forward="true" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
           <folding>
-            <element signature="e#410#602#0" />
             <element signature="e#660#853#0" />
             <element signature="e#911#1104#0" />
             <element signature="e#1146#1348#0" />
@@ -857,32 +862,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/data/home.json">
+    <entry file="file://$PROJECT_DIR$/views/homeA.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="625" column="47" lean-forward="true" selection-start-line="625" selection-start-column="47" selection-end-line="625" selection-end-column="47" />
-          <folding>
-            <element signature="e#157#1607#0" />
-            <element signature="e#1617#3476#0" />
-            <element signature="e#3486#5074#0" />
-            <element signature="e#5084#6601#0" />
-            <element signature="e#6611#7974#0" />
-            <element signature="e#7984#9352#0" />
-            <element signature="e#9362#10426#0" />
-            <element signature="e#10436#12051#0" />
-            <element signature="e#12061#13786#0" />
-            <element signature="e#13796#15361#0" />
-            <element signature="e#26546#30255#0" />
-            <element signature="e#26678#30263#0" />
-            <element signature="e#26831#27296#0" />
-            <element signature="e#27450#27817#0" />
-            <element signature="e#27828#28394#0" />
-            <element signature="e#27971#28384#0" />
-            <element signature="e#28192#28372#0" />
-            <element signature="e#28546#28932#0" />
-            <element signature="e#28943#29582#0" />
-            <element signature="e#29086#29572#0" />
-          </folding>
+        <state relative-caret-position="301">
+          <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
         </state>
       </provider>
     </entry>
