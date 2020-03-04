@@ -33,7 +33,7 @@
 }
 
 .intro-items{
-    height:66vh;
+    height:calc(66vh - 1rem);
     overflow-y: scroll;
 }
 
@@ -45,10 +45,10 @@
 }
 
 .intro-third{
-    height:71vh;
+    height:calc(71vh - 1rem);
     margin-top: 2vh;
     font-size: x-large;
-    overflow-y: auto;
+    overflow-y: scroll;
 }
 
 .intro-third img{

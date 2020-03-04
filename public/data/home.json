@@ -421,7 +421,7 @@
     },
     {
       "name":"Smoke",
-      "img": "images/intro-imgs/smoke.png",
+      "img": "images/intro-imgs/car-smoke.png",
       "event": "smoke",
       "children": [
         {
@@ -432,11 +432,27 @@
           {
             "name": "Black Smoke",
             "img": "images/intro-imgs/smoke.png",
-            "detail": "Under the hood, smoke might be due to coolant in the combustion chamber (sweet smell could accompany), a cracked engine block, or a leaking head gasket.",
+            "detail": "If there is black smoke coming from your exhaust, this indicates that your engine is burning too much fuel. There are multiple other causes to black smoke, such as a broken fuel pressure regulator, leaking fuel injector or dysfunctional carburetor.",
             "faq": [
               {
-                "question": "Should I still drive after I see black smoke?",
-                "answer":"We suggest you don't do that."
+                "question": "What should I do if I see black smoke?",
+                "answer":"Calling an expert or going to a repair shop is recommended if you are unsure of the cause."
+              }
+            ]
+          }
+        },{
+          "name": "White Smoke",
+          "img": "images/intro-imgs/white-smoke.png",
+          "event": "whiteSmoke",
+          "children":
+          {
+            "name": "White Smoke",
+            "img": "images/intro-imgs/white-smoke.png",
+            "detail": "White smoke coming from the engine can indicate multiple issues such as a coolant leak, a cracked engine block, or a leaking head gasket.",
+            "faq": [
+              {
+                "question": "What should I do if I see white smoke?",
+                "answer":"You will most likely need to stop the operation of your vehicle and call for assistance immediately. Operation of the vehicle may cause overheating."
               }
             ]
           }

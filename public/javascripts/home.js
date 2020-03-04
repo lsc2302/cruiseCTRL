@@ -14,11 +14,20 @@ function clickHomeBack(){
 
 function searchIntro(e){
     if(e.which===13) {
-        let paths = ['lights','smell','rottenEgg','smoke','blackSmoke','sound',
-                    'soundTyre','shake','shakeTyre','antilockWarning','batteryLow','checkEngine','brakeSystemWarning',
-                    'lowOilWarning','lowFuelWarning','lowWiperFluidWarning','temperatureWarning','tirePressureWarning',
-                    'tractionControlIndicator','cruiseControlIndicator','ignitionSwitchWarning','steeringLockWarning',
-                    'doorOpenWarning','seatBeltWarning',
+        let paths = [
+            'lights',
+            'antilockWarning','batteryLow','checkEngine','brakeSystemWarning',
+            'lowOilWarning','lowFuelWarning','lowWiperFluidWarning','temperatureWarning','tirePressureWarning',
+            'tractionControlIndicator','cruiseControlIndicator','ignitionSwitchWarning','steeringLockWarning',
+            'doorOpenWarning','seatBeltWarning',
+            'smell',
+            'rottenEgg','gas','burnt','mold','syrup','hotOil',
+            'smoke',
+            'blackSmoke','whiteSmoke',
+            'sound',
+            'clunking','flapping','grind','sizzling','knocking','bang',
+            'shake',
+            'imbalancedTires','sparkPlugs','brakePads','brakeCalipers','axles',
         ];
         if(paths.indexOf(e.target.value)!== -1){
             window.location.href = '/' + e.target.value;

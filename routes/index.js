@@ -8,7 +8,6 @@ const router = express.Router();
 
 router.get('/', function(req, res, next) {
     if(!!req.session.loginUser){
-        // res.redirect('/path/to/homeA');
         let data = Object.assign(req.session.loginUser, renderdata);
         res.render('home',data);
     }
@@ -281,6 +280,16 @@ router.get('/smoke',function(req,res){
 router.get('/blackSmoke',function(req,res){
     if(!!req.session.loginUser){
         let data = Object.assign(req.session.loginUser, renderdata.data[2].children[0].children);
+        res.render('third',data);
+    }
+    else{
+        res.redirect('/login');
+    }
+});
+
+router.get('/whiteSmoke',function(req,res){
+    if(!!req.session.loginUser){
+        let data = Object.assign(req.session.loginUser, renderdata.data[2].children[1].children);
         res.render('third',data);
     }
     else{
