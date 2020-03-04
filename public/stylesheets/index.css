@@ -36,6 +36,7 @@ html, body, .index {
     width:100%;
     border-bottom:1px solid gray;
     border-top:1px solid gray;
+    overflow-y:scroll;
 }
 nav{
     flex:10;

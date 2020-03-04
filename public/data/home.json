@@ -314,12 +314,12 @@
       "event": "smell",
       "children": [
         {
-          "name": "Rotten eggs Smell",
+          "name": "Rotten eggs",
           "img": "images/intro-imgs/egg.png",
           "event": "rottenEgg",
           "children":
             {
-              "name": "Rotten eggs Smell",
+              "name": "Rotten eggs",
               "img": "images/intro-imgs/egg.png",
               "detail": "If your vehicle smells of rotten eggs, it is probably coming from your transmission. Your transmission uses oil containing sulfur, which is what produces the smell. The smell of rotten eggs can also mean you have a problem with your catalytic converter. ",
               "faq": [
@@ -333,12 +333,12 @@
               ]
             }
         }, {
-          "name": "Gasoline Smell",
+          "name": "Gasoline",
           "img": "images/intro-imgs/gas.png",
           "event": "gas",
           "children":
           {
-            "name": "Gasoline Smell",
+            "name": "Gasoline",
             "img": "images/intro-imgs/gas.png",
             "detail": "If you smell any type of gasoline from the inside of your car, it usually means something is wrong with your fuel-tank injection line or vent hose.",
             "faq": [
@@ -349,12 +349,12 @@
             ]
           }
         },{
-          "name": "Burnt Smell",
+          "name": "Burnt",
           "img": "images/intro-imgs/burnt.png",
           "event": "burnt",
           "children":
           {
-            "name": "Burnt Smell",
+            "name": "Burnt",
             "img": "images/intro-imgs/burnt.png",
             "detail": "The smell of burning paper is most likely coming from your clutch, which is in charge of helping your car shift gears.<br/>A burnt carpet smell usually arises when the brake pads are overheated.",
             "faq": [
@@ -366,12 +366,12 @@
           }
         },
         {
-          "name": "Mold Smell",
+          "name": "Mold",
           "img": "images/intro-imgs/mold.png",
           "event": "mold",
           "children":
           {
-            "name": "Mold Smell",
+            "name": "Mold",
             "img": "images/intro-imgs/mold.png",
             "detail": "If your vehicle smells moldy, it probably is. There may be mildew growing inside your air conditioning system from moisture.",
             "faq": [
@@ -383,12 +383,12 @@
           }
         },
         {
-          "name": "Maple Syrup Smell",
+          "name": "Maple Syrup",
           "img": "images/intro-imgs/syrup.png",
           "event": "syrup",
           "children":
           {
-            "name": "Maple Syrup Smell",
+            "name": "Maple Syrup",
             "img": "images/intro-imgs/syrup.png",
             "detail": "If your vehicle smells sweet after the engine has been running, you may have a coolant leak. This may be coming from the radiator, heater, failed intake gasket or cylinder head. If it seems like the odor is coming from the glove/passenger compartment, the issue may be from your heater.",
             "faq": [
@@ -400,12 +400,12 @@
           }
         },
         {
-          "name": "Hot Oil Smell",
+          "name": "Hot Oil",
           "img": "images/intro-imgs/hot-oil.png",
           "event": "hotOil",
           "children":
           {
-            "name": "Hot Oil Smell",
+            "name": "Hot Oil",
             "img": "images/intro-imgs/hot-oil.png",
             "detail": "If you smell hot oil, there may be an oil leak.",
             "faq": [
@@ -460,7 +460,7 @@
       ]
     },
     {
-      "name":"Strange Sound",
+      "name":"Sounds",
       "img": "images/intro-imgs/sound.png",
       "event": "sound",
       "children": [

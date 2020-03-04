@@ -33,7 +33,7 @@
 }
 
 .intro-items{
-    height:calc(57vh - 1rem);
+    height:calc(100% - 7vh);
     overflow-y: scroll;
 }
 
@@ -45,7 +45,7 @@
 }
 
 .intro-third{
-    height:calc(62vh - 1rem);
+    height:calc(100% - 9vh - 1rem);
     margin-top: 2vh;
     font-size: x-large;
     overflow-y: scroll;
@@ -66,6 +66,10 @@
     padding-left: 2.5vh;
 }
 
+/*.second-level{*/
+/*    height:100%;*/
+/*}*/
+
 .first-level input{
     height:5vh;
     width:100%;
@@ -82,11 +86,13 @@
 }
 
 .container{
+    height:100%;
     max-width: 1000px;
     width:90vw;
     padding:0;
     margin-left:5vw;
     margin-right: 5vw;
+    overflow-y: scroll;
 }
 
 .home-back img{
@@ -104,4 +110,8 @@
 
 #home-search-1{
     margin-top:4vh;
+}
+
+.input-group{
+    height:calc(100% - 7vh - 1rem);
 }
