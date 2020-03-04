@@ -8,9 +8,9 @@ const router = express.Router();
 
 router.get('/', function(req, res, next) {
     if(!!req.session.loginUser){
-        res.redirect('/path/to/homeA');
-        // let data = Object.assign(req.session.loginUser, renderdata);
-        // res.render('home',data);
+        // res.redirect('/path/to/homeA');
+        let data = Object.assign(req.session.loginUser, renderdata);
+        res.render('home',data);
     }
     else{
         res.redirect('/login');
