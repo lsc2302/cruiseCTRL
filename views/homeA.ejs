@@ -44,13 +44,13 @@
     <div id="alert-placeholder">
     </div>
     <div class="middle" id="middle">
-        <div id="middle-home">
+        <div class="first-level container">
             <div id="home-intro">
-                Please Choose Problem Type
+                Choose A Problem:
             </div>
-            <div class="first-level container">
-                <div class="input-group mb-3" id="home-search-1">
-                    <input type="text" class="search form-control" placeholder="Search..." onkeydown="searchIntro(event)" >
+            <div class="input-group mb-3" id="home-search-1">
+                <input type="text" class="search form-control" placeholder="Search..." onkeydown="searchIntro(event)" >
+                <div class="intro-items">
                     <% for(var i=0; i < data.length; i++) { %>
                     <div class="intro-item">
                         <div class="intro-first" onclick="clickHome('<%=data[i].event%>')">
@@ -62,7 +62,6 @@
                 </div>
             </div>
         </div>
-
     </div>
     <nav class="bottom">
         <div id="icon-0" onclick="clickNav(0)">

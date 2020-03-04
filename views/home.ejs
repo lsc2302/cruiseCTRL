@@ -42,20 +42,22 @@
     <div id="alert-placeholder">
     </div>
     <div class="middle" id="middle">
-            <div id="home-intro">
-                Choose A Problem:
-            </div>
             <div class="first-level container">
+                <div id="home-intro">
+                    Choose A Problem:
+                </div>
                 <div class="input-group mb-3" id="home-search-1">
                     <input type="text" class="search form-control" placeholder="Search..." onkeydown="searchIntro(event)" >
-                    <% for(var i=0; i < data.length; i++) { %>
-                    <div class="intro-item">
-                        <div class="intro-first" onclick="clickHome('<%=data[i].event%>')">
-                            <img src=<%=data[i].img%>>
-                            <%=data[i].name%>
+                    <div class="intro-items">
+                        <% for(var i=0; i < data.length; i++) { %>
+                        <div class="intro-item">
+                            <div class="intro-first" onclick="clickHome('<%=data[i].event%>')">
+                                <img src=<%=data[i].img%>>
+                                <%=data[i].name%>
+                            </div>
                         </div>
+                        <% } %>
                     </div>
-                    <% } %>
                 </div>
             </div>
     </div>

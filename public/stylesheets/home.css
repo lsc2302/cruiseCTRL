@@ -29,7 +29,7 @@
 }
 
 .intro-item{
-    margin-top:3vh;
+    margin-top:2.5vh;
 }
 
 .intro-items{
@@ -62,13 +62,8 @@
     height:5vh;
     width:100%;
     font-size: xx-large;
-    padding-top: 3vh;
-    padding-left: 2.5vh;
+    padding-top: 2vh;
 }
-
-/*.second-level{*/
-/*    height:100%;*/
-/*}*/
 
 .first-level input{
     height:5vh;
@@ -109,7 +104,7 @@
 }
 
 #home-search-1{
-    margin-top:4vh;
+    margin-top:2vh;
 }
 
 .input-group{
