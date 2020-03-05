@@ -19,8 +19,6 @@ Sabha Mobini Fahalari
 
 Ivan Luu
 
-Description:
-
 #### Target Users: 
 Drivers and people who interested in driving, car racing, etc.
 
