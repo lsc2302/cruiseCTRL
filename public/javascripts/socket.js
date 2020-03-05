@@ -29,7 +29,8 @@ $(function(){
                             <strong>A new question is waiting for you!</strong>
                             <button type="button" class="btn btn-success" 
                             onclick="javascript:window.location.href='/question'"
-                            >Go right now!</button>
+                            style="font-size: xx-large"
+                            >Go!</button>
                         </div>
                         `);
                 });

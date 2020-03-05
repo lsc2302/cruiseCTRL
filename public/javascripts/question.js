@@ -14,9 +14,10 @@ $(document).ready(function() {
                         <div class="alert alert-warning" style="display: block">
                             <button type="button" class="close" data-dismiss="alert">&times;</button>
                             <strong>A new question is waiting for you!</strong>
-                            <button type="button" class="btn btn-success"
+                            <button type="button" class="btn btn-success" 
                             onclick="javascript:window.location.href='/question'"
-                            >Go right now!</button>
+                            style="font-size: xx-large"
+                            >Go!</button>
                         </div>
                         `);
             storeNotifications(data)
