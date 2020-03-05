@@ -3,7 +3,7 @@ Final Project
 
 For CSE170/COGS120 Interaction Design for Winter 2020 COGS120/CSE170 Interaction Design
 
-####Tech Stack:
+#### Tech Stack:
 
 Front-end: HTML5/CSS3/JS(ES6), Jquery, Bootstrap 4, AJAX, socket.io
 
@@ -11,7 +11,7 @@ Back-end: Mongoose(Mongodb), mlab, Heroku, Restful API, Node.js, express,ejs
 
 Other tools: Git/Github, Figma 
 
-####Group members:
+#### Group members:
 
 Shuchang Liu
 
@@ -21,14 +21,14 @@ Ivan Luu
 
 Description:
 
-####Target Users: 
+#### Target Users: 
 Drivers and people who interested in driving, car racing, etc.
 
-####Functions:
+#### Functions:
 
 An online platform for users to share experience, ask questions and provide help.
 
-####Project Pages:
+#### Project Pages:
 
 This project has 3 pages:<br/>
 Home, Q&A and Profile.<br/>
@@ -90,4 +90,4 @@ Help:
 
 Contact Info:
 
-<img src="https://github.com/lsc2302/cruiseCTRL/blob/master/snapshots/contact.png" alt="GitHub"  width="200" height="360" />
+<img src="https://github.com/lsc2302/cruiseCTRL/blob/master/snapshots/contact.png?raw=true" alt="GitHub"  width="200" height="360" />
