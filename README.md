@@ -47,46 +47,46 @@ Users will be able to get coins by answering questions in the near future.<br/>
 Home section:
 
 Plan A:
-<img src="https://www.github.com/lsc2302/cruiseCTRL/snapshots/homeA-1.png" alt="GitHub"  width="200" height="360" />
-<img src="https://www.github.com/lsc2302/cruiseCTRL/snapshots/homeA-2.png" alt="GitHub"  width="200" height="360" />
-<img src="https://www.github.com/lsc2302/cruiseCTRL/snapshots/homeA-3.png" alt="GitHub"  width="200" height="360" />
+<img src="https://github.com/lsc2302/cruiseCTRL/blob/master/snapshots/homeA-1.png?raw=true" alt="GitHub"  width="200" height="360" />
+<img src="https://github.com/lsc2302/cruiseCTRL/blob/master/snapshots/homeA-2.png?raw=true" alt="GitHub"  width="200" height="360" />
+<img src="https://github.com/lsc2302/cruiseCTRL/blob/master/snapshots/homeA-3.png?raw=true" alt="GitHub"  width="200" height="360" />
 
 Plan B:
-<img src="https://www.github.com/lsc2302/cruiseCTRL/snapshots/homeB.png" alt="GitHub"  width="200" height="360" />
+<img src="https://github.com/lsc2302/cruiseCTRL/blob/master/snapshots/homeB.png?raw=true" alt="GitHub"  width="200" height="360" />
 
 Q&A:
 
 (1) User 'admin' ask User 'sahba' a question,
 
-<img src="https://www.github.com/lsc2302/cruiseCTRL/snapshots/question-1.png" alt="GitHub"  width="200" height="360" />
+<img src="https://github.com/lsc2302/cruiseCTRL/blob/master/snapshots/question-1.png?raw=true" alt="GitHub"  width="200" height="360" />
 
 (2) User 'sahba' received a notice,
 
-<img src="https://www.github.com/lsc2302/cruiseCTRL/snapshots/question-2.png" alt="GitHub"  width="200" height="360" />
+<img src="https://github.com/lsc2302/cruiseCTRL/blob/master/snapshots/question-2.png?raw=true" alt="GitHub"  width="200" height="360" />
 
 (3) User 'sahba' saw a brief of the question.
 
-<img src="https://www.github.com/lsc2302/cruiseCTRL/snapshots/question-3.png" alt="GitHub"  width="200" height="360" />
+<img src="https://github.com/lsc2302/cruiseCTRL/blob/master/snapshots/question-3.png?raw=true" alt="GitHub"  width="200" height="360" />
 
 (4) User 'sahba' clicked the notice and see more about this question(the question may be too long).
 
-<img src="https://www.github.com/lsc2302/cruiseCTRL/snapshots/question-4.png" alt="GitHub"  width="200" height="360" />
+<img src="https://github.com/lsc2302/cruiseCTRL/blob/master/snapshots/question-4.png?raw=true" alt="GitHub"  width="200" height="360" />
 
 (5) Two users discussing about the problem.
 
-<img src="https://www.github.com/lsc2302/cruiseCTRL/snapshots/question-5.png" alt="GitHub"  width="200" height="360" />
+<img src="https://github.com/lsc2302/cruiseCTRL/blob/master/snapshots/question-5.png?raw=true" alt="GitHub"  width="200" height="360" />
 
 Profile:
 
-<img src="https://www.github.com/lsc2302/cruiseCTRL/snapshots/profile.png" alt="GitHub"  width="200" height="360" />
+<img src="https://github.com/lsc2302/cruiseCTRL/blob/master/snapshots/profile.png?raw=true" alt="GitHub"  width="200" height="360" />
 
 Menu:
 
-<img src="https://www.github.com/lsc2302/cruiseCTRL/snapshots/menu.png" alt="GitHub"  width="200" height="360" />
+<img src="https://github.com/lsc2302/cruiseCTRL/blob/master/snapshots/menu.png?raw=true" alt="GitHub"  width="200" height="360" />
 
 Help:
 
-<img src="https://www.github.com/lsc2302/cruiseCTRL/snapshots/help.png" alt="GitHub"  width="200" height="360" />
+<img src="https://github.com/lsc2302/cruiseCTRL/blob/master/snapshots/help.png?raw=true" alt="GitHub"  width="200" height="360" />
 
 Contact Info:
 
