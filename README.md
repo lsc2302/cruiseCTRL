@@ -90,4 +90,4 @@ Help:
 
 Contact Info:
 
-<img src="https://www.github.com/lsc2302/cruiseCTRL/snapshots/contact.png" alt="GitHub"  width="200" height="360" />
+<img src="https://github.com/lsc2302/cruiseCTRL/blob/master/snapshots/contact.png" alt="GitHub"  width="200" height="360" />
