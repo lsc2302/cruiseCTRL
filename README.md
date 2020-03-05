@@ -48,9 +48,11 @@ Home section:
 
 Plan A:
 
+<div>
 <img src="https://github.com/lsc2302/cruiseCTRL/blob/master/snapshots/homeA-1.png?raw=true" alt="GitHub"  width="200" height="360" />
 <img src="https://github.com/lsc2302/cruiseCTRL/blob/master/snapshots/homeA-2.png?raw=true" alt="GitHub"  width="200" height="360" />
 <img src="https://github.com/lsc2302/cruiseCTRL/blob/master/snapshots/homeA-3.png?raw=true" alt="GitHub"  width="200" height="360" />
+</div>
 
 Plan B:
 
