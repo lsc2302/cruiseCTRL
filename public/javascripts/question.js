@@ -198,7 +198,7 @@ function clickCard(i){
             <img src="images/back.png" id="answer-back" 
             onclick="
             $('.answer-notification-detail').toggle().html('');
-            $('.index').css('opacity','100%').prop('disabled', false);
+            $('.index').css('display','block').prop('disabled', false);
             "/>
             <div class="card" id="card-detail">
                 <div class="card-header" id="card-header-detail">
@@ -225,7 +225,7 @@ function clickCard(i){
             </div>
         `
     );
-    $('.index').css('opacity','0%').prop( "disabled", true );
+    $('.index').css('display','none').prop( "disabled", true );
 }
 
 function clickAnswerQuestion(i) {
