@@ -1,10 +1,8 @@
 function clickHome(path){
-    ga("send", "event", 'buttonClick','click');
     if(path==='')return;
     window.location.href = '/'+path;
 }
 function clickHomeBack(){
-    ga("send", "event", 'buttonClick','click');
     let i=-1;
     while(document.referrer=== window.location.host){
         i-=1;

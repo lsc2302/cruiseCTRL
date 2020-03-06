@@ -29,7 +29,6 @@
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
         ga('create', 'UA-159663907-1', 'auto');
         ga('require','GTM-562NVJZ');
         ga('send', 'pageview');
@@ -40,6 +39,14 @@
 <div class="index">
     <%- include ('top.ejs') %>
     <div id="alert-placeholder">
+        <div class="alert alert-warning" style="display: block">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>Is this page helpful?</strong>
+            <button type="button" class="btn btn-success"
+                    onclick="ga('send','event','buttonClick','click');$('#alert-placeholder').html('');"
+                    style="font-size: x-large"
+            >Yes</button>
+        </div>
     </div>
     <div class="middle" id="middle">
             <div class="first-level container">

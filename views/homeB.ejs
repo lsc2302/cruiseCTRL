@@ -42,6 +42,14 @@
 <div class="index">
     <%- include ('topA.ejs') %>
     <div id="alert-placeholder">
+        <div class="alert alert-warning" style="display: block">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>Is this page helpful?</strong>
+            <button type="button" class="btn btn-success"
+                    onclick="ga('send','event','buttonClick','click');$('#alert-placeholder').html('');"
+                    style="font-size: x-large"
+            >Yes</button>
+        </div>
     </div>
     <div class="middle" id="middle">
             <div class="first-level">
