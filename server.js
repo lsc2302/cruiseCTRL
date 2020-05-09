@@ -113,8 +113,8 @@ io.on('connect', function(socket) {
 
 
 
-let uri = 'mongodb://localhost/server_db3';
-// let uri = process.env.MONGODB_URI;
+// let uri = 'mongodb://localhost/server_db3';
+let uri = process.env.MONGODB_URI;
 mongoose.connect(uri,{useNewUrlParser:true})
     .then(()=>{
       console.log('successful database connection!');
