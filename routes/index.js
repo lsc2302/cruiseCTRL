@@ -618,8 +618,8 @@ router.post('/logout',(req,res)=>{
 }
 );
 
-router.post('/login',(req,res)=>{
-  const {username} = req.body;
+router.post('/loginLogic',(req,res)=>{
+    const {username} = req.body;
     UserModel.findOne({username:username})
       .then(user => {
           if(user){

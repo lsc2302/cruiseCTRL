@@ -1,9 +1,10 @@
-function clickLogin(){
-        let username = $('#login-username').val();
+function clickLogin(event){
+    event.preventDefault();
+    let username = $('#login-username').val();
         let password = $('#login-password').val();
         let fd={'username':username,'password':password};
         $.ajax({
-            url: '/login',
+            url: '/loginLogic',
             type: 'POST',
             data:JSON.stringify(fd),
             // data: `username=${username}&password=${password}`,
@@ -15,7 +16,8 @@ function clickLogin(){
             success: function (response) {
                 if (response.status === 0) {
                     window.location.href='/';
-                } else if(response.status === 1){
+                }
+                else if(response.status === 1){
                     $('#alert-placeholder').html(`
                         <div class="alert alert-warning" style="display: block">
                             <button type="button" class="close" data-dismiss="alert">&times;</button>
