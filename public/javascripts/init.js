@@ -2,7 +2,7 @@ function storeNotifications(data){
     const {username, userAvatar, userExperience,
         userSkills,carCountry,carBrand,carModel,question,questionType
     } = data;
-    let existNotifications = parseInt(sessionStorage.getItem('notifications'));
+    let existNotifications = parseInt(sessionStorage.getItem('notifications')||0);
     sessionStorage.setItem('notifications',(existNotifications+1).toString());
     let cur = 'notif'+(existNotifications+1).toString();
     sessionStorage.setItem(cur+'username',username);

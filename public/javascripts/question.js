@@ -384,21 +384,21 @@ function clickCloseMoreInfo(){
 }
 
 function cleanNotification(targetNumber){
-    let existNotifications = parseInt(sessionStorage.getItem('notifications'));
-    sessionStorage.setItem('notifications',(existNotifications-1).toString());
-    let cur = 'notif'+(parseInt(targetNumber)+1);
-    sessionStorage.removeItem(cur+'username');
-    sessionStorage.removeItem(cur+'userAvatar');
-    sessionStorage.removeItem(cur+'userExperience');
-    sessionStorage.removeItem(cur+'userSkills');
-    sessionStorage.removeItem(cur+'carCountry');
-    sessionStorage.removeItem(cur+'carBrand');
-    sessionStorage.removeItem(cur+'carModel');
-    sessionStorage.removeItem(cur+'question');
-    sessionStorage.removeItem(cur+'questionType');
-    sessionStorage.removeItem('targetAvatar');
-    sessionStorage.removeItem('targetNumber');
-    sessionStorage.removeItem('targetName');
+    // let existNotifications = parseInt(sessionStorage.getItem('notifications'));
+    // sessionStorage.setItem('notifications',(existNotifications-1).toString());
+    // let cur = 'notif'+(parseInt(targetNumber)+1);
+    // sessionStorage.removeItem(cur+'username');
+    // sessionStorage.removeItem(cur+'userAvatar');
+    // sessionStorage.removeItem(cur+'userExperience');
+    // sessionStorage.removeItem(cur+'userSkills');
+    // sessionStorage.removeItem(cur+'carCountry');
+    // sessionStorage.removeItem(cur+'carBrand');
+    // sessionStorage.removeItem(cur+'carModel');
+    // sessionStorage.removeItem(cur+'question');
+    // sessionStorage.removeItem(cur+'questionType');
+    // sessionStorage.removeItem('targetAvatar');
+    // sessionStorage.removeItem('targetNumber');
+    // sessionStorage.removeItem('targetName');
     window.location.href = '/question';
 }
 

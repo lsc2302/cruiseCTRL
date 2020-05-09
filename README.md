@@ -42,6 +42,12 @@ Users will be able to get coins by answering questions in the near future.<br/>
 5. User profile: Users can always check their profile by clicking the button at the bottom.<br/>
 
 #### Project Details and Snapshots:
+Login Page:
+<div>
+<img src="https://github.com/lsc2302/cruiseCTRL/blob/master/snapshots/login.png?raw=true" alt="GitHub"  width="200" height="360" />
+</div>
+
+
 Home section:
 
 Plan A:
