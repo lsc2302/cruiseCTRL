@@ -619,8 +619,8 @@ router.post('/logout',(req,res)=>{
 );
 
 router.post('/loginLogic',(req,res)=>{
-    const {username} = req.body;
-    UserModel.findOne({username:username})
+    const {username,password} = req.body;
+    UserModel.findOne({username:username,password:password})
       .then(user => {
           if(user){
               req.session.regenerate(function(err) {
@@ -631,7 +631,7 @@ router.post('/loginLogic',(req,res)=>{
                   res.send({status: 0, data: user});
               });
           }else{
-              res.send({status: 1, msg:'user not found!'})
+              res.send({status: 1, msg:'user not found or password wrong!'})
           }
         }
       )
