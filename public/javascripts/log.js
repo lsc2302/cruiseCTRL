@@ -21,7 +21,7 @@ function clickLogin(event){
                     $('#alert-placeholder').html(`
                         <div class="alert alert-warning" style="display: block">
                             <button type="button" class="close" data-dismiss="alert">&times;</button>
-                            <strong>User not found! Please Sign up first!</strong>
+                            <strong>User not found or password incorrect! </strong>
                         </div>
                         `);
                     // alert('User not found! Please Sign up first!');
